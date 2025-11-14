@@ -1,0 +1,29 @@
+/* 
+ #p1css is the selector, 
+ color: orange is the declaration, 
+ color is the property, 
+ orange is the value 
+ */
+ 
+#p1css { /* ID selector */
+    color: orange;
+}
+
+#p2css h1 { /* Descendant selectors */
+    color: orange;
+}
+
+#p3css > h1 { /* Child selectors */
+    color: orange;
+    font-style: oblique;
+}
+
+.test { /* Class selectors */
+    margin: 10px;
+    text-align: center;
+}
+
+p.test2 { /* Element with class selectors */
+    color:red;
+    font-style: italic;
+}
