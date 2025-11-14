@@ -9,13 +9,17 @@
     color: orange;
 }
 
-#p2css h1 { /* Descendant selectors */
-    color: orange;
+#p2css h1, h3 { /* Descendant selectors */   
+    color: hsl(0,100%,50%); /* hsl: color, saturation, lightness  | Test: https://www.hslpicker.com/ */
 }
 
 #p3css > h1 { /* Child selectors */
-    color: orange;
+    color: rgb(255,0,0);
     font-style: oblique;
+    font-family:"Courier Nex", monospace;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-decoration: line-through blue;
 }
 
 .test { /* Class selectors */
