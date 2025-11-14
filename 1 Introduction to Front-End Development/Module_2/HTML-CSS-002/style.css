@@ -1,3 +1,28 @@
-#id1 {
-    display:inline;
+.parent {
+    border: 4px solid red;
+    margin-top: 30px;
+}
+
+.child {
+    display: block; /* img is an inline and we have to convert it into a block */
+    width: 50%; 
+    padding: 20px;
+    border: 4px solid green;
+    margin: auto;
+}
+
+.child2 {
+    width: 50%;
+    padding: 15px;
+    border: 4px solid blue;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.l1 {
+    background-color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
 }
