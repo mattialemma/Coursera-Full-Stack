@@ -19,10 +19,18 @@
     margin-bottom: 10px;
 }
 
-.l1 {
+.labelCSS {
     background-color: yellow;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     display: block;
+}
+
+.child3 {
+    float: left;
+}
+
+.parent2{
+    margin:150px;
 }
