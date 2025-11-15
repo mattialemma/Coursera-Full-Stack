@@ -29,38 +29,38 @@ La struttura segue l'organizzazione del programma:
 
 📚 Struttura del corso con elementi principali
 
-1️⃣ Introduzione al Front-End
+1️⃣ Introduzione al Front-End:
   Concetti base del web
   HTML, CSS e responsive design
   Introduzione a JavaScript
 
-2️⃣ Introduzione alla Programmazione con JavaScript
+2️⃣ Introduzione alla Programmazione con JavaScript:
   Variabili, tipi di dati, operatori
   Funzioni e scope
   Array, oggetti
   Manipolazione del DOM
 
-3️⃣ Version Control con Git & GitHub
+3️⃣ Version Control con Git & GitHub:
   Git: init, clone, add, commit
   Branching e merging
   GitHub: repository, pull request, issues
 
-4️⃣ React Basics
+4️⃣ React Basics:
   Componenti, props, state
   Hooks principali
   Routing e gestione eventi
 
-5️⃣ Back-End Specialization (Python & Django)
+5️⃣ Back-End Specialization (Python & Django):
   Python: sintassi, funzioni, OOP
   Django: views, templates, ORM
   Creazione API REST
 
-6️⃣ Database e Data Modeling
+6️⃣ Database e Data Modeling:
   SQL
   MySQL
   Relazioni e normalizzazione
 
-7️⃣ Capstone Project
+7️⃣ Capstone Project:
   Applicazione full stack
   Front-end in React
   Back-end in Django
