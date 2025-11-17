@@ -1,4 +1,4 @@
-🧑‍💻 Meta Full Stack Developer – README
+🧑‍💻 Meta Full Stack Developer – README  - Mattia Lemma
 
 Questo repository contiene il materiale prodotto durante il Meta Full Stack Developer Professional Certificate su Coursera.
 L'intero percorso è organizzato in corsi, ciascuno suddiviso in moduli, che a loro volta comprendono esercizi, progetti e appunti.

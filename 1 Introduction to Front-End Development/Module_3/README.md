@@ -1,4 +1,4 @@
-16/11/2025
+16/11/2025 - Mattia Lemma
 
 Nel modulo 3 ho imparato le basi di Bootstrap e introduzione a React con funzionamento del DOM.
 Cosa sono le dipendenze, i Bundler Javascript e il Lazy Loading.
