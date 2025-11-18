@@ -1,0 +1,34 @@
+// In JavaScript un iterabile è  qualsiasi tipo di dato
+// su cui è possibile iterare  utilizzando un ciclo for.
+
+console.log("-----");
+
+var letters = "abc";
+for(let i=0; i<letters.length; i++){
+    console.log(letters[i]);
+}
+
+console.log("-----");
+
+var array = ['a', 'b', 'c'];
+for(let i=0; i<array.length; i++){
+    console.log(array[i]);
+}
+
+console.log("-----");
+
+// Nonostante il comportamento simile, le stringhe NON sono array. 
+// Vediamo un esempio che funziona con gli array ma non con le stringhe:
+
+var stringa = "Hello ";
+// console.log(stringa.pop()); // Errore di compilazione | (stringa.pop is not a function)
+
+// Ciò significa che non posso eseguire tutti i metodi array sulle stringhe.
+
+var stringa2 = "Mattia Lemma";
+console.log(stringa + stringa2);
+console.log(stringa.concat(stringa2));
+
+// -_-_-_-_-_-_ -_-_-_-_-_-_ -_-_-_-_-_-_ -_-_-_-_-_-_ -_-_-_-_-_-_
+
+// Metodi utili per le stringhe
