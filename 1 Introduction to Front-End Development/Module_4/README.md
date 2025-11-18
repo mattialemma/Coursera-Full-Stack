@@ -1,6 +1,6 @@
 16/11/2025 - Mattia Lemma
 
-In questa parte del corso sono stati effettuati diversi test pratici utilizzando Bootstrap, con l’obiettivo di comprendere e applicare i componenti e le classi fondamentali del framework.
+In questa parte del corso ho effettuato diversi test pratici utilizzando Bootstrap, con l’obiettivo di comprendere e applicare i componenti e le classi fondamentali del Framework.
 
 Sono stati messi in pratica:
 
