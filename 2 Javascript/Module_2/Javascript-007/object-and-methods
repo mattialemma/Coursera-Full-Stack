@@ -15,9 +15,12 @@ car.tettuccio = function(){
     console.log("Tettuccio chiuso");
 }
 
+car["Tipo di trazione"] = "4x4 o posteriore";
+
 console.log(car);
 car.start();
 car.tettuccio();
+
 
 /*
     Ad esempio, il metodo log che appartiene all'oggetto console,
