@@ -13,6 +13,10 @@ letters.match(/a/); // cerca la lettera 'a' nella stringa | Restituisce un array
     ]
 */
 
+// Test su come funziona .match()
+var test = "ciao";
+console.log(test.match("ia")); // index 1 perchè la corrispondenza inizia da test[1]
+
 
 var letters = "abc";
 letters.match(/d/); // 'd' non trovata quindi non costruisce l'array:
