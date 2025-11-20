@@ -1,0 +1,44 @@
+
+// -_-_-_-_-_-_-_-| Programmazione OOP |-_-_-_-_-_-_-_-
+
+var virtualPet = {
+    sleepy: true,
+    nap: function () {
+        this.sleepy = false // this. si riferisce alla proprietà sleepy di virtualPet
+    }
+}
+
+console.log(virtualPet.sleepy); // Output: true
+virtualPet.nap();
+console.log(virtualPet.sleepy) // Output: false
+
+
+/* -_-_-_-_-_-_-_-| Programmazione FP |-_-_-_-_-_-_-_- 
+
++ FUNZIONI DI PRIMA CLASSE
+Una funzione in JavaScript non è un valore che possiamo:
+- Passare ad altre funzioni, salvare in una variabile, restituire ad altre funzioni
+In JavaScript è normale passare una funzione o la sua invocazione come argomento a un'altra funzione.
+*/
+
+function addTwoNums(a, b) {
+    console.log(a + b)
+}
+
+function randomNum() {
+    return Math.floor((Math.random() * 10) + 1); // Restituisce numero casuale tra 1 e 10
+}
+
+function specificNum() { return 42 }; // Restituisce il numero 42
+
+var useRandom = true;
+
+var getNumber;
+
+if(useRandom) {
+    getNumber = randomNum // getNumber diventa la funzione randomNum
+} else {
+    getNumber = specificNum // getNumber diveta la funzione specificNum
+}
+
+addTwoNums(getNumber(), getNumber()) // Chiamo la funzione che ho selezionato (useRandom oppure specificNum)
