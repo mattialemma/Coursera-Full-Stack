@@ -80,7 +80,7 @@ kingPenguin.useWings(); // "Diving!"
 
 //______________________________________________________________
 console.log("--------"); console.log();
-// Test:
+// Esercizio personale di test:
 
 class Persona {
     constructor(nome,cognome){
