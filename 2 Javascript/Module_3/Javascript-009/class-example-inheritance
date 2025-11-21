@@ -1,0 +1,32 @@
+// Esempio creazione e utilizzo di una classe con ereditarietà
+
+class Train {
+    constructor(color, lightsOn) { // Utilizzato per costruire le proprietà della futura istanza dell'oggetto della classe Train
+        this.color = color;
+        this.lightsOn = lightsOn;
+    }
+    
+    toggleLights() {
+        this.lightsOn = !this.lightsOn;
+    }
+    lightsStatus() {
+        console.log('Lights on?', this.lightsOn);
+    }
+    getSelf() {
+        console.log(this);
+    }
+    getPrototype() {
+        var proto = Object.getPrototypeOf(this);
+        console.log(proto);
+    }
+}
+
+let train1 = new Train("red", false);
+console.log(train1); // Output: Train {color: 'red', lightsOn: false}
+
+let train2 = new Train("orange", true); // Crea un'istanza della classe Train con Train.prototype come prototipo - Ovvero: (Crea un nuovo oggetto che eredita da Train.prototype)
+train2.lightsStatus(); // Output: Train { color: 'red', lightsOn: false }
+train2.toggleLights(); // Output: Lights on? true
+train2.lightsStatus(); // Output: Lights on? false
+train2.getSelf(); // Output: Train { color: 'orange', lightsOn: false }
+train2.getPrototype(); // Output: {constructor: f, toggleLights: f, lightsStatus: f, getSelf: f, getPrototype: f}

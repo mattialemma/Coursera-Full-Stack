@@ -3,10 +3,19 @@
 Gli argomenti principali che abbiamo trattato sono:
 [ Valore di ritorno delle funzioni. Ricorsione. Scope delle variabili.
 Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const,
-Ereditarietà. Costruttori. super. ]
+Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. ]
 
 
 Ho elencato alcune spiegazioni aggiuntive:
+
+
+
+- Ereditarietà e Prototype
+L'ereditarietà in Javascript si basa sul prototipo dell'oggetto.
+Tutti gli Object costruiti a partire dal prototipo condividono le stesse funzionalità.
+Quando è necessario codificare relazioni OOP più complesse, è possibile utilizzare la parola chiave class e la sua sintassi facile da capire e da ragionare.
+
+
 
 - FP VS OOP
 Possiamo dire che il paradigma della programmazione funzionale funziona mantenendo separati i dati e le funzionalità. La sua controparte, la OOP, funziona mantenendo i dati e le funzionalità raggruppati in Object significativi.
