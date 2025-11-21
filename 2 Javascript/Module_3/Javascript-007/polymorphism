@@ -98,7 +98,7 @@ class Studente extends Persona {
         super(nome,cognome) // Obbligatorio
         this.matricola = matricola;
     }
-
+    
     saluta(nome) {
         super.saluta(nome);
         console.log("Sono un umile studente.");
