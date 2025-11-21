@@ -2,7 +2,7 @@
 
 Gli argomenti principali che abbiamo trattato sono:
 [ Valore di ritorno delle funzioni. Ricorsione. Scope delle variabili.
-Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. ]
+Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const ]
 
 
 - FP VS OOP

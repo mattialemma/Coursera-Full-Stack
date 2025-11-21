@@ -15,6 +15,14 @@ let → non permette la ri-dichiarazione nello stesso scope
 
 var → permette la ri-dichiarazione senza errori.
 
+- Utilizzo scorretto di let:
+
++ Se dichiaro una variabile con let non inizializzandola e la stampo, in output avrò undefined.
+let a;
+console.log(a) -> Output: undefined
+
++ Se la utilizzo in operazioni otterrò NaN:
+let a; let b = 1; let ris = a + b; console.log(ris); -> Output: NaN (perchè undefined + 1)
 
 -_-_-_-_-| 3. Hoisting |-_-_-_-_-
 
@@ -23,7 +31,6 @@ non può essere usata prima della dichiarazione.
 
 var → viene hoisted e inizializzata come undefined:
 può essere usata prima della dichiarazione, anche se è sconsigliato.
-
 
 -_-_-_-_-| 4. Proprietà globali |-_-_-_-_-
 
@@ -48,3 +55,14 @@ var x = 5;
 var x;        // dichiarazione spostata in alto
 console.log(x);
 x = 5;        // assegnazione lasciata al suo posto
+
+
+____________________________________________
+-_-_-_-_-_| Const |_-_-_-_-_-
+
+const piGreco = 4.141592; // Valore che non cambia, costante
+
+La dichiarazione è obbligatoria, altrimenti -> errore di sintassi.
+Non si può accedere a const prima dell'inizializzazione.
+Prima inizializzo, poi utilizzo.
+Non è possibile inizializzare nuovamente const con altri valori.

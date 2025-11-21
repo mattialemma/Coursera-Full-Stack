@@ -3,7 +3,7 @@
 Gli argomenti principali che abbiamo trattato sono:
 [ Utilizzo di funzioni, array e oggetti in JavaScript.
 Le stringhe. Regole di sintassi. Introduzione all'oggetto Math.
-Le eccezioni. Gestione degli errori. Programmazione difensiva. ]
+Le eccezioni. Gestione degli errori. Programmazione difensiva. Let, var, const. NaN. ]
 
 Questo documento presenta i concetti fondamentali relativi a funzioni, array e oggetti in JavaScript. Le funzioni rappresentano blocchi di codice riutilizzabile che permettono di organizzare e semplificare il programma. Gli array, pur utilizzando una sintassi dedicata, sono a tutti gli effetti oggetti e offrono metodi e proprietà specifiche per la gestione di insiemi ordinati di valori.
 
