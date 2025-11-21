@@ -1,12 +1,16 @@
-20/11/2025 - Mattia Lemma
+21/11/2025 - Mattia Lemma
 
 Gli argomenti principali che abbiamo trattato sono:
 [ Valore di ritorno delle funzioni. Ricorsione. Scope delle variabili.
-Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const ]
+Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const,
+Ereditarietà. Costruttori. super. ]
 
+
+Ho elencato alcune spiegazioni aggiuntive:
 
 - FP VS OOP
 Possiamo dire che il paradigma della programmazione funzionale funziona mantenendo separati i dati e le funzionalità. La sua controparte, la OOP, funziona mantenendo i dati e le funzionalità raggruppati in Object significativi.
+
 
 
 - Interpolazione di variabili
@@ -29,3 +33,11 @@ style = "color: red; background: blue; font-size: 20px;"
 
 + Ovvero: 
 console.log("%cCiao", "color: red; background: blue; font-size: 20px;");
+
+
+
+- I quattro principi fondamentali della OOP sono:
+ereditarietà , incapsulamento , astrazione e polimorfismo .
+
+_______________________________________________________________
+Ho svolto esercizi guidati e autonomi per verificare le competenze acquisite.

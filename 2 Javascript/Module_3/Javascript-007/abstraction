@@ -1,0 +1,15 @@
+// Astrazione
+
+/*
+    L'astrazione consiste nello scrivere il codice in un modo che lo renda più generalizzato.
+
+    L'astrazione consiste nell'estrarre il  concetto  di ciò che si sta cercando di fare, 
+    piuttosto che occuparsi di una manifestazione specifica di quel concetto.
+    + Pensi al “cosa”, non al “come”.
+      es: voglio cucinare.
+
+    L'incapsulamento consiste nel non avere accesso o non preoccuparsi
+    del funzionamento interno di alcune implementazioni.
+    + Pensi al “come usarlo”, non al “come è fatto dentro”.
+      es: il forno funziona, ma non so com'è fatto dentro.
+*/
