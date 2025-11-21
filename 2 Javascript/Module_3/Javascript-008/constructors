@@ -87,3 +87,71 @@ pear; // --> "pear"
     è meglio non usare i costruttori quando si costruiscono oggetti normali.
 */
 
+_______________________________________________________________________
+// -_-_-_-_-| Modelli e letterali alternativi |-_-_-_-_-
+
+/*
+    Al posto di new Object, si dovrebbe utilizzare la sintassi letterale dell'oggetto:{}.
+*/
+
+let obj = new Object();
+obj.attributo = "nome";
+
+// Risulta meno leggibile di:
+
+let obj = {
+    attributo: "nome"
+};
+
+
+
+/*
+    RegExp:
+    RegExp è un oggetto incorporato di JavaScript che serve per lavorare con le espressioni regolari,
+    cioè pattern usati per cercare dentro le stringhe.
+    Esistono due modi per creare uan RegExp:
+*/
+
+// Con il costruttore
+let pattern = new RegExp("a");
+"abcd".match(pattern);  // ['a', index: 0, ...]
+
+// Con il letterale di regex (modo più usato)
+"abcd".match(/d/); // ['d', index: 3, input: 'abcd', groups: undefined]
+"abcd".match(/a/); // ['a', index: 0, input: 'abcd', groups: undefined]
+
+// Utilizzo del costruttore con RegExp
+// Regex dinamica che dipende dal valore di una variabile (name). | Permette di creare una regex usando stringhe
+let name = "Bro";
+let pattern2 = new RegExp(`^${name}$`);
+
+console.log(pattern2.test("Bro"));     // true
+console.log(pattern2.test("Broo"));    // false
+console.log(pattern2.test("bro"));     // false
+
+// La Regex letterale non permette variabili dentro gli slash. | Ovvero: 
+let pattern3 = /^${name}$/; // Non funziona
+
+
+
+/*
+    Invece di usare i costruttori Array, Function e RegExp,
+    si dovrebbero usare le loro varianti di letterali di array, letterali di funzione
+    e letterali di modello:[],() {} e/()/.
+
+    Tuttavia, quando si costruiscono Object di altri tipi incorporati, si può usare il costruttore.
+    Ecco alcuni esempi:
+*/
+let obj1 = new Date();
+let obj2 = new Error();
+let obj3 = new Map();
+let obj4 = new Promise();
+let obj5 = new Set();
+let obj6 = new WeakSet();
+let obj7 = new WeakMap();
+
+obj2.name;
+obj2.message;
+obj4.then;
+obj7.get;
+// ecc...
