@@ -1,0 +1,47 @@
+// De-strutturazione di array e oggetti
+
+/*
+    Destrutturare array e oggetti è una tecnica in JavaScript che consente di estrarre valori
+    da un array o da un oggetto e assegnarli a variabili in modo semplice e conciso.
+    Immagina di avere un cesto di frutta (l'array) e di voler prendere solo alcune mele e banane.
+    Invece di cercare in tutto il cesto, puoi semplicemente dire: "Voglio queste dui frutti specifici".
+*/
+
+
+// Esempio base
+let {PI} = Math; // PI è 3.14159...
+let {pi} = Math; // undefined (la notazione è case-sensitive)
+PI === Math.PI; // true
+PI = 1;
+PI === Math.pow; // false (non c'è connessione tra la variabile destrutturata e la proprietà sorgente dell'oggetto dato)
+
+// -_-_-_-| Altri esempi |-_-_-_-
+
+// Destrutturazione di un array
+const frutti = ['mela', 'banana', 'arancia'];
+const [primaFrutta, secondaFrutta] = frutti;
+console.log(primaFrutta); // Output: mela
+console.log(secondaFrutta); // Output: banana
+
+// Destrutturazione di un oggetto
+const auto = { marca: 'Toyota', modello: 'Corolla', anno: 2020 };
+const { marca, modello } = auto;
+console.log(marca); // Output: Toyota
+console.log(modello); // Output: Corolla
+
+// Test con funzioni
+function Persona(nome = "Mattia", cognome = "Lemma") {
+    this.nome = nome;
+    this.cognome = cognome;
+    this.metodo = function() {
+        console.log(this.nome, this.cognome);
+    }
+}
+
+const p = new Persona();
+let {nome, cognome} = p;
+console.log(nome, cognome);
+
+const p2 = new Persona("Francesco");
+let {nome: nome1, cognome: cognome1} = p2; // Rinominazione
+console.log(nome1, cognome1);

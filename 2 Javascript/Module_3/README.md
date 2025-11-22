@@ -3,11 +3,13 @@
 Gli argomenti principali che abbiamo trattato sono:
 [ Valore di ritorno delle funzioni. Ricorsione. Scope delle variabili.
 Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const,
-Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. ]
+Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. Destrutturazione.]
 
 
 Ho elencato alcune spiegazioni aggiuntive:
 
+- Destrutturazione
+Destrutturare array e oggetti è una tecnica in JavaScript che consente di estrarre valori da un array o da un oggetto e assegnarli a variabili in modo semplice e conciso. Immagina di avere un cesto di frutta (l'array) e di voler prendere solo alcune mele e banane. Invece di cercare in tutto il cesto, puoi semplicemente dire: "Voglio questi due frutti specifici". (Esempi in Javascript-013)
 
 
 - Ereditarietà e Prototype
