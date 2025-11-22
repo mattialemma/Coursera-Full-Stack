@@ -1,0 +1,37 @@
+// Loop for ... of (array e oggetti)
+
+/*
+    Un ciclo for of non può lavorare direttamente su un oggetto, poiché un oggetto non è iterabile.
+*/
+
+const car = {
+    speed: 100,
+    color: "blue"
+}
+
+// Errore
+for (prop of car) {
+    console.log(prop) // Output: Uncaught TypeError: car is not iterable
+}
+
+// Gli array sono iterabili
+const colors = ["red", "blue", "yellow"]
+for (let color of colors)
+    console.log(color); // Output: red  blue  yellow
+
+//___________________________________________________________
+// Metodi integrati per convertire oggetti in array iterabili
+
+const car2 = {
+    speed: 200,
+    color: "red"
+}
+
+console.log(Object.keys(car2)); // Output: ['speed', 'color']
+console.log(Object.values(car2)); // Output: [200, 'red']
+console.log(Object.entries); // Output; [ ['speed', 200], ['color', 'red']]
+
+for (const key of Object.keys(car2)) {
+    console.log(key, ".", car2[key])
+}
+

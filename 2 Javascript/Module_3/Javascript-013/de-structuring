@@ -29,11 +29,11 @@ const { marca, modello } = auto;
 console.log(marca); // Output: Toyota
 console.log(modello); // Output: Corolla
 
-// Test con funzioni
+// Test con funzioni (funziona correttamente)
 function Persona(nome = "Mattia", cognome = "Lemma") {
     this.nome = nome;
     this.cognome = cognome;
-    this.metodo = function() {
+    this.metodo = function() { // Funzione richiamabile dall'oggetto poichè ha il this. ed è quindi una proprietà dell'oggetto
         console.log(this.nome, this.cognome);
     }
 }
@@ -45,3 +45,6 @@ console.log(nome, cognome);
 const p2 = new Persona("Francesco");
 let {nome: nome1, cognome: cognome1} = p2; // Rinominazione
 console.log(nome1, cognome1);
+
+p.metodo();
+p2.metodo();

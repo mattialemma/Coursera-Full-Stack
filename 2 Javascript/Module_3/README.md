@@ -3,7 +3,8 @@
 Gli argomenti principali che abbiamo trattato sono:
 [ Valore di ritorno delle funzioni. Ricorsione. Scope delle variabili.
 Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const,
-Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. Destrutturazione.]
+Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. Destrutturazione.
+Convertire oggetti in array. ]
 
 
 Ho elencato alcune spiegazioni aggiuntive:
