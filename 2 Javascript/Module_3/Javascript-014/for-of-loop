@@ -35,3 +35,22 @@ for (const key of Object.keys(car2)) {
     console.log(key, ".", car2[key])
 }
 
+//______________________________________________________________________________
+// for ... of lavora sui valori, 
+// mentre for ... in lavora sulle chiavi degli Object o sugli indici degli array
+
+// Esempio 1
+const car = { velocità: 100, colore: "blu" };
+for (let key in car) {
+    console.log(key, car[key]); // Output: velocità, colore
+}
+
+// Esempio 2
+const colors = ["red", "blue", "yellow"]
+for (let color of colors)
+    console.log(color); // Output: 0 1 2
+
+// Esempio 3
+const colors2 = ["red", "blue", "yellow"]
+for (let color in colors2)
+    console.log(color); // Output: red  blue  yellow
