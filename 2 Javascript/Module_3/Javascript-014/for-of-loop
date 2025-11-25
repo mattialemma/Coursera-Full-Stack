@@ -48,9 +48,48 @@ for (let key in car) {
 // Esempio 2
 const colors = ["red", "blue", "yellow"]
 for (let color of colors)
-    console.log(color); // Output: 0 1 2
+    console.log(color); // Output: red  blue  yellow
 
 // Esempio 3
 const colors2 = ["red", "blue", "yellow"]
 for (let color in colors2)
-    console.log(color); // Output: red  blue  yellow
+    console.log(color); // Output: 0 1 2
+
+
+// -_-_-_-| Altro esempio, ma con un caso interessante |-_-_-_-
+
+const car1 = {
+    engine: true,
+    steering: true,
+    speed: "slow"
+}
+
+const sportsCar = Object.create(car1);
+sportsCar.speed = "fast";
+console.log("The sportsCar object:", sportsCar);
+
+console.log("---| for-in è inaffidabile |---");
+for (prop in sportsCar){
+    console.log(prop); 
+}
+/*
+    Output: 
+    The sportsCar object: { speed: 'fast' }
+    ---| for-in è inaffidabile |---
+    speed
+    engine
+    steering
+*/
+
+console.log("Iterando sull'oggetto e sul suo prototipo!");
+
+console.log("---| for-of è affidabile |---");
+for (prop of Object.keys(sportsCar)){
+    console.log(prop + ": "+ sportsCar[prop]);
+}
+
+/*
+    Output:
+    ---| for-of è affidabile |---
+    speed: fast
+*/
