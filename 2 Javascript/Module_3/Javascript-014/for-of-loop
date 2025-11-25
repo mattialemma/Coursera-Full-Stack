@@ -69,8 +69,8 @@ sportsCar.speed = "fast";
 console.log("The sportsCar object:", sportsCar);
 
 console.log("---| for-in è inaffidabile |---");
-for (prop in sportsCar){
-    console.log(prop); 
+for (prop in sportsCar) {
+    console.log(prop);
 }
 /*
     Output: 
@@ -79,17 +79,60 @@ for (prop in sportsCar){
     speed
     engine
     steering
+
+    - SPIEGAZIONE:
+    i cicli for in sono inaffidabili in questo scenario
+    perché iterano non solo sull'oggetto specificato,  ma anche sul suo prototipo
 */
 
+console.log();
 console.log("Iterando sull'oggetto e sul suo prototipo!");
 
 console.log("---| for-of è affidabile |---");
-for (prop of Object.keys(sportsCar)){
-    console.log(prop + ": "+ sportsCar[prop]);
+for (prop of Object.keys(sportsCar)) {
+    console.log(prop + ": " + sportsCar[prop]);
 }
 
 /*
     Output:
     ---| for-of è affidabile |---
     speed: fast
+*/
+
+// Il ciclo for-of itera sulle proprietà dell'oggetto solo quando si utilizza il metodo Object.keys()
+// per restituire un array su cui eseguire il ciclo.
+
+//-_-_-_-_-_-_-_-_-
+/*
+    Se utilizzi Object.create, non è obbligatorio usare Object.keys per iterare sull'oggetto creato.
+    Puoi semplicemente utilizzare un ciclo for...in per iterare su tutte le proprietà,
+    comprese quelle ereditate, oppure un ciclo for...of per scorrere solo le proprietà
+    direttamente inizializzate nell'oggetto stesso, escludendo quelle che provengono dal prototipo. 
+*/
+
+// - - - - -| Stesso codice senza commenti | - - - - - -
+
+const bike = {
+    engine: true,
+    oil: true,
+    color: "red"
+}
+
+const sportBike = Object.create(bike);
+
+sportBike.color = "blue";
+console.log("The sportBike:", sportBike);
+
+for (prop in sportBike) {
+    console.log(prop);
+}
+
+for (prop of Object.keys(sportBike)) {
+    console.log(prop + ":", sportBike[prop]);
+}
+
+/*
+for (prop of sportBike) {
+    console.log(prop); // Errore, non iterabile
+}
 */
