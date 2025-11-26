@@ -5,7 +5,7 @@ Gli argomenti principali che abbiamo trattato sono:
 Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const,
 Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. Destrutturazione.
 Convertire oggetti in array. Template letterali. Strutture dati. Funzioni freccia. 
-Operatore di spread. ]
+Operatore di spread. Operatore di rest. ]
 
 
 Ho elencato alcune spiegazioni aggiuntive:
