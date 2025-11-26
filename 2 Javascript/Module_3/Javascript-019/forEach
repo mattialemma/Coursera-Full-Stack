@@ -31,10 +31,23 @@ veggies.forEach(function (veggie, index) {
 });
 
 console.log();
-// Per aumentare la leggibilità utilizziamo la funzione freccia
+// Per aumentare la leggibilità utilizziamo la funzione freccia (array function)
 const veggies2 = ['onion', 'garlic', 'potato'];
 
 veggies.forEach((veggie, index) => {
     console.log(`${index}. ${veggie}`);
 });
+
+
+console.log();
+// Test personale
+console.log("Prodotti raggruppati a due a due: ");
+const listaSpesa = ['uova', 'farina', 'olio', 'kebab', 'ricotta', 'cipollotto', 'carne'];
+listaSpesa.forEach(
+    (element, index) => {
+        console.log(`Prodotto ${index+1} chiamato ${element}.`);
+        if(index%2)
+            console.log("- - - - ");
+    }
+);
 
