@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Pagina </title>
+</head>
+
+<body>
+    <script type="module">
+        import greet, { informalGreeting } from './greeting.js';
+
+        greet();
+        informalGreeting('Bro');
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+    informalGreeting è una named export e bisogna importarla usando esattamente quel nome e le { }.
+    greet non ha le parentesi perchè è una default export, puoi dargli il nome che vuoi quando la importi.
+ -->

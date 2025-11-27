@@ -1,4 +1,4 @@
-// Utilizzo di spread e rest
+// Utilizzo avanzato di spread e rest
 
 // Rest nella destrutturazione degli arrya
 const [first, ...rest] = [1, 2, 3, 4];

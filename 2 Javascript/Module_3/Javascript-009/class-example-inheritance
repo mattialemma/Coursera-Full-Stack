@@ -104,7 +104,7 @@ console.log(boxingGym.treadmill) //
 */
 
 /*
-    Questo codice mi consente di istanziare un nuovo oggetto istanza della classe Gym e,
+    Quest'uiltimo codice mi consente di istanziare un nuovo oggetto istanza della classe Gym e,
     quando lo ispeziono, ottengo le seguenti informazioni:
 
     - la proprietà openHrs è uguale a "7-22" (cioè dalle 7 del mattino alle 10 di sera).
