@@ -1,0 +1,30 @@
+<!-- Moduli HTML -->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Modules</title>
+</head>
+
+<body>
+    <script>
+        let h1 = document.createElement('h1')
+        h1.innerText = "Type into the input to make this text change"
+
+        let input = document.createElement('input')
+        input.setAttribute('type', 'text')
+
+        document.body.innerText = '';
+        document.body.appendChild(h1);
+        document.body.appendChild(input);
+
+        input.addEventListener('change', function () { // oppure uso la arrow function () => e tolgo le { }
+            h1.innerText = input.value
+        })
+    </script>
+</body>
+
+</html>

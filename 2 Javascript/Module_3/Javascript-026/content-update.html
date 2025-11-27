@@ -1,0 +1,27 @@
+// Aggiornamento del contenuto delle pagine web
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Example</title>
+</head>
+<body>
+    <script>
+        let answer = prompt('What is your name?');
+        if (typeof(answer) === 'string') {
+            var h1 = document.createElement('h1');
+            h1.innerText = answer;
+            document.body.innerText = '';
+            document.body.appendChild(h1);
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+    Questo approccio è il più semplice ma il meno efficiente.
+    È qui che entrano in gioco i moduli HTML.
+    (file: html-modules)
+-->
