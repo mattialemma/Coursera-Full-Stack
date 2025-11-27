@@ -1,7 +1,7 @@
 // Operatore di spread
 
 //  È il metodo più breve e semplice per copiare
-//  le proprietà di un oggettosu un oggetto appena creato.
+//  le proprietà di un oggetto su un oggetto appena creato.
 
 let top3 = [
     "Napoli",
