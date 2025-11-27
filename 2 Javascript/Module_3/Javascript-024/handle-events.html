@@ -1,0 +1,30 @@
+<!--- Gestione degli eventi -->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione degli Eventi</title>
+</head>
+
+<body>
+    <h1 onclick="handleClick2()">Heading!</h1>
+    <p> Body: Testo scritto da Mattia Lemma, ma non so bene cosa scrivere. </p>
+    <script>
+        const target = document.querySelector('body');
+
+        function handleClick() {
+            console.log("Clicked body!");
+        }
+
+        function handleClick2() {
+            console.log("Clicked heading!")
+        }
+
+        target.addEventListener('click', handleClick);
+    </script>
+</body>
+
+</html>
