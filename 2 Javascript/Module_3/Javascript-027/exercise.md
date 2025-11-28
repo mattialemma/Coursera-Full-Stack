@@ -24,6 +24,7 @@ var arr = [
     'Third Click'
 ]
 
+
 3)
 function handleClicks() {
     switch(h1.innerText) {
