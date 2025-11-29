@@ -1,21 +1,11 @@
 
-const { default : TestRunner } = require("jest-runner");
 
-Serve a importare il modulo jest-runner in un file JavaScript. 
-Questo modulo è parte del framework di testing Jest, che è utilizzato per eseguire test automatizzati sul codice JavaScript. 
+import { test, expect } from 'vitest' 
+- importa da Vitest le due funzioni fondamentali:
 
-
-
-- Importazione di un modulo: 
-Quando scrivi const { default : TestRunner } = require("jest-runner");, stai dicendo al tuo programma di prendere il modulo jest-runner e di assegnarlo a una costante chiamata TestRunner. 
-Questo ti permette di utilizzare le funzionalità di jest-runner nel tuo codice.
-
-- Funzione di TestRunner: 
-TestRunner è responsabile dell'esecuzione dei test.
-Puoi pensarlo come un giudice in una competizione:
-controlla se il tuo codice funziona come dovrebbe, eseguendo i test che hai scritto e riportando i risultati.
+    - test serve per definire un test (“questa cosa deve funzionare così”).
+    - expect serve per scrivere l’asserzione, cioè verificare se il risultato è quello che ti aspetti.
 
 
-
-Il termine require è una funzione utilizzata in JavaScript, in particolare con Node.js, 
-per importare moduli o file esterni nel codice. 
+import addFive from './addFive.js' 
+importa la funzione addFive dal file addFive.js, così puoi testarla dentro il file di test.
