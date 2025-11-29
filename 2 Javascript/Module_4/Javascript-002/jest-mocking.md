@@ -1,6 +1,6 @@
-// JEST framework per i test e il mocking
+    JEST framework per i test e il mocking
 
-/*
+
     Il mocking consente di separare il codice  che si sta testando dalle relative dipendenze.
     In altre parole, è possibile utilizzare le funzionalità di mocking  per garantire che i test unitari siano autonomi.
     Ad esempio, è possibile testare  la funzionalità front-end di un'app web simulando  i dati come se provenissero da
@@ -18,4 +18,15 @@
     lo sviluppatore backend completi  il ​​suo lavoro prima che il codice frontend possa essere compilato.  
      
     Con il mocking è possibile evitare questo collo di bottiglia. 
-*/
+
+
+    - SNAPSHOT TEST -
+    Jest consente di eseguire test snapshot.
+    I test snapshot vengono utilizzati  dagli sviluppatori per verificare che
+    non vi siano regressioni nel DOM delle nostre app  dopo aver apportato modifiche alla base di codice.
+
+    In parole semplici, immagina di scattare una foto (o "snapshot") della tua applicazione in un determinato momento. Questa foto rappresenta lo stato attuale della tua interfaccia utente. 
+    Quando apporti modifiche al codice, puoi confrontare la nuova versione della tua applicazione con quella foto originale per vedere se ci sono differenze indesiderate.
+
+    - ESEMPIO REALE DI SNAPSHOT TEST -
+    se hai un'app che mostra un elenco di prodotti, puoi scattare un "snapshot" di come appare l'elenco. Se successivamente cambi il modo in cui i prodotti vengono visualizzati, il test di snapshot ti dirà se l'aspetto dell'elenco è cambiato rispetto alla foto originale. Questo ti aiuta a garantire che le modifiche non abbiano introdotto errori visivi o funzionali.

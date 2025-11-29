@@ -1,6 +1,5 @@
-// Astrazione
+    Astrazione
 
-/*
     L'astrazione consiste nello scrivere il codice in un modo che lo renda più generalizzato.
 
     L'astrazione consiste nell'estrarre il  concetto  di ciò che si sta cercando di fare, 
@@ -12,4 +11,4 @@
     del funzionamento interno di alcune implementazioni.
     + Pensi al “come usarlo”, non al “come è fatto dentro”.
       es: il forno funziona, ma non so com'è fatto dentro.
-*/
+
