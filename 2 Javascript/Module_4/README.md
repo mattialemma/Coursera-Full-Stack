@@ -1,6 +1,7 @@
 28/11/2025 - Mattia Lemma
 
-[ Test, Node.js, npm. JEST. Refactoring. TDD. ]
+[ Test, Node.js, npm. JEST. Refactoring. TDD. 
+  Testing R.E. (e2e), Testing di integrazione, Testing unitario. ]
 
 
 Node.js è un ambiente di runtime autonomo che permette di eseguire JavaScript al di fuori del browser, basato sul motore V8.
