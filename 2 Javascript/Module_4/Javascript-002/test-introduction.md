@@ -1,5 +1,5 @@
 
-    -_-_-| Testing E2 EE | -_-_-
+    -_-_-| Testing E2 EE () | -_-_-
 
     Testa l'intero prodotto software finito dal punto di vista dell'utente finale.
 
