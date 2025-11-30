@@ -6,3 +6,5 @@ test('addFive aggiunge 5 al valore', () => {
   const result = addFive(val);
   expect(result).toBe(val + 5); // 1 + 5 = 6
 });
+
+// Esegui con comando da terminale: pnpm test
