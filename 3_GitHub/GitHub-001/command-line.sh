@@ -34,4 +34,19 @@ pwd # Ovvero: Print Working Directory
 ls -l       # -l elenca i file in ordine di elenco e mostra i permessi di lettura o scrittura (Per Unix)
 ls -a       # -a elenca tutti i file e le directory, compresi gli elementi nascosti (Per Unix)
 
+# Stampa il contenuto in un file
+cat file1.txt # Stampa a console il contenuto del file
 
+# Restituisce il conteggio delle parole nel file
+wc file1.txt -w # Output: 181
+
+# Pipes: consentono di passare l'output di un comando come input a un altro
+ls 
+# Output: file1.txt file2.txt
+ls | wc -w
+# Output: 2
+cat file1.txt | wc -w
+# Output: 
+181
+cat file1.txt file2.txt | wc -w
+362
