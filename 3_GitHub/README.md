@@ -2,7 +2,8 @@
 
 [ Introduzione a GitHub e al versioning.
 Sistemi di versioning distribuiti e centralizzati.
-Unix e comandi da terminale. Vim. Esercizi di laboratorio online. ]
+Unix e comandi da terminale. Vim. Esercizi di laboratorio online. 
+Principali comandi di Git e GitHub. Esercizi pratici. ]
 
 
 

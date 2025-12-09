@@ -117,7 +117,7 @@ Ogni modulo contiene:
 |-------|-------|---------------|
 | 1️⃣ Introduction to Front-End | ✅ Completato | 100% |
 | 2️⃣ Programming with JavaScript | ✅ Completato | 100% |
-| 3️⃣ Version Control (Git & GitHub) | 🔄 In corso | 70% |
+| 3️⃣ Version Control (Git & GitHub) | ✅ Completato | 100% |
 | 4️⃣ React Basics | 📋 Da iniziare | 0% |
 | 5️⃣ Back-End (Python & Django) | 📋 Da iniziare | 0% |
 | 6️⃣ Database & Data Modeling | 📋 Da iniziare | 0% |
