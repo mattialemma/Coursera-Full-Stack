@@ -1,4 +1,4 @@
-06/12/2025
+09/12/2025
 
 [ Introduzione a GitHub e al versioning.
 Sistemi di versioning distribuiti e centralizzati.
