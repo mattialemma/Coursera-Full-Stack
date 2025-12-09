@@ -29,7 +29,7 @@ L'intero percorso è organizzato in corsi, ciascuno suddiviso in moduli, che a l
 │   ├── 📁 GitHub-001/
 │   ├── 📁 GitHub-002/
 │   └── 📄 README.md
-└── � README.md
+└── 📝README.md
 ```
 
 Ogni modulo contiene:
