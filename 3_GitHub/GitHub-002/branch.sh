@@ -1,7 +1,7 @@
 
-git chackout -B newBranch # Crea un nuovo branch e mi sposta su di esso
+git checkout -B newBranch # Crea un nuovo branch e mi sposta su di esso
 
-git chackout newBranch2 # Crea un nuovo branch
+git branch newBranch2 # Crea un nuovo branch
 
 # Capire in che branch mi trovo
 git branch
