@@ -1,15 +1,15 @@
 
-git checkout -B newBranch # Crea un nuovo branch e mi sposta su di esso
+git checkout -B newBranch # Create a new branch and switch to it
 
-git branch newBranch2 # Crea un nuovo branch
+git branch newBranch2 # Create a new branch
 
-# Capire in che branch mi trovo
+# Find out which branch I'm on
 git branch
 
-# Creo file, faccio tracking, commit, push
+# Create file, track it, commit, push
 touch text2.txt
 git add text2.txt
 git commit -m "New file"
 git push -u origin newBranch
 
-# ciao
+# hello

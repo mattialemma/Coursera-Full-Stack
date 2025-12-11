@@ -1,46 +1,46 @@
-# Per aprire la cartella Desktop
+# To open the Desktop folder
 cd Desktop
 
-# Per tornare alla cartella precedente
+# To go back to the previous folder
 cd ..
 
-# Per visionare il contenuti della directory corrente
+# To view the contents of the current directory
 ls
 
-# Per creare un nuovo file con il testo "Ciao a tutti"
-echo Ciao a tutti > file.txt # Per Windows e Unix
+# To create a new file with the text "Hello everyone"
+echo Hello everyone > file.txt # For Windows and Unix
 
-# Per creare un nuovo file di testo vuoto
-type nul > file.txt # Per Windows e Unix
-touch nome_file # Per Unix
+# To create a new empty text file
+type nul > file.txt # For Windows and Unix
+touch filename # For Unix
 
-# Per creare una cartella
-mkdir nome_cartella
+# To create a folder
+mkdir folder_name
 
-# Per aprire un file in Visual Studio Code
-code nome_file 
+# To open a file in Visual Studio Code
+code filename 
 
-# Copiare un file 
-# (es: copio documentazione.txt e lo incollo all'interno della cartella Backup rinominandolo documentazione_backup.txt)
-cp Progetto/documentazione.txt Progetto/Backup/documentazione_backup.txt
+# Copy a file 
+# (e.g.: I copy documentation.txt and paste it inside the Backup folder renaming it documentation_backup.txt)
+cp Project/documentation.txt Project/Backup/documentation_backup.txt
 
-# Spostare un file
-mv Progetto/script.py Progetto/Sorgenti/
+# Move a file
+mv Project/script.py Project/Sources/
 
-# Per mostrare il percorso della directory corrente
-pwd # Ovvero: Print Working Directory
+# To show the current directory path
+pwd # That is: Print Working Directory
 
-# I flag sono combinati con i comandi Unix.
-ls -l       # -l elenca i file in ordine di elenco e mostra i permessi di lettura o scrittura (Per Unix)
-ls -a       # -a elenca tutti i file e le directory, compresi gli elementi nascosti (Per Unix)
+# Flags are combined with Unix commands.
+ls -l       # -l lists files in list order and shows read or write permissions (For Unix)
+ls -a       # -a lists all files and directories, including hidden items (For Unix)
 
-# Stampa il contenuto in un file
-cat file1.txt # Stampa a console il contenuto del file
+# Print the content in a file
+cat file1.txt # Prints the file content to console
 
-# Restituisce il conteggio delle parole nel file
+# Returns the word count in the file
 wc file1.txt -w # Output: 181
 
-# Pipes: consentono di passare l'output di un comando come input a un altro
+# Pipes: allow you to pass the output of one command as input to another
 ls 
 # Output: file1.txt file2.txt
 ls | wc -w

@@ -1,4 +1,4 @@
-# Eseguire una merge su due branch diversi: GESTIONE DEI CONFLITTI
+# Performing a merge on two different branches: CONFLICT MANAGEMENT
 
 # DEVELOPER 1
 git pull
@@ -10,13 +10,13 @@ git checkout -b feautur2
 
 # DEVELOPER 1
 git add Feauture.js
-git commit -m "Task: aggiuta funzionalità 1"
+git commit -m "Task: added functionality 1"
 git pull origin main
 git push -u origin feauture1
 
 # DEVELOPER 2
 git add Feauture.js
-git commit -m "Task: aggiunta funzionalità 2"
+git commit -m "Task: added functionality 2"
 git pull origin main
 
 # Output:
@@ -41,7 +41,7 @@ Unmerged paths:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-# Per risolvere il problema, il developer 2 deve comparare i cambiamenti fatti dal developer 1.
+# To resolve the problem, developer 2 must compare the changes made by developer 1.
 
 git log --merge
 
@@ -60,7 +60,7 @@ Date:   Sat Jan 29 16:53:40 2022 +0000
 
     chore: add feature 1
 
-# Developer 2 ora esamina nello specifico le differenze:
+# Developer 2 now examines the specific differences:
 
 git diff
 
@@ -79,15 +79,15 @@ index 1b1136f,c3be92f..0000000
     return a + b;
   }
 
-# La differenza è che developer 1 ha ritornato "too much" mentre developer 2 ha ritornato "way too much"
-# Developer 2 può ora aggiustare il codice:
+# The difference is that developer 1 returned "too much" while developer 2 returned "way too much"
+# Developer 2 can now fix the code:
 
 let add = (a, b) => {
   if(a + b > 10) { return 'way too much'}
   return a + b;
 }
 
-# Developer 2 può eseguire ora i comandi per la pull request:
+# Developer 2 can now execute the commands for the pull request:
 git add Feauture.js
 git commit -m "fix merge conflicts"
 git push -u origin feauture2

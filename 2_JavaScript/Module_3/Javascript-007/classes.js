@@ -1,4 +1,4 @@
-// Classi
+// Classes
 
 class Car {
     constructor(color, speed, km) {
@@ -38,11 +38,11 @@ car2.printKm();
 //-_-_-_-_- _-_-_-_-_- _-_-_-_-_- _-_-_-_-_-
 
 class Animal { /* ...class code here... */ }
-var myDog = Object.create(Animal) // Utilizzo del metodo Object.create per instanziare oggetti delle classi
+var myDog = Object.create(Animal) // Using the Object.create method to instantiate class objects
 console.log(Animal) // Output: [class Animal]
 
 
-// Un modo più comune è l'utilizzo della parola chiave new
+// A more common way is using the new keyword
 
 class Animal { /* ...class code here... */ }
 var myDog = new Animal()
@@ -50,5 +50,5 @@ console.log(Animal) // Output: [class Animal]
 
 
 //______________________________________________________________
-// I quattro principi fondamentali della OOP sono:
-//  ereditarietà , incapsulamento , astrazione e polimorfismo .
+// The four fundamental principles of OOP are:
+//  inheritance, encapsulation, abstraction and polymorphism.

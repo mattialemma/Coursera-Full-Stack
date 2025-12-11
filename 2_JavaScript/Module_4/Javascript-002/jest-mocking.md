@@ -1,32 +1,32 @@
-    JEST framework per i test e il mocking
+    JEST framework for testing and mocking
 
 
-    Il mocking consente di separare il codice  che si sta testando dalle relative dipendenze.
-    In altre parole, è possibile utilizzare le funzionalità di mocking  per garantire che i test unitari siano autonomi.
-    Ad esempio, è possibile testare  la funzionalità front-end di un'app web simulando  i dati come se provenissero da
-    un server, quando in realtà provenivano dal client.
-    Il mocking è particolarmente utile perché molto spesso le applicazioni web sono sviluppate da team di sviluppatori e
-    alcuni di loro lavorano sul backend di  una funzionalità e altri sul frontend.
+    Mocking allows you to separate the code you are testing from its dependencies.
+    In other words, you can use mocking features to ensure that unit tests are self-contained.
+    For example, you can test the front-end functionality of a web app by simulating data as if it came from
+    a server, when in reality it came from the client.
+    Mocking is particularly useful because very often web applications are developed by teams of developers and
+    some of them work on the backend of a feature and others on the frontend.
 
-    - ESEMPIO REALE DI MOCKING -
-    Prendiamo ad esempio il caso in cui il team  decida di creare una nuova funzionalità
-    che  elenchi la rubrica degli  utenti dell'app sul frontend.
-    I dati effettivi relativi agli utenti  per questa funzionalità proverrebbero dal server.  
-    Ma cosa succederebbe se uno sviluppatore backend fosse un  po' in ritardo nello sviluppo
-    della sua partedella funzionalità?  
-    In tal caso, uno sviluppatore frontend si troverebbe bloccato in attesa che 
-    lo sviluppatore backend completi  il ​​suo lavoro prima che il codice frontend possa essere compilato.  
+    - REAL EXAMPLE OF MOCKING -
+    Let's take the example where the team decides to create a new feature
+    that lists the app's user directory on the frontend.
+    The actual user data for this feature would come from the server.  
+    But what would happen if a backend developer were a bit late in developing
+    their part of the feature?  
+    In that case, a frontend developer would be stuck waiting for 
+    the backend developer to complete their work before the frontend code can be compiled.  
      
-    Con il mocking è possibile evitare questo collo di bottiglia. 
+    With mocking you can avoid this bottleneck. 
 
 
     - SNAPSHOT TEST -
-    Jest consente di eseguire test snapshot.
-    I test snapshot vengono utilizzati  dagli sviluppatori per verificare che
-    non vi siano regressioni nel DOM delle nostre app  dopo aver apportato modifiche alla base di codice.
+    Jest allows you to perform snapshot tests.
+    Snapshot tests are used by developers to verify that
+    there are no regressions in the DOM of our apps after making changes to the codebase.
 
-    In parole semplici, immagina di scattare una foto (o "snapshot") della tua applicazione in un determinato momento. Questa foto rappresenta lo stato attuale della tua interfaccia utente. 
-    Quando apporti modifiche al codice, puoi confrontare la nuova versione della tua applicazione con quella foto originale per vedere se ci sono differenze indesiderate.
+    In simple words, imagine taking a photo (or "snapshot") of your application at a certain moment. This photo represents the current state of your user interface. 
+    When you make changes to the code, you can compare the new version of your application with that original photo to see if there are any unwanted differences.
 
-    - ESEMPIO REALE DI SNAPSHOT TEST -
-    se hai un'app che mostra un elenco di prodotti, puoi scattare un "snapshot" di come appare l'elenco. Se successivamente cambi il modo in cui i prodotti vengono visualizzati, il test di snapshot ti dirà se l'aspetto dell'elenco è cambiato rispetto alla foto originale. Questo ti aiuta a garantire che le modifiche non abbiano introdotto errori visivi o funzionali.
+    - REAL EXAMPLE OF SNAPSHOT TEST -
+    if you have an app that displays a list of products, you can take a "snapshot" of what the list looks like. If you later change the way products are displayed, the snapshot test will tell you if the appearance of the list has changed from the original photo. This helps you ensure that changes have not introduced visual or functional errors.

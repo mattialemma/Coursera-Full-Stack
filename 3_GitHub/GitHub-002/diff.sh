@@ -1,155 +1,155 @@
-# Git diff - Comandi principali
-# Serve a confrontare le differenze tra le versioni di un file, tra i commit e anche tra i rami (branches) di un progetto.
+# Git diff - Main commands
+# Used to compare differences between file versions, between commits, and also between project branches.
 
-# Immagina di avere un diario in cui annoti le tue esperienze. 
-# Se vuoi vedere cosa hai scritto in una versione precedente rispetto a quella attuale, 
-# git diff ti mostra esattamente quali parole hai aggiunto o rimosso.
+# Imagine having a diary where you write down your experiences. 
+# If you want to see what you wrote in a previous version compared to the current one, 
+# git diff shows you exactly which words you added or removed.
 
 # ==========================================
-# COMANDI PRINCIPALI
+# MAIN COMMANDS
 # ==========================================
 
-# 1️⃣ Vedere modifiche NON ancora aggiunte (non staged)
+# 1️⃣ See changes NOT yet added (not staged)
 git diff
 
-# 2️⃣ Vedere modifiche GIÀ aggiunte con git add (staged)
+# 2️⃣ See changes ALREADY added with git add (staged)
 git diff --staged
 
-# 3️⃣ Confrontare con l'ultimo commit
+# 3️⃣ Compare with the last commit
 git diff HEAD
 
-# 4️⃣ Vedere solo i nomi dei file modificati
+# 4️⃣ See only the names of modified files
 git diff --name-only
 
 # ==========================================
-# ESEMPIO DI OUTPUT
+# OUTPUT EXAMPLE
 # ==========================================
 
-# Quando esegui "git diff", vedrai qualcosa tipo:
+# When you run "git diff", you'll see something like:
 #
 # diff --git a/index.html b/index.html
 # --- a/index.html
 # +++ b/index.html
 # @@ -10,3 +10,4 @@
 #  <body>
-# -    <h1>Titolo Vecchio</h1>
-# +    <h1>Titolo Nuovo</h1>
-# +    <p>Nuovo paragrafo</p>
+# -    <h1>Old Title</h1>
+# +    <h1>New Title</h1>
+# +    <p>New paragraph</p>
 #
-# Legenda:
-# - (rosso)  = linea rimossa
-# + (verde)  = linea aggiunta
+# Legend:
+# - (red)  = removed line
+# + (green)  = added line
 
 # ==========================================
-# ESEMPI PRATICI
+# PRACTICAL EXAMPLES
 # ==========================================
 
-# 1️⃣ VEDERE LE MODIFICHE NON ANCORA STAGED (più comune)
-# Mostra le differenze tra la working directory e l'area di staging
+# 1️⃣ SEE CHANGES NOT YET STAGED (most common)
+# Shows differences between working directory and staging area
 git diff
 
-# Esempio di output:
+# Example output:
 # diff --git a/index.html b/index.html
 # index 1234567..abcdefg 100644
 # --- a/index.html
 # +++ b/index.html
 # @@ -10,7 +10,8 @@
 #  <body>
-# -    <h1>Titolo Vecchio</h1>
-# +    <h1>Titolo Nuovo</h1>
-# +    <p>Paragrafo aggiunto</p>
+# -    <h1>Old Title</h1>
+# +    <h1>New Title</h1>
+# +    <p>Added paragraph</p>
 #      <div class="container">
 
-# Legenda output:
-# - (rosso) = linea rimossa
-# + (verde) = linea aggiunta
-# @@ -10,7 +10,8 @@ = indica le righe modificate
+# Output legend:
+# - (red) = removed line
+# + (green) = added line
+# @@ -10,7 +10,8 @@ = indicates modified lines
 
 
-# 2️⃣ VEDERE LE MODIFICHE GIÀ STAGED (pronte per il commit)
-# Mostra cosa hai aggiunto con "git add" ma non ancora committato
+# 2️⃣ SEE CHANGES ALREADY STAGED (ready for commit)
+# Shows what you added with "git add" but haven't committed yet
 git diff --staged
-# oppure
+# or
 git diff --cached
 
 
-# 3️⃣ CONFRONTARE CON UN COMMIT SPECIFICO
-# Vedere le differenze tra la working directory e un commit precedente
-git diff HEAD         # confronta con l'ultimo commit
-git diff HEAD~1       # confronta con il penultimo commit
-git diff HEAD~2       # confronta con 2 commit fa
-git diff abc1234      # confronta con un commit specifico (usa l'hash)
+# 3️⃣ COMPARE WITH A SPECIFIC COMMIT
+# See differences between working directory and a previous commit
+git diff HEAD         # compare with last commit
+git diff HEAD~1       # compare with second-to-last commit
+git diff HEAD~2       # compare with 2 commits ago
+git diff abc1234      # compare with a specific commit (use hash)
 
 
-# 4️⃣ CONFRONTARE DUE COMMIT TRA LORO
+# 4️⃣ COMPARE TWO COMMITS WITH EACH OTHER
 git diff commit1 commit2
-# Esempio:
+# Example:
 git diff abc1234 def5678
 git diff HEAD~3 HEAD~1
 
 
-# 5️⃣ CONFRONTARE DUE BRANCH
-git diff main feature-branch        # vede le differenze tra due branch
-git diff main..feature-branch       # stesso risultato
-git diff main...feature-branch      # mostra solo le modifiche uniche del feature-branch
+# 5️⃣ COMPARE TWO BRANCHES
+git diff main feature-branch        # see differences between two branches
+git diff main..feature-branch       # same result
+git diff main...feature-branch      # shows only unique changes of feature-branch
 
 
-# 6️⃣ VEDERE LE MODIFICHE DI UN FILE SPECIFICO
-git diff index.html                 # solo per index.html (non staged)
-git diff --staged style.css         # solo per style.css (staged)
-git diff HEAD~1 script.js           # confronta script.js con il commit precedente
+# 6️⃣ SEE CHANGES OF A SPECIFIC FILE
+git diff index.html                 # only for index.html (not staged)
+git diff --staged style.css         # only for style.css (staged)
+git diff HEAD~1 script.js           # compare script.js with previous commit
 
 
-# 7️⃣ VEDERE SOLO I NOMI DEI FILE MODIFICATI (senza dettagli)
-git diff --name-only                # lista solo i nomi dei file
-git diff --name-status              # lista file con status (M=modified, A=added, D=deleted)
+# 7️⃣ SEE ONLY NAMES OF MODIFIED FILES (without details)
+git diff --name-only                # list only file names
+git diff --name-status              # list files with status (M=modified, A=added, D=deleted)
 
 
-# 8️⃣ VEDERE LE STATISTICHE DELLE MODIFICHE
-git diff --stat                     # mostra quante righe aggiunte/rimosse per file
-# Esempio output:
+# 8️⃣ SEE MODIFICATION STATISTICS
+git diff --stat                     # shows how many lines added/removed per file
+# Example output:
 #  index.html | 5 +++--
 #  style.css  | 12 ++++++++++++
 #  2 files changed, 15 insertions(+), 2 deletions(-)
 
 
-# 9️⃣ IGNORARE GLI SPAZI BIANCHI
-git diff -w                         # ignora differenze negli spazi
-git diff --ignore-all-space         # stesso risultato
+# 9️⃣ IGNORE WHITESPACE
+git diff -w                         # ignore whitespace differences
+git diff --ignore-all-space         # same result
 
 
-# 🔟 VEDERE LE MODIFICHE DELL'ULTIMO COMMIT
-git show                            # mostra l'ultimo commit con le sue modifiche
-git show HEAD~1                     # mostra il penultimo commit
+# 🔟 SEE CHANGES OF THE LAST COMMIT
+git show                            # shows last commit with its changes
+git show HEAD~1                     # shows second-to-last commit
 
 
 # ==========================================
-# CASO D'USO PRATICO - WORKFLOW TIPICO
+# PRACTICAL USE CASE - TYPICAL WORKFLOW
 # ==========================================
 
-# Scenario: Hai modificato alcuni file e vuoi verificare prima di committare
+# Scenario: You modified some files and want to verify before committing
 
-# Passo 1: Vedi cosa hai modificato
+# Step 1: See what you modified
 git diff
 
-# Passo 2: Aggiungi i file che vuoi committare
+# Step 2: Add the files you want to commit
 git add index.html style.css
 
-# Passo 3: Verifica cosa stai per committare
+# Step 3: Verify what you're about to commit
 git diff --staged
 
-# Passo 4: Se tutto ok, committa
-git commit -m "Aggiornato layout homepage"
+# Step 4: If everything is ok, commit
+git commit -m "Updated homepage layout"
 
-# Passo 5: Verifica cosa hai committato
+# Step 5: Verify what you committed
 git show
 
 
 # ==========================================
-# TIPS UTILI
+# USEFUL TIPS
 # ==========================================
 
-# ✅ Usa git diff prima di "git add" per vedere cosa stai per aggiungere
-# ✅ Usa git diff --staged prima di "git commit" per verificare cosa stai committando
-# ✅ Usa git diff --name-only per una vista rapida dei file modificati
-# ✅ Combina con grep per cercare modifiche specifiche: git diff | grep "parola"
+# ✅ Use git diff before "git add" to see what you're about to add
+# ✅ Use git diff --staged before "git commit" to verify what you're committing
+# ✅ Use git diff --name-only for a quick view of modified files
+# ✅ Combine with grep to search for specific changes: git diff | grep "word"

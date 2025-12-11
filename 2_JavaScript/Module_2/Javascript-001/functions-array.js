@@ -21,7 +21,7 @@ console.log("-----");
 // Testing a function to print array elements
 
 function printArrayElements(arr) {
-    for (let i = 0; i - arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (i == 1) // Doesn't print the element at index 1
             continue;
         console.log("Element at index", i, "is", arr[i]);
@@ -34,12 +34,12 @@ console.log("-----");
 
 // Exercise: Letter Finder
 
-function letterFinder(parola, lettera) {
-    for (let i = 0; i < parola.length; i++) {
-        if (parola[i] == lettera) {
-            console.log("Trovata una corrispondeza alla posizione", i);
+function letterFinder(word, letter) {
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] == letter) {
+            console.log("Found a match at position", i);
         } else {
-            console.log("Nessuna corrispondeza alla posizione", i);
+            console.log("No match at position", i);
         }
     }
 }

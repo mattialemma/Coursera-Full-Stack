@@ -1,6 +1,6 @@
-// Dishes Data (codice personalizzato secondo le competenze acquisite)
+// Dishes Data (custom code according to acquired skills)
 
-console.log(); // Semplice spazio
+console.log(); // Simple space
 
 const dishData = [
     { name: "Italian pasta", price: 9.55 },

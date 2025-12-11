@@ -2,7 +2,7 @@
 /* -_-_-_-| Null |-_-_-_- */
 
 var letters = "abc";
-letters.match(/a/); // cerca la lettera 'a' nella stringa | Restituisce un array: 
+letters.match(/a/); // search for letter 'a' in the string | Returns an array: 
 /* 
  Output:
     [
@@ -13,13 +13,13 @@ letters.match(/a/); // cerca la lettera 'a' nella stringa | Restituisce un array
     ]
 */
 
-// Test su come funziona .match()
-var test = "ciao";
-console.log(test.match("ia")); // index 1 perchè la corrispondenza inizia da test[1]
+// Test on how .match() works
+var test = "hello";
+console.log(test.match("el")); // index 1 because the match starts from test[1]
 
 
 var letters = "abc";
-letters.match(/d/); // 'd' non trovata quindi non costruisce l'array:
+letters.match(/d/); // 'd' not found so doesn't build the array:
 /* 
 Output:
     null
@@ -29,9 +29,9 @@ Output:
 /* -_-_-_-| Undefined |-_-_-_- */
 
 var a;
-console.log(a); // valore di a indefinito, non inizializzato
+console.log(a); // value of a undefined, not initialized
 
 
-/* -_-_-_-| Stringa vuota |-_-_-_- */
+/* -_-_-_-| Empty string |-_-_-_- */
 var name1 = "";
 var name2 = '';

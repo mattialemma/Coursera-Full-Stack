@@ -1,4 +1,4 @@
-// Operatore di rest
+// Rest operator
 
 const top7 = [
     "Colosseum",
@@ -11,35 +11,35 @@ const top7 = [
 ];
 
 
-const [first, second, third, ...secondVisit] = top7; // secondVisit è un sottoarray
+const [first, second, third, ...secondVisit] = top7; // secondVisit is a subarray
 
 console.log(secondVisit); // Output: [ 'Trevi Fountain', 'Pantheon', 'Piazza Venezia', 'Palatine Hill' ]
 
-// -_-_-_-_-_-_-_-_-_-_-| Nelle funzioni |-_-_-_-_-_-_-_-_-_-_-
+// -_-_-_-_-_-_-_-_-_-_-| In functions |-_-_-_-_-_-_-_-_-_-_-
 /*
-     L'operatore rest è utile anche nelle funzioni, infatti, 
-     posso usare un parametro rest per moltiplicare rapidamente i valori. 
+     The rest operator is also useful in functions, in fact, 
+     I can use a rest parameter to quickly multiply values. 
      
-     Creo una funzione per aggiungere l'aliquota fiscale ai prezzi,
-     la chiamo  addTaxToPrices e le assegna due parametri,l'aliquota fiscale e l'operatore rest,con gli articoli acquistati.
-     La funzione restituisce ogni articolo con l'aliquota fiscale nei parametri addToTaxPrices;
-     il parametro rest mi restituisce un array, quindi  posso usare metodi array sugli articoli acquistati,usando il metodo map. 
+     I create a function to add tax rate to prices,
+     I call it addTaxToPrices and assign it two parameters, the tax rate and the rest operator, with the purchased items.
+     The function returns each item with the tax rate in the addToTaxPrices parameters;
+     the rest parameter returns an array, so I can use array methods on purchased items, using the map method. 
      
-     È importante sapere che il parametro rest  deve essere l'ultimo parametro nella definizione della funzione.
-     Ciò significa che aggiungere qualsiasi altro parametro alla mia funzione addTaxToPrices
-     dopo l'operatore rest e gli articoli acquistati genererebbe un errore.
+     It's important to know that the rest parameter must be the last parameter in the function definition.
+     This means that adding any other parameter to my addTaxToPrices function
+     after the rest operator and the purchased items would generate an error.
 */
 
 function addTaxToPrices(taxRate, ...itemsBought) {
     return itemsBought.map(item => taxRate * item);
 }
 
-// Esempio:
-const tax = 1.22; // IVA 22%
-const ris = addTaxToPrices(tax, 10, 20, 50);
+// Example:
+const tax = 1.22; // VAT 22%
+const result = addTaxToPrices(tax, 10, 20, 50);
 
-console.log(ris); // Output: [12.2, 24.4, 61]
+console.log(result); // Output: [12.2, 24.4, 61]
 
-// In breve:
-// Lo spread operator (...) è utile nelle funzioni quando vuoi passare un numero variabile di argomenti.
+// In short:
+// The spread operator (...) is useful in functions when you want to pass a variable number of arguments.
 

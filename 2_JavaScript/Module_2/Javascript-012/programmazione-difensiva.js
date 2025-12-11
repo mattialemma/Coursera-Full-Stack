@@ -1,11 +1,11 @@
-// Programmazione difensiva
+// Defensive programming
 /*
-    La programmazione difensiva consiste nel supporre che tutti gli argomenti che una funzione riceverà,
-    siano del tipo sbagliato, del valore sbagliato o entrambi.
-    Si presuppone che le cose vadano male in modo da trovare una soluzione prima che il problema si verifichi.
+    Defensive programming consists of assuming that all arguments a function will receive,
+    are of the wrong type, the wrong value, or both.
+    It is assumed that things will go wrong in order to find a solution before the problem occurs.
 */
 
-// Come rifattorizzeresti la funzione qui sotto?
+// How would you refactor the function below?
 /*
 function letterFinder(word, match) {
     for (var i = 0; i < word.length; i++) {
@@ -19,7 +19,7 @@ function letterFinder(word, match) {
 }
     */
 
-// In questo modo:
+// In this way:
 
 function letterFinder(word, match) {
     var condition1 = typeof (word) == "string" && word.length >= 2;

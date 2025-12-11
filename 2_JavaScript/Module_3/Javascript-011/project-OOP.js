@@ -1,12 +1,12 @@
-// Progettazione di un programma OOP
+// Designing an OOP program
 
-class Animal { // Prototipo
+class Animal { // Prototype
     constructor(color, energy) {
         this.color = color;
         this.energy = energy;
     }
 
-    // Metodi
+    // Methods
     isActive() {
         if (this.energy > 0) {
             this.energy -= 20;
@@ -31,7 +31,7 @@ class Bird extends Animal {
         this.sound = sound;
         this.energy = energy;
     }
-    // Metodi
+    // Methods
     makeSound() {
         console.log(this.sound);
     }
@@ -44,7 +44,7 @@ class Cat extends Animal {
         this.canJumpHigh = canJumpHigh;
         this.canClimbTrees = canClimbTrees;
     }
-    // Metodi
+    // Methods
     makeSound() {
         console.log(this.sound);
     }
@@ -55,7 +55,7 @@ class HouseCat extends Cat {
         super(sound, canJumpHigh, canClimbTrees, color, energy);
         this.houseCatSound = houseCatSound;
     }
-    // Metodi
+    // Methods
     makeSound(option) {
         if (option)
             super.makeSound();
@@ -68,7 +68,7 @@ class Tiger extends Cat {
         super(sound, canJumpHigh, canClimbTrees, color, energy);
         this.tigerSound = tigerSound;
     }
-    // Metodi
+    // Methods
     makeSound(option) {
         if (option)
             super.makeSound();
@@ -81,20 +81,20 @@ class Parrot extends Bird {
         super(sound, canFly, color, energy);
         this.canTalk = canTalk;
     }
-    // Metodi
+    // Methods
     makeSound(option) {
         if (option)
             super.makeSound();
-        if (this.canTalk) // Se canTalk è true
+        if (this.canTalk) // If canTalk is true
             console.log("I'm a talking parrot!");
     }
 
-    // Metodo che chiama un metodo della classe Tiger che Bird non estende
+    // Method that calls a method from the Tiger class that Bird doesn't extend
     callTiger(parrotOption, tigerOption) {
-        const tiger = new Tiger(); // Crazione oggetto Tiger
-        this.makeSound(parrotOption); // Chiamata al metodo di Parrot
+        const tiger = new Tiger(); // Creating Tiger object
+        this.makeSound(parrotOption); // Call to Parrot's method
         console.log("I am a tiger-parrot:");
-        tiger.makeSound(tigerOption) // Chiamata al metodo di Tiger 
+        tiger.makeSound(tigerOption) // Call to Tiger's method 
     }
 }
 
@@ -102,8 +102,8 @@ class Parrot extends Bird {
 var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
 var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
 console.log(polly);
-polly.callTiger(true, true); // Test con chiamate ad altre classi che non ereditano
-// Ho provato a chiamare la classe Tiger a partire dalla classe Parrot instanziando un oggetto tiger nella funzione callTiger ed effettuando la chiamata al metodo di Tiger sull'oggetto
+polly.callTiger(true, true); // Test with calls to other classes that don't inherit
+// I tried calling the Tiger class from the Parrot class by instantiating a tiger object in the callTiger function and making the call to Tiger's method on the object
 console.log("- - - ");
 
 fiji.makeSound(); // undefined

@@ -56,7 +56,7 @@ while (k <= 5) {
 
 console.log("-----");
 
-// Innested loops: Using a for loop inside another for loop to print a multiplication table
+// Nested loops: Using a for loop inside another for loop to print a multiplication table
 for (let a = 1; a <= 3; a++) {
     for (let b = 1; b <= 3; b++) {
         console.log(a + " x " + b + " = " + (a * b));
@@ -65,7 +65,7 @@ for (let a = 1; a <= 3; a++) {
 
 console.log("-----");
 
-// Innested loops: Using a while loop inside another while loop to print a multiplication table
+// Nested loops: Using a while loop inside another while loop to print a multiplication table
 var x = 1;
 var y = 1;
 while (x <= 3) {
@@ -79,7 +79,7 @@ while (x <= 3) {
 
 console.log("-----");
 
-// Innested loops: More complex example with for loops
+// Nested loops: More complex example with for loops
 for (let i = 100; i > 10; i = i - 10) {
     for (let j = 10; j > 4; j = j - 5) {
         console.log(i + " divided by " + j + " equals " + i / j);

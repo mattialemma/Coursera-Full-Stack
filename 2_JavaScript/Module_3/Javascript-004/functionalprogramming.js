@@ -1,4 +1,4 @@
-// Esercizio
+// Exercise
 
 function consoleStyler(color, background, fontSize, txt) {
     var message = "%c" + txt;

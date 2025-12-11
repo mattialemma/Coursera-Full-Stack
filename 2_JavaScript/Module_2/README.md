@@ -1,20 +1,20 @@
-19/11/2025 - Mattia Lemma
+11/19/2025 - Mattia Lemma
 
-Gli argomenti principali che abbiamo trattato sono:
-[ Utilizzo di funzioni, array e oggetti in JavaScript.
-Le stringhe. Regole di sintassi. Introduzione all'oggetto Math.
-Le eccezioni. Gestione degli errori. Programmazione difensiva. Let, var, const. NaN. ]
+The main topics we covered are:
+[ Using functions, arrays, and objects in JavaScript.
+Strings. Syntax rules. Introduction to the Math object.
+Exceptions. Error handling. Defensive programming. Let, var, const. NaN. ]
 
-Questo documento presenta i concetti fondamentali relativi a funzioni, array e oggetti in JavaScript. Le funzioni rappresentano blocchi di codice riutilizzabile che permettono di organizzare e semplificare il programma. Gli array, pur utilizzando una sintassi dedicata, sono a tutti gli effetti oggetti e offrono metodi e proprietà specifiche per la gestione di insiemi ordinati di valori.
+This document presents the fundamental concepts related to functions, arrays, and objects in JavaScript. Functions represent reusable blocks of code that allow you to organize and simplify the program. Arrays, while using dedicated syntax, are actually objects and offer specific methods and properties for managing ordered sets of values.
 
-Le stringhe, pur condividendo alcune caratteristiche superficiali con gli array (come l'indicizzazione o la proprietà length), non sono array e presentano comportamenti diversi, in particolare l'immutabilità.
-È quindi importante conoscere le eccezioni e le differenze tra i vari tipi di dati.
+Strings, while sharing some superficial characteristics with arrays (such as indexing or the length property), are not arrays and exhibit different behaviors, particularly immutability.
+It is therefore important to know the exceptions and differences between the various data types.
 
-L'oggetto Math fornisce funzioni e costanti matematiche utili, come operazioni di arrotondamento,
-calcoli complessi e generazione di numeri casuali.
+The Math object provides useful mathematical functions and constants, such as rounding operations,
+complex calculations, and random number generation.
 
-Infine, la gestione delle eccezioni e degli errori consente di intercettare e trattare anomalie durante l’esecuzione del codice, migliorando stabilità ed affidabilità dei programmi.
+Finally, exception and error handling allows you to intercept and handle anomalies during code execution, improving program stability and reliability.
 
 ______________________________________________________________________________________________________
 
-Ho svolto esercizi guidati e autonomi per verificare le competenze acquisite, integrando alcuni contenuti con risorse esterne per approfondire aspetti non trattati nel corso.
+I completed guided and autonomous exercises to verify acquired skills, integrating some content with external resources to deepen aspects not covered in the course.

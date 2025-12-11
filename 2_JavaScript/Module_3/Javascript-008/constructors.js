@@ -1,49 +1,49 @@
-// Costruttori
+// Constructors
 
 /*
-    Javascript ha una serie di tipi di Object incorporati chiamati oggetti nativi, come ad esempio:
-    Math, Date, Object, Function, Boolean, Symbol, Array, Map, Set, Promise, JSON, e molti altri.
+    Javascript has a series of built-in Object types called native objects, such as:
+    Math, Date, Object, Function, Boolean, Symbol, Array, Map, Set, Promise, JSON, and many others.
 
-    - Uso delle funzioni costruttore
-    Consentono di costruire istanze di questi oggetti nativi incorporati tramite l'operatore new.
+    - Using constructor functions
+    They allow you to build instances of these built-in native objects through the new operator.
 */
 
-// Creazione di una nuova istanza dell'Objecct Date:
-var data = new Date(); // Si ottiene data e ora correnti | Output: Thu Feb 03 2025 11:24:08 GMT+0100 (Central European Standard Time) 
- data.getTime;
- data.getDay;
- data.getHours;
- data.getTimezoneOffset;
- data.getMilliseconds;
+// Creating a new instance of the Date Object:
+var date = new Date(); // Get current date and time | Output: Thu Feb 03 2025 11:24:08 GMT+0100 (Central European Standard Time) 
+date.getTime;
+date.getDay;
+date.getHours;
+date.getTimezoneOffset;
+date.getMilliseconds;
 // ...
 
 /*
-    Non tutti gli Object incorporati sono dotati di una funzione costruttore.
-    Un esempio di questo tipo di oggetto è l'oggetto incorporato Math.
+    Not all built-in Objects have a constructor function.
+    An example of this type of object is the built-in Math object.
 */
 
-new Math(); // Lancia un uncaught TypeError (Math is not a constructor)
+new Math(); // Throws an uncaught TypeError (Math is not a constructor)
 
 /*
-    ALCUNI OGGETTI BUILT-IN HANNO COSTRUTTORI: 
-    Quando servono istanze diverse, come "Data()"
+    SOME BUILT-IN OBJECTS HAVE CONSTRUCTORS: 
+    When different instances are needed, like "Date()"
 
-    ALTRI NO:
-    Perchè sono solo raccolte di funzioni utili, come "Math()."
+    OTHERS DON'T:
+    Because they are just collections of useful functions, like "Math()."
 */
 
 
 ____________________________________________________________
-// -_-_-_-_-| Funzioni costruttore personalizzate |-_-_-_-_-
+// -_-_-_-_-| Custom constructor functions |-_-_-_-_-
 
 function Icecream(flavor) {
     this.flavor = flavor;
 
-    let nonProp = function() {
-        console.log("Vengo chiamata solo internamente... ");
+    let nonProp = function () {
+        console.log("I'm only called internally... ");
     }
 
-    this.meltIt = function() { // Con il this, meltit diventa una proprietà dell'oggetto
+    this.meltIt = function () { // With this, meltIt becomes a property of the object
         console.log(`The ${this.flavor} icecream has melted`);
         nonProp();
     }
@@ -56,11 +56,11 @@ appleIcecream; // --> Icecream {flavor: 'apple', meltIt: ƒ}
 kiwiIcecream.meltIt(); // Output: The kiwi icecream has melted
 appleIcecream.meltIt(); // Output: The apple icecream has melted
 appleIcecream.nonProp(); // Output: ReferenceError: nonProp is not defined
-// nonProp diventa una funzione privata interna al costruttore Iceream
+// nonProp becomes a private function internal to the Icecream constructor
 
 
 _______________________________________________________________________
-// -_-_-_-_-| Prestazioni e buone pratiche con i costruttori |-_-_-_-_-
+// -_-_-_-_-| Performance and best practices with constructors |-_-_-_-_-
 
 
 let apple = new String("apple");
@@ -70,58 +70,58 @@ let pear = "pear";
 pear; // --> "pear"
 
 /*
-    La variabileapple è un Object di tipoString.
-    La variabilepear è un letterale di stringa, cioè un valore primitivo di JavaScript.
+    The apple variable is an Object of type String.
+    The pear variable is a string literal, i.e. a JavaScript primitive value.
 
     + PERFORMANCE
-    La variabilepear, essendo un valore primitivo,
-    sarà sempre più performante della variabileapple, che è un Object.
+    The pear variable, being a primitive value,
+    will always be more performant than the apple variable, which is an Object.
 
 
-    In altre parole, se si confrontanew String('plum') === new String('plum'),
-    si otterràfalse, mentre"plum" === "plum" restituisce true. Si ottiene false
-    quando si confrontano gli Object perché non sono i valori passati al costruttore
-    a essere confrontati, ma piuttosto la posizione di memoria in cui gli oggetti sono salvati.
+    In other words, if you compare new String('plum') === new String('plum'),
+    you will get false, while "plum" === "plum" returns true. You get false
+    when comparing Objects because it's not the values passed to the constructor
+    that are compared, but rather the memory location where the objects are saved.
 
-    Oltre a non usare i costruttori per costruire versioni di primitive a oggetti,
-    è meglio non usare i costruttori quando si costruiscono oggetti normali.
+    Besides not using constructors to build object versions of primitives,
+    it's better not to use constructors when building normal objects.
 */
 
 _______________________________________________________________________
-// -_-_-_-_-| Modelli e letterali alternativi |-_-_-_-_-
+// -_-_-_-_-| Alternative patterns and literals |-_-_-_-_-
 
 /*
-    Al posto di new Object, si dovrebbe utilizzare la sintassi letterale dell'oggetto:{}.
+    Instead of new Object, you should use the object literal syntax: {}.
 */
 
 let obj = new Object();
-obj.attributo = "nome";
+obj.attribute = "name";
 
-// Risulta meno leggibile di:
+// Is less readable than:
 
 let obj = {
-    attributo: "nome"
+    attribute: "name"
 };
 
 
 
 /*
     RegExp:
-    RegExp è un oggetto incorporato di JavaScript che serve per lavorare con le espressioni regolari,
-    cioè pattern usati per cercare dentro le stringhe.
-    Esistono due modi per creare uan RegExp:
+    RegExp is a built-in JavaScript object used to work with regular expressions,
+    i.e. patterns used to search inside strings.
+    There are two ways to create a RegExp:
 */
 
-// Con il costruttore
+// With the constructor
 let pattern = new RegExp("a");
 "abcd".match(pattern);  // ['a', index: 0, ...]
 
-// Con il letterale di regex (modo più usato)
+// With regex literal (most used way)
 "abcd".match(/d/); // ['d', index: 3, input: 'abcd', groups: undefined]
 "abcd".match(/a/); // ['a', index: 0, input: 'abcd', groups: undefined]
 
-// Utilizzo del costruttore con RegExp
-// Regex dinamica che dipende dal valore di una variabile (name). | Permette di creare una regex usando stringhe
+// Using the constructor with RegExp
+// Dynamic regex that depends on the value of a variable (name). | Allows creating a regex using strings
 let name = "Bro";
 let pattern2 = new RegExp(`^${name}$`);
 
@@ -129,18 +129,18 @@ console.log(pattern2.test("Bro"));     // true
 console.log(pattern2.test("Broo"));    // false
 console.log(pattern2.test("bro"));     // false
 
-// La Regex letterale non permette variabili dentro gli slash. | Ovvero: 
-let pattern3 = /^${name}$/; // Non funziona
+// The literal Regex doesn't allow variables inside the slashes. | That is: 
+let pattern3 = /^${name}$/; // Doesn't work
 
 
 
 /*
-    Invece di usare i costruttori Array, Function e RegExp,
-    si dovrebbero usare le loro varianti di letterali di array, letterali di funzione
-    e letterali di modello:[],() {} e/()/.
+    Instead of using Array, Function and RegExp constructors,
+    you should use their array literal, function literal
+    and template literal variants: [], () {} and /()/.
 
-    Tuttavia, quando si costruiscono Object di altri tipi incorporati, si può usare il costruttore.
-    Ecco alcuni esempi:
+    However, when building Objects of other built-in types, you can use the constructor.
+    Here are some examples:
 */
 let obj1 = new Date();
 let obj2 = new Error();
@@ -154,4 +154,4 @@ obj2.name;
 obj2.message;
 obj4.then;
 obj7.get;
-// ecc...
+// etc...

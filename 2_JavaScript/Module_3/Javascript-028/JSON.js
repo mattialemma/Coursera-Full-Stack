@@ -2,16 +2,16 @@
 
 /*
     In JSON
-    - Le stringhe con doppio apice sono necessarie per tutte le chiavi.
-    - Accetta i seguenti valori primitivi: stringhe, numeri, boolean, Null
-    - Accetta i seguenti valori complessi: Object e array. Non può contenere funzioni.
-    - Le proprietà sono separate da virgole negli oggetti e negli array di JSON, proprio come in JavaScript.
-    - Le proprietà String devono essere circondate da doppi apici. Ad esempio: "frutta", "verdura"
-    Si possono usare i letterali di Object e i letterali di array, purché si seguano le regole di cui sopra.
+    - Double-quoted strings are required for all keys.
+    - Accepts the following primitive values: strings, numbers, boolean, Null
+    - Accepts the following complex values: Object and array. Cannot contain functions.
+    - Properties are separated by commas in JSON objects and arrays, just like in JavaScript.
+    - String properties must be surrounded by double quotes. For example: "fruit", "vegetable"
+    You can use Object literals and array literals, as long as you follow the above rules.
 */
 
 
-// -_-_-| Da JSON a JavaScript |-_-_-
+// -_-_-| From JSON to JavaScript |-_-_-
 const jsonString = JSON.stringify({
     "currencies": {
         "USD": {
@@ -39,47 +39,47 @@ const jsonString = JSON.stringify({
     }
 });
 
-// Ora posso convertire la stringa JSON in un oggetto JavaScript:
+// Now I can convert the JSON string to a JavaScript object:
 const currencyInfo = JSON.parse(jsonString);
 
 
-// -_-_-| Da JavaScript a JSON |-_-_-
+// -_-_-| From JavaScript to JSON |-_-_-
 const currencyInfo2 = {
     USD: {
-        valore: 2,
-        nome: "Dollari"
+        value: 2,
+        name: "Dollars"
     },
     GBP: {
-        valore: 0.5,
-        nome: "Sterlina Britannica"
+        value: 0.5,
+        name: "British Pound"
     },
     EUR: {
-        valore: 2.1,
-        nome: "Euro"
+        value: 2.1,
+        name: "Euro"
     },
-    descrizione: "testo"
+    description: "text"
 };
 
-// Ora posso convertire l'oggetto currencyInfo2 in stringa JSON:
+// Now I can convert the currencyInfo2 object to JSON string:
 const jsonString2 = JSON.stringify(currencyInfo);
 
 
 
-// --- Altri esempi ---
+// --- Other examples ---
 
-// Oggetto JSON con due proprietà separate da ,
-'{"color":"red", "nestedObject": { "color": "blue" } }' 
+// JSON object with two properties separated by ,
+'{"color":"red", "nestedObject": { "color": "blue" } }'
 
-// Stringa JSON che codifica array:
+// JSON string encoding array:
 '["one", "two", "three"]'
 
 
 /*
-    Cosa succede con i tipi di dati non supportati?
-    Se si cerca di stringere un tipo di dati non accettato da JSON, come ad esempio:
-    - Funzioni: L'operazione fallisce silenziosamente.
-    - Numeri BigInt: 
-    Ad esempio, il tentativo di stringare 123n darà luogo a un errore: 
+    What happens with unsupported data types?
+    If you try to stringify a data type not accepted by JSON, such as:
+    - Functions: The operation fails silently.
+    - BigInt numbers: 
+    For example, attempting to stringify 123n will result in an error: 
     Output: Uncaught TypeError: Do not know how to serialize a BigInt.
 */
 

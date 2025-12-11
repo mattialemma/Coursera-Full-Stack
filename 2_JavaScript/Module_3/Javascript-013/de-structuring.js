@@ -1,50 +1,50 @@
-// De-strutturazione di array e oggetti
+// De-structuring arrays and objects
 
 /*
-    Destrutturare array e oggetti è una tecnica in JavaScript che consente di estrarre valori
-    da un array o da un oggetto e assegnarli a variabili in modo semplice e conciso.
-    Immagina di avere un cesto di frutta (l'array) e di voler prendere solo alcune mele e banane.
-    Invece di cercare in tutto il cesto, puoi semplicemente dire: "Voglio queste dui frutti specifici".
+    Destructuring arrays and objects is a technique in JavaScript that allows you to extract values
+    from an array or object and assign them to variables in a simple and concise way.
+    Imagine having a fruit basket (the array) and wanting to take only some apples and bananas.
+    Instead of searching through the whole basket, you can simply say: "I want these two specific fruits".
 */
 
 
-// Esempio base
-let {PI} = Math; // PI è 3.14159...
-let {pi} = Math; // undefined (la notazione è case-sensitive)
+// Basic example
+let { PI } = Math; // PI is 3.14159...
+let { pi } = Math; // undefined (notation is case-sensitive)
 PI === Math.PI; // true
 PI = 1;
-PI === Math.pow; // false (non c'è connessione tra la variabile destrutturata e la proprietà sorgente dell'oggetto dato)
+PI === Math.pow; // false (there's no connection between the destructured variable and the source property of the given object)
 
-// -_-_-_-| Altri esempi |-_-_-_-
+// -_-_-_-| Other examples |-_-_-_-
 
-// Destrutturazione di un array
-const frutti = ['mela', 'banana', 'arancia'];
-const [primaFrutta, secondaFrutta] = frutti;
-console.log(primaFrutta); // Output: mela
-console.log(secondaFrutta); // Output: banana
+// Destructuring an array
+const fruits = ['apple', 'banana', 'orange'];
+const [firstFruit, secondFruit] = fruits;
+console.log(firstFruit); // Output: apple
+console.log(secondFruit); // Output: banana
 
-// Destrutturazione di un oggetto
-const auto = { marca: 'Toyota', modello: 'Corolla', anno: 2020 };
-const { marca, modello } = auto;
-console.log(marca); // Output: Toyota
-console.log(modello); // Output: Corolla
+// Destructuring an object
+const car = { brand: 'Toyota', model: 'Corolla', year: 2020 };
+const { brand, model } = car;
+console.log(brand); // Output: Toyota
+console.log(model); // Output: Corolla
 
-// Test con funzioni (funziona correttamente)
-function Persona(nome = "Mattia", cognome = "Lemma") {
-    this.nome = nome;
-    this.cognome = cognome;
-    this.metodo = function() { // Funzione richiamabile dall'oggetto poichè ha il this. ed è quindi una proprietà dell'oggetto
-        console.log(this.nome, this.cognome);
+// Test with functions (works correctly)
+function Person(name = "Mattia", surname = "Lemma") {
+    this.name = name;
+    this.surname = surname;
+    this.method = function () { // Function callable from the object because it has this. and is therefore a property of the object
+        console.log(this.name, this.surname);
     }
 }
 
-const p = new Persona();
-let {nome, cognome} = p;
-console.log(nome, cognome);
+const p = new Person();
+let { name, surname } = p;
+console.log(name, surname);
 
-const p2 = new Persona("Francesco");
-let {nome: nome1, cognome: cognome1} = p2; // Rinominazione
-console.log(nome1, cognome1);
+const p2 = new Person("Francesco");
+let { name: name1, surname: surname1 } = p2; // Renaming
+console.log(name1, surname1);
 
-p.metodo();
-p2.metodo();
+p.method();
+p2.method();

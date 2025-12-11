@@ -1,25 +1,25 @@
-// Esempi di strutture dati
-// Lavoriamo con gli Array
+// Examples of data structures
+// Working with Arrays
 
 // -_-_-_-| Map |-_-_-_-
 
 /*
-    Questo metodo viene utilizzato per mappare ogni elemento dell'array
-    su un altro elemento dell'array, in base al lavoro svolto all'interno della funzione
-    che viene passata come parametro alla mappa. 
+    This method is used to map each element of the array
+    to another element of the array, based on the work done inside the function
+    that is passed as a parameter to the map. 
 */
 
-[0,10,20,30,40,50].map( function(num) {
+[0, 10, 20, 30, 40, 50].map(function (num) {
     return num / 10
 })
 
-// Oppure con array function
-const result = [0,10,20,30,40,50].map(num => num / 10);
+// Or with arrow function
+const result = [0, 10, 20, 30, 40, 50].map(num => num / 10);
 console.log(result); // Output [0,1,2,3,4,5]
 
 
-// Perchè non utilizzare un forEach in questo caso?
-// Potrei farlo con un forEach ma dovrei creare io stesso il nuovo array:
+// Why not use a forEach in this case?
+// I could do it with a forEach but I would have to create the new array myself:
 const resultForEach = [];
 [0, 10, 20, 30, 40, 50].forEach(num => {
     resultForEach.push(num / 10);

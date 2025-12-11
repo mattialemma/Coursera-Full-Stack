@@ -1,85 +1,85 @@
-16/11/2025 - Mattia Lemma
+11/16/2025 - Mattia Lemma
 
-Nel modulo 3 ho imparato le basi di Bootstrap e introduzione a React con funzionamento del DOM.
-Cosa sono le dipendenze, i Bundler Javascript e il Lazy Loading.
+In module 3, I learned the basics of Bootstrap and an introduction to React with DOM functionality.
+What dependencies, JavaScript Bundlers, and Lazy Loading are.
 
 -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- 
 
-Le dipendenze sono i pacchetti esterni (librerie, Framework, moduli) di cui il progetto ha bisogno per funzionare.
-(Esempi possono essere: React, Tailwind, Bootstrap...)
+Dependencies are external packages (libraries, frameworks, modules) that the project needs to function.
+(Examples can be: React, Tailwind, Bootstrap...)
 
 -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- 
 
 - Bundler
-Uno strumento (come Vite, Webpack, Parcel) che prende tutti i file del tuo progetto e li raggruppa, ottimizza e prepara per il browser.
-Produce uno o più bundle finali (JS, CSS, asset) pronti per essere caricati.
-Serve a costruire l’app in modo efficiente.
+A tool (like Vite, Webpack, Parcel) that takes all your project files and bundles, optimizes, and prepares them for the browser.
+Produces one or more final bundles (JS, CSS, assets) ready to be loaded.
+Used to build the app efficiently.
 
 - Lazy Loading
-Tecnica che permette di caricare parti dell’app solo quando servono, invece di caricarle tutte all’inizio.
-Si usa per ridurre il tempo di caricamento iniziale e migliorare le performance.
-Serve a caricare meno codice all’avvio.
+A technique that allows loading parts of the app only when needed, instead of loading them all at the beginning.
+Used to reduce initial loading time and improve performance.
+Used to load less code at startup.
 
 -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- 
 
-Documentazione di Bootstrap: 
+Bootstrap Documentation: 
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
-Infix → breakpoint responsivo (col-sm-6, text-md-center, d-lg-none... )
-Modifier → variazione di stile del componente (btn-primary, btn-lg, alert-danger, card-body...)
+Infix → responsive breakpoint (col-sm-6, text-md-center, d-lg-none... )
+Modifier → component style variation (btn-primary, btn-lg, alert-danger, card-body...)
 
 
-Riassunto dei principali framework CSS:
+Summary of main CSS frameworks:
 
 - Bootstrap:
-Descrizione: Framework popolare per lo sviluppo di interfacce utente.
-Vantaggi: Componenti predefiniti, sistema di griglia reattivo, facile da usare.
-Ideale per: Progetti che richiedono un design rapido e responsivo.
+Description: Popular framework for user interface development.
+Advantages: Predefined components, responsive grid system, easy to use.
+Ideal for: Projects requiring rapid and responsive design.
 
 - Foundation:
-Descrizione: Framework per la creazione di interfacce utente simile a Bootstrap.
-Vantaggi: Componenti avanzati, flessibilità e personalizzazione.
-Ideale per: Progetti di grandi dimensioni e complessi.
+Description: Framework for creating user interfaces similar to Bootstrap.
+Advantages: Advanced components, flexibility and customization.
+Ideal for: Large and complex projects.
 
 - Pure.css:
-Descrizione: Libreria CSS minimalista per costruire interfacce utente.
-Vantaggi: Leggero, migliora i tempi di caricamento.
-Ideale per: Progetti focalizzati su prestazioni e caricamento rapido.
+Description: Minimalist CSS library for building user interfaces.
+Advantages: Lightweight, improves loading times.
+Ideal for: Projects focused on performance and fast loading.
 
 - Tailwind CSS:
-Descrizione: Framework utility-first per la creazione di stili CSS.
-Vantaggi: Personalizzazione dettagliata, flessibilità nel design.
-Ideale per: Progetti che richiedono un design altamente personalizzato.
+Description: Utility-first framework for creating CSS styles.
+Advantages: Detailed customization, design flexibility.
+Ideal for: Projects requiring highly customized design.
 
 - UIKit:
-Descrizione: Framework leggero con componenti reattivi.
-Vantaggi: Facile da personalizzare, design semplice.
-Ideale per: Progetti che richiedono un aspetto pulito e modulare.
+Description: Lightweight framework with responsive components.
+Advantages: Easy to customize, simple design.
+Ideal for: Projects requiring a clean and modular appearance.
 
 - MVP.css:
-Descrizione: Libreria CSS per prototipazione rapida.
-Vantaggi: Stile automatico degli elementi HTML senza classi CSS.
-Ideale per: Sviluppatori che desiderano creare rapidamente interfacce visivamente gradevoli.
+Description: CSS library for rapid prototyping.
+Advantages: Automatic styling of HTML elements without CSS classes.
+Ideal for: Developers who want to quickly create visually appealing interfaces.
 
 -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- 
 
-React è una libreria e non un framework.
+React is a library and not a framework.
 
-Librerie JavaScript comuni con React
+Common JavaScript libraries with React
 
 - Lodash: 
-Una libreria di utilità che offre funzioni comuni per operazioni come ordinare liste o arrotondare numeri, risparmiando tempo agli sviluppatori.
+A utility library that offers common functions for operations like sorting lists or rounding numbers, saving developers time.
 
 - Luxon: 
-Aiuta a gestire date e orari, fornendo funzioni per manipolarli e visualizzarli nel formato locale dell'utente, utile per applicazioni che mostrano ordini o eventi.
+Helps manage dates and times, providing functions to manipulate and display them in the user's local format, useful for applications that show orders or events.
 
 - Redux: 
-Gestisce lo stato delle applicazioni web, permettendo di tenere traccia di elementi come il carrello della spesa e di aggiornare l'interfaccia utente in base alle modifiche.
+Manages the state of web applications, allowing you to keep track of elements like the shopping cart and update the user interface based on changes.
 
 - Axios: 
-Semplifica l'invio di richieste HTTP e la gestione delle risposte, con funzionalità avanzate come l'annullamento delle richieste e la modifica dei dati ricevuti.
+Simplifies sending HTTP requests and handling responses, with advanced features like request cancellation and modifying received data.
 
 - Jest: 
-Una libreria per scrivere test automatizzati, utile per garantire la qualità del codice e fornire report su quanto codice è stato testato.
+A library for writing automated tests, useful for ensuring code quality and providing reports on how much code has been tested.
 
 -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- -_-_-_-_-_-_- 

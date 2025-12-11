@@ -1,24 +1,24 @@
 // Type of operator
 
 /*
-Sistema realizzato per velocizzare la verifica dei tipi ed applicare lo switch-case
+System created to speed up type verification and apply switch-case
 
-1) var test = typeof ('Carissimo sono Mattia'); 
+1) var test = typeof ('Dear I am Mattia'); 
 2) var test = typeof (10); 
 3) var test = typeof (3.14); 
 4) var test = typeof (true); 
 5) var test = typeof (1 < 2); 
 6) var test = typeof ([1, 2, 3]); 
 7) var test = typeof ([1, "hey", 2, ""]); 
-8) var test = typeof ({ Propriety: 1 }); 
+8) var test = typeof ({ Property: 1 }); 
 9) var test = typeof (function abc() { console.log("Mattia Lemma") }) 
 */
 var flag = true;
-var test = 1; // Imposta il numero del test che vuoi provare
+var test = 1; // Set the test number you want to try
 
 switch (test) {
     case 0:
-        var test = typeof ('Carissimo sono Mattia');
+        var test = typeof ('Dear I am Mattia');
         break;
     case 1:
         var test = typeof (10);
@@ -39,7 +39,7 @@ switch (test) {
         var test = typeof ([1, "hey", 2, ""]);
         break;
     case 7:
-        var test = typeof ({ Propriety: 1 });
+        var test = typeof ({ Property: 1 });
         break;
     case 8:
         var test = typeof (function abc() { console.log("Mattia Lemma") })

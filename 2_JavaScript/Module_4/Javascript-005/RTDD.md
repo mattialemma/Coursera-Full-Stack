@@ -1,40 +1,40 @@
-RTDD, in breve, è un processo semplificato di scrittura di codice che soddisferà  alcuni requisiti. 
+RTDD, in short, is a simplified process of writing code that will satisfy some requirements. 
 
 
-Il test RTDD si esegue prima dell'implementazione dei requisiti funzionali. Si scrive quindi un test per una funzionalità da compilare, prima che venga compilata.
-
-- - - - - - - - - - - - - - - - - -
-
-Il TDD è una metodologia di sviluppo dove prima si scrive un test che fallisce → poi si scrive il codice minimo per farlo passare → poi si migliora il codice.
-
-Il ciclo è sempre:
-
-RED → scrivi un test che fallisce
-
-GREEN → scrivi il codice minimo per farlo passare
-
-REFACTOR → ripulisci e migliora il codice
+The RTDD test is executed before implementing functional requirements. You therefore write a test for a feature to be compiled, before it is compiled.
 
 - - - - - - - - - - - - - - - - - -
 
-- - -| Fasi | - - -
+TDD is a development methodology where you first write a test that fails → then write the minimum code to make it pass → then improve the code.
 
-- Abbiamo questo test:
+The cycle is always:
+
+RED → write a test that fails
+
+GREEN → write the minimum code to make it pass
+
+REFACTOR → clean up and improve the code
+
+- - - - - - - - - - - - - - - - - -
+
+- - -| Phases | - - -
+
+- We have this test:
 test('statusOfKeys exists', () => {
   expect(statusOfKeys).toBeDefined()
 })
 
 
-- Abbiamo la funzione vuota:
+- We have the empty function:
 function statusOfKeys() {}
 
-Se la funzione non è definita, il test fallisce con:
+If the function is not defined, the test fails with:
 ReferenceError: statusOfKeys is not defined
-Se fallisce siamo in fase RED.
+If it fails we are in the RED phase.
 
-- Scriviamo il codice minimo indispensabile per far passare il test:
+- We write the minimum code necessary to pass the test:
 function statusOfKeys() {}
 
-Ora il test passa, siamo in fase GREEN.
+Now the test passes, we are in the GREEN phase.
 
 

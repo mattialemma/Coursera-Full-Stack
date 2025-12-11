@@ -1,10 +1,10 @@
-// Ereditarietà
+// Inheritance
 
 /*
-    Esiste una classe base.
-    Possono esitere una o più sotto-classi che ereditano dalla classe base.
-    Possono esistere altre sotto-classi che ereditano dalle sotto-classi della classe base.
-    E così via...
+    There is a base class.
+    There can be one or more sub-classes that inherit from the base class.
+    There can be other sub-classes that inherit from the sub-classes of the base class.
+    And so on...
 */
 
 class Animal {

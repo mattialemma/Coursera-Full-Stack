@@ -1,5 +1,5 @@
 
-// Esempio con if else
+// Example with if else
 var result = 35;
 
 if (result >= 50) {
@@ -12,13 +12,13 @@ else {
     console.log("You did not pass the exam... Bro");
 }
 
-// Esempio con else if
-var place = "city"; 
+// Example with else if
+var place = "city";
 
-switch (place) { // switch controlla valore e tipo di 'place' (comparazione stretta con ===)
+switch (place) { // switch checks value and type of 'place' (strict comparison with ===)
     case "city":
         console.log("You live in a city.");
-        break; // Se non si usa break, il codice continua ad eseguire i case successivi (fall through)
+        break; // If you don't use break, the code continues to execute the following cases (fall through)
     case "suburb":
         console.log("You live in the suburbs.");
         break;
@@ -29,11 +29,11 @@ switch (place) { // switch controlla valore e tipo di 'place' (comparazione stre
         console.log("You live in a place far away from civilization.");
 }
 
-// Esempio con break in un ciclo
-for (let i = 1; i <= 5; i++) { // Si utilizza let perchè i è una variabile di blocco e quindi non esiste al di fuori del ciclo (scope del ciclo)
+// Example with break in a loop
+for (let i = 1; i <= 5; i++) { // We use let because i is a block variable and therefore doesn't exist outside the loop (loop scope)
     if (i === 3) {
-        break; // Fermo il ciclo quando i è uguale a 3
+        break; // Stop the loop when i equals 3
     }
-    console.log(i); // Stampa i numeri da 1 a 2
+    console.log(i); // Prints numbers from 1 to 2
 }
 

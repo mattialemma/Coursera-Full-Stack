@@ -1,4 +1,4 @@
-// Esercizio di laboratorio
+// Laboratory exercise
 
 // Part 1: Separate Array Elements
 const topSixRestaurants = ["Chick-fil-A", "In-N-Out", "Chipotle", "McDonald's", "Taco Bell", "KFC"];
@@ -23,7 +23,6 @@ unknownArgs("a", "b", "c");
 // Part 3: Merge Arrays
 const favoriteBaseballTeams = ["Yankees", "Mets", "Dodgers", "Giants", "Red Sox", "Cubs"];
 const favoriteFootballTeams = ["Patriots", "Giants", "Jets", "Eagles", "Steelers", "Cowboys"];
-const favoriteTeams = [...favoriteBaseballTeams, ...favoriteFootballTeams]
 const favoriteTeams = [...favoriteBaseballTeams, ...favoriteFootballTeams];
 console.log("Favorite Teams:", favoriteTeams);
 

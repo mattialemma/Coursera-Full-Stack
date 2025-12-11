@@ -1,27 +1,27 @@
-# Git blame - Comandi principali
-# Serve a mostrare chi ha fatto le modifiche su un file e quando.
+# Git blame - Main commands
+# Used to show who made changes to a file and when.
 
-# -_-_-_-| COMANDI PRINCIPALI |-_-_-_-
+# -_-_-_-| MAIN COMMANDS |-_-_-_-
 
-# Vedere chi ha modificato ogni riga di un file
+# See who modified each line of a file
 git blame Feature.js
 
-# Vedere solo le righe da 5 a 20
+# See only lines 5 to 20
 git blame -L 5,20 Feature.js
 
-# Formato compatto (solo hash)
+# Compact format (hash only)
 git blame -s Feature.js
 
-# -_-_-_-| ESEMPIO DI OUTPUT |-_-_-_-
+# -_-_-_-| OUTPUT EXAMPLE |-_-_-_-
 
-# Quando eseguiamo "git blame Feature.js", vedremo:
+# When we run "git blame Feature.js", we'll see:
 #
 # a1b2c3d4 (Mattia Lemma 2025-12-09 19:15:30 +0100 1) function calculate() {
 # e5f6g7h8 (Mario Rossi  2025-11-20 14:22:15 +0100 2)   return x + y;
 # a1b2c3d4 (Mattia Lemma 2025-12-09 19:15:30 +0100 3) }
 #
-# Legenda:
-# - a1b2c3d4 = hash del commit
-# - (Mattia Lemma...) = autore e data
-# - 1, 2, 3 = numero di riga
-# - function calculate()... = contenuto della riga
+# Legend:
+# - a1b2c3d4 = commit hash
+# - (Mattia Lemma...) = author and date
+# - 1, 2, 3 = line number
+# - function calculate()... = line content

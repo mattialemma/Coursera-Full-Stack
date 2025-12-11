@@ -1,14 +1,14 @@
-// Esercizi 
+// Exercises 
 
 // if...else if...else
 var age = 10;
 
 if (age >= 65) {
-    console.log("Il reddito viene percepito dalla pensione. ");
+    console.log("Income is received from pension. ");
 } else if (age < 65 && age >= 18) {
-    console.log("Ogni mese ricevi uno stipendio. ");
+    console.log("You receive a salary every month. ");
 } else if (age < 18) {
-    console.log("Ricevi un'indennità. ");
+    console.log("You receive an allowance. ");
 }
 
 // Switch case
@@ -16,26 +16,26 @@ var day = "Sunday";
 
 switch (day) {
     case "Monday":
-        console.log("Oggi è lunedì.");
+        console.log("Today is Monday.");
         break;
     case "Tuesday":
-        console.log("Oggi è martedì.");
+        console.log("Today is Tuesday.");
         break;
     case "Wednesday":
-        console.log("Oggi è mercoledì.");
+        console.log("Today is Wednesday.");
         break;
     case "Thursday":
-        console.log("Oggi è giovedì.");
+        console.log("Today is Thursday.");
         break;
     case "Friday":
-        console.log("Oggi è venerdì.");
+        console.log("Today is Friday.");
         break;
     case "Saturday":
-        console.log("Oggi è sabato.");
+        console.log("Today is Saturday.");
         break;
     case "Sunday":
-        console.log("Oggi è domenica.");
+        console.log("Today is Sunday.");
         break;
     default:
-        console.log("Il giorno inserito non è valido.");
+        console.log("The entered day is not valid.");
 }

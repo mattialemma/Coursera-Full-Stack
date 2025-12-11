@@ -1,8 +1,8 @@
 
-Gli <script> normali sono vecchio stile e mettono JS direttamente nella pagina.
+Normal <script> tags are old-style and put JS directly in the page.
 
-I moduli (type="module" + import/export) servono per organizzare meglio il codice in file separati.
+Modules (type="module" + import/export) are used to better organize code in separate files.
 
-greeting.js è un modulo che esporta funzioni.
+greeting.js is a module that exports functions.
 
-Lo script HTML le importa ed esegue.
+The HTML script imports and executes them.

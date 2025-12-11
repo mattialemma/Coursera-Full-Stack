@@ -1,7 +1,7 @@
 /* 
-    Gli array sono un tipo speciale di oggetto in JavaScript
-    Utilizziamo il metodo push per inserire elementi alla fine dell'array
-    e pop per rimuovere l'ultimo elemento dell'array
+    Arrays are a special type of object in JavaScript
+    We use the push method to insert elements at the end of the array
+    and pop to remove the last element of the array
 */
 
 var fruits = [];
@@ -14,7 +14,7 @@ console.log("Fruits after pop operation:", fruits);
 
 console.log("-----");
 
-// Funzione per inserire tre elementi in un array
+// Function to insert three elements into an array
 
 function insertInArray(element1, element2, element3) {
     var arr = [];
@@ -29,18 +29,18 @@ console.log("My Array after insertInArray function:", myArray);
 
 console.log("-----");
 
-// Test personale di una funzione che lavora con oggetti e array
+// Personal test of a function that works with objects and arrays
 
-function serviceArray(ogb2, arrOfKeys) {
+function serviceArray(obj2, arrOfKeys) {
     var arrResult = [];
 
-    if (obg2.age) {
-        arrResult.push(obg2.name);
-        arrResult.push(obg2.age);
-        arrResult.push(obg2.city);
+    if (obj2.age) {
+        arrResult.push(obj2.name);
+        arrResult.push(obj2.age);
+        arrResult.push(obj2.city);
 
         for (let i = 0; i < arrOfKeys.length; i++) {
-            console.log(ogb2[arrOfKeys[i]]);
+            console.log(obj2[arrOfKeys[i]]);
         }
 
         console.log("-----");
@@ -56,12 +56,12 @@ function serviceArray(ogb2, arrOfKeys) {
 
 arrOfKeys = ['name', 'age', 'city'];
 
-var obg2 = {
+var obj2 = {
     name: "Alice",
     age: 30,
     city: "New York",
 }
 
-var person = serviceArray(obg2, arrOfKeys);
+var person = serviceArray(obj2, arrOfKeys);
 console.log("-----");
 console.log("Person array returned from serviceArray function:", person);

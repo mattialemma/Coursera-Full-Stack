@@ -1,16 +1,16 @@
-17/11/2025 - Mattia Lemma
+11/17/2025 - Mattia Lemma
 
-Introduzione a JavaScript
+Introduction to JavaScript
 
-In questa parte del corso abbiamo iniziato a esplorare le basi di JavaScript, effettuando test sia su Visual Studio Code che tramite la console DevTools del browser Google Chrome.
+In this part of the course, we started exploring the basics of JavaScript, performing tests both on Visual Studio Code and through the DevTools console of the Google Chrome browser.
 
-Sono stati introdotti e sperimentati:
+The following were introduced and experimented with:
 
-Utilizzo della console.log e dello strumento DevTools.
-I fondamenti della logica condizionale
-Le strutture switch
-L’utilizzo di variabili
-I principali loop (cicli)
-Le regole di sintassi fondamentali del linguaggio
+Using console.log and the DevTools tool.
+The fundamentals of conditional logic
+Switch structures
+Using variables
+The main loops (cycles)
+The fundamental syntax rules of the language
 
-Questi argomenti costituiscono le basi per comprendere il funzionamento di JavaScript e iniziare a sviluppare piccoli programmi e script.
+These topics constitute the foundations for understanding how JavaScript works and starting to develop small programs and scripts.

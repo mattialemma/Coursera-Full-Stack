@@ -1,5 +1,5 @@
-// Esempi di strutture dati
-// Lavoriamo con gli Array
+// Examples of data structures
+// Working with Arrays
 
 // -_-_-_-| forEach |-_-_-_-
 
@@ -18,20 +18,20 @@ fruits.forEach(appendIndex);
 */
 
 /*
-    forEach accetta una funzione che lavorerà su ogni elemento dell'array.
-    Il primo parametro della funzione è l'elemento dell'array e il secondo parametro (opzionale) è l'indice.
+    forEach accepts a function that will work on each element of the array.
+    The first parameter of the function is the array element and the second parameter (optional) is the index.
 */
 
 console.log();
-// Molto spesso, la funzione che il metodo forEach() deve utilizzare
-// viene passata direttamente nella chiamata al metodo, come in questo caso:
+// Very often, the function that the forEach() method should use
+// is passed directly in the method call, as in this case:
 const veggies = ['onion', 'garlic', 'potato'];
 veggies.forEach(function (veggie, index) {
     console.log(`${index}. ${veggie}`);
 });
 
 console.log();
-// Per aumentare la leggibilità utilizziamo la funzione freccia (array function)
+// To increase readability we use the arrow function
 const veggies2 = ['onion', 'garlic', 'potato'];
 
 veggies.forEach((veggie, index) => {
@@ -40,13 +40,13 @@ veggies.forEach((veggie, index) => {
 
 
 console.log();
-// Test personale
-console.log("Prodotti raggruppati a due a due: ");
-const listaSpesa = ['uova', 'farina', 'olio', 'kebab', 'ricotta', 'cipollotto', 'carne'];
-listaSpesa.forEach(
+// Personal test
+console.log("Products grouped two by two: ");
+const shoppingList = ['eggs', 'flour', 'oil', 'kebab', 'ricotta', 'spring onion', 'meat'];
+shoppingList.forEach(
     (element, index) => {
-        console.log(`Prodotto ${index+1} chiamato ${element}.`);
-        if(index%2)
+        console.log(`Product ${index + 1} called ${element}.`);
+        if (index % 2)
             console.log("- - - - ");
     }
 );

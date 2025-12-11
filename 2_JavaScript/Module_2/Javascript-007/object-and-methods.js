@@ -1,32 +1,32 @@
-// Parte "avanzata" sugli oggetti
+// "Advanced" part on objects
 
-// Risulta possibile aggiungere nuove coppie chiave-valore a oggetti essitendi utilizzando la dot notation
-// con la possibilità di aggiungere proprietà con diversi tipi di dati, comprese le funzioni.
+// It is possible to add new key-value pairs to existing objects using dot notation
+// with the ability to add properties with different data types, including functions.
 
 var car = {};
 
 car.color = "red";
 
-car.start = function(){ // Aggiunta di un metodo a car che può essere chiamata solo con car.start()
-    console.log("Motore acceso");
+car.start = function () { // Adding a method to car that can only be called with car.start()
+    console.log("Engine started");
 }
 
-car.tettuccio = function(){
-    console.log("Tettuccio chiuso");
+car.roof = function () {
+    console.log("Roof closed");
 }
 
-car["Tipo di trazione"] = "4x4 o posteriore";
+car["Drive type"] = "4x4 or rear";
 
 console.log(car);
 car.start();
-car.tettuccio();
+car.roof();
 
 
 /*
-    Ad esempio, il metodo log che appartiene all'oggetto console,
-    è acessibile solo tramite l'oggetto console:
+    For example, the log method that belongs to the console object,
+    is only accessible through the console object:
 
-    console.log("Carissimo!");
+    console.log("Dear!");
 
 */
 

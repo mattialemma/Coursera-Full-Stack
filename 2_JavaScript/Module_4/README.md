@@ -1,16 +1,16 @@
-30/11/2025 - Mattia Lemma
+11/30/2025 - Mattia Lemma
 
-[ Test, Node.js, npm. JEST. Refactoring. TDD. 
-  Testing R.E. (e2e), Testing di integrazione, Testing unitario. 
-  Esercizi pratici che comprendono conoscenze acquisite. ]
+[ Testing, Node.js, npm. JEST. Refactoring. TDD. 
+  E2E testing, Integration testing, Unit testing. 
+  Practical exercises that include acquired knowledge. ]
 
 
-Node.js è un ambiente di runtime autonomo che permette di eseguire JavaScript al di fuori del browser, basato sul motore V8.
-Include npm (Node Package Manager), un gestore di pacchetti che consente di installare e utilizzare numerose librerie e framework sotto forma di moduli.
-Un modulo npm è un pezzo di codice riutilizzabile pubblicato nel registro npm, e viene spesso chiamato anche pacchetto npm.
+Node.js is a standalone runtime environment that allows you to run JavaScript outside the browser, based on the V8 engine.
+It includes npm (Node Package Manager), a package manager that allows you to install and use numerous libraries and frameworks in the form of modules.
+An npm module is a piece of reusable code published in the npm registry, and is often also called an npm package.
 
-Il file package.json contiene le informazioni sul progetto e l’elenco dei moduli (dipendenze) che il progetto utilizza, inclusi quelli installati dal registry npm.
+The package.json file contains project information and the list of modules (dependencies) that the project uses, including those installed from the npm registry.
 
-Esempi di librerie che si posono installare includono React,  Webpack, Bootstrap e Angular Core.
-Il file package.json si aggiorna  quando si installa un nuovo pacchetto. 
+Examples of libraries that can be installed include React, Webpack, Bootstrap, and Angular Core.
+The package.json file is updated when you install a new package.
 

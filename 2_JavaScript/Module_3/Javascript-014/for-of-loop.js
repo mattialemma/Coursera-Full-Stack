@@ -1,7 +1,7 @@
-// Loop for ... of (array e oggetti)
+// Loop for ... of (arrays and objects)
 
 /*
-    Un ciclo for of non può lavorare direttamente su un oggetto, poiché un oggetto non è iterabile.
+    A for of loop cannot work directly on an object, because an object is not iterable.
 */
 
 const car = {
@@ -9,18 +9,18 @@ const car = {
     color: "blue"
 }
 
-// Errore
+// Error
 for (prop of car) {
     console.log(prop) // Output: Uncaught TypeError: car is not iterable
 }
 
-// Gli array sono iterabili
+// Arrays are iterable
 const colors = ["red", "blue", "yellow"]
 for (let color of colors)
     console.log(color); // Output: red  blue  yellow
 
 //___________________________________________________________
-// Metodi integrati per convertire oggetti in array iterabili
+// Built-in methods to convert objects into iterable arrays
 
 const car2 = {
     speed: 200,
@@ -36,27 +36,27 @@ for (const key of Object.keys(car2)) {
 }
 
 //______________________________________________________________________________
-// for ... of lavora sui valori, 
-// mentre for ... in lavora sulle chiavi degli Object o sugli indici degli array
+// for ... of works on values, 
+// while for ... in works on Object keys or array indices
 
-// Esempio 1
-const car = { velocità: 100, colore: "blu" };
+// Example 1
+const car = { speed: 100, color: "blue" };
 for (let key in car) {
-    console.log(key, car[key]); // Output: velocità, colore
+    console.log(key, car[key]); // Output: speed, color
 }
 
-// Esempio 2
+// Example 2
 const colors = ["red", "blue", "yellow"]
 for (let color of colors)
     console.log(color); // Output: red  blue  yellow
 
-// Esempio 3
+// Example 3
 const colors2 = ["red", "blue", "yellow"]
 for (let color in colors2)
     console.log(color); // Output: 0 1 2
 
 
-// -_-_-_-| Altro esempio, ma con un caso interessante |-_-_-_-
+// -_-_-_-| Another example, but with an interesting case |-_-_-_-
 
 const car1 = {
     engine: true,
@@ -68,49 +68,49 @@ const sportsCar = Object.create(car1);
 sportsCar.speed = "fast";
 console.log("The sportsCar object:", sportsCar);
 
-console.log("---| for-in è inaffidabile |---");
+console.log("---| for-in is unreliable |---");
 for (prop in sportsCar) {
     console.log(prop);
 }
 /*
     Output: 
     The sportsCar object: { speed: 'fast' }
-    ---| for-in è inaffidabile |---
+    ---| for-in is unreliable |---
     speed
     engine
     steering
 
-    - SPIEGAZIONE:
-    i cicli for in sono inaffidabili in questo scenario
-    perché iterano non solo sull'oggetto specificato,  ma anche sul suo prototipo
+    - EXPLANATION:
+    for in loops are unreliable in this scenario
+    because they iterate not only on the specified object, but also on its prototype
 */
 
 console.log();
-console.log("Iterando sull'oggetto e sul suo prototipo!");
+console.log("Iterating on the object and its prototype!");
 
-console.log("---| for-of è affidabile |---");
+console.log("---| for-of is reliable |---");
 for (prop of Object.keys(sportsCar)) {
     console.log(prop + ": " + sportsCar[prop]);
 }
 
 /*
     Output:
-    ---| for-of è affidabile |---
+    ---| for-of is reliable |---
     speed: fast
 */
 
-// Il ciclo for-of itera sulle proprietà dell'oggetto solo quando si utilizza il metodo Object.keys()
-// per restituire un array su cui eseguire il ciclo.
+// The for-of loop iterates on object properties only when using the Object.keys() method
+// to return an array to loop on.
 
 //-_-_-_-_-_-_-_-_-
 /*
-    Se utilizzi Object.create, non è obbligatorio usare Object.keys per iterare sull'oggetto creato.
-    Puoi semplicemente utilizzare un ciclo for...in per iterare su tutte le proprietà,
-    comprese quelle ereditate, oppure un ciclo for...of per scorrere solo le proprietà
-    direttamente inizializzate nell'oggetto stesso, escludendo quelle che provengono dal prototipo. 
+    If you use Object.create, it's not mandatory to use Object.keys to iterate on the created object.
+    You can simply use a for...in loop to iterate on all properties,
+    including inherited ones, or a for...of loop to scroll only through properties
+    directly initialized in the object itself, excluding those coming from the prototype. 
 */
 
-// - - - - -| Stesso codice senza commenti | - - - - - -
+// - - - - -| Same code without comments | - - - - - -
 
 const bike = {
     engine: true,
@@ -133,6 +133,6 @@ for (prop of Object.keys(sportBike)) {
 
 /*
 for (prop of sportBike) {
-    console.log(prop); // Errore, non iterabile
+    console.log(prop); // Error, not iterable
 }
 */

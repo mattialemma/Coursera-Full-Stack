@@ -1,57 +1,57 @@
-28/11/2025 - Mattia Lemma
+11/28/2025 - Mattia Lemma
 
-Gli argomenti principali che abbiamo trattato sono:
-[ Valore di ritorno delle funzioni. Ricorsione. Scope delle variabili.
-Immutabilità delle variabili. Programmazione funzionale (FP) e OOP. var, let, const,
-Ereditarietà. Costruttori. super per costruttori e metodi. Prototype. Destrutturazione.
-Convertire oggetti in array. Template letterali. Strutture dati. Funzioni freccia. 
-Operatore di spread. Operatore di rest. Moduli. Manipolazione del DOM. Gestione degli handle. 
-JSON e scambio di dati. ]
-
-
-Ho elencato alcune spiegazioni aggiuntive:
-
-- Destrutturazione
-Destrutturare array e oggetti è una tecnica in JavaScript che consente di estrarre valori da un array o da un oggetto e assegnarli a variabili in modo semplice e conciso. Immagina di avere un cesto di frutta (l'array) e di voler prendere solo alcune mele e banane. Invece di cercare in tutto il cesto, puoi semplicemente dire: "Voglio questi due frutti specifici". (Esempi in Javascript-013)
+The main topics we covered are:
+[ Function return values. Recursion. Variable scope.
+Variable immutability. Functional programming (FP) and OOP. var, let, const,
+Inheritance. Constructors. super for constructors and methods. Prototype. Destructuring.
+Converting objects to arrays. Template literals. Data structures. Arrow functions. 
+Spread operator. Rest operator. Modules. DOM manipulation. Event handling. 
+JSON and data exchange. ]
 
 
-- Ereditarietà e Prototype
-L'ereditarietà in Javascript si basa sul prototipo dell'oggetto.
-Tutti gli Object costruiti a partire dal prototipo condividono le stesse funzionalità.
-Quando è necessario codificare relazioni OOP più complesse, è possibile utilizzare la parola chiave class e la sua sintassi facile da capire e da ragionare.
+I listed some additional explanations:
+
+- Destructuring
+Destructuring arrays and objects is a technique in JavaScript that allows you to extract values from an array or object and assign them to variables in a simple and concise way. Imagine having a basket of fruit (the array) and wanting to take only some apples and bananas. Instead of searching through the entire basket, you can simply say: "I want these two specific fruits". (Examples in Javascript-013)
+
+
+- Inheritance and Prototype
+Inheritance in JavaScript is based on the object's prototype.
+All Objects constructed from the prototype share the same functionality.
+When it's necessary to code more complex OOP relationships, you can use the class keyword and its easy-to-understand and reason-about syntax.
 
 
 
 - FP VS OOP
-Possiamo dire che il paradigma della programmazione funzionale funziona mantenendo separati i dati e le funzionalità. La sua controparte, la OOP, funziona mantenendo i dati e le funzionalità raggruppati in Object significativi.
+We can say that the functional programming paradigm works by keeping data and functionality separate. Its counterpart, OOP, works by keeping data and functionality grouped in meaningful Objects.
 
 
 
-- Interpolazione di variabili
+- Variable interpolation
 var style = `color: ${color};`
 style += `background: ${background};';
 
-Il seguente codice crea una variabile style e aggiunge la stringa color: e la variabile color e il ;
-Se la variabile color = red ho quindi:
+The following code creates a style variable and adds the string color: and the color variable and the ;
+If the color variable = red I therefore have:
 style = 'color: red;'
 
-+ Potrei usare anche " " al posto di ' ' ma risulterebbe meno leggibile:
++ I could also use " " instead of ' ' but it would be less readable:
 style += "color: " + color + ";";
 
-+ Possibile uso:
++ Possible use:
 console.log(message, style);
 
-+ Dove:
-message = %cCiao
++ Where:
+message = %cHello
 style = "color: red; background: blue; font-size: 20px;"
 
-+ Ovvero: 
-console.log("%cCiao", "color: red; background: blue; font-size: 20px;");
++ That is: 
+console.log("%cHello", "color: red; background: blue; font-size: 20px;");
 
 
 
-- I quattro principi fondamentali della OOP sono:
-ereditarietà , incapsulamento , astrazione e polimorfismo .
+- The four fundamental principles of OOP are:
+inheritance, encapsulation, abstraction, and polymorphism.
 
 _______________________________________________________________
-Ho svolto esercizi guidati e autonomi per verificare le competenze acquisite.
+I completed guided and autonomous exercises to verify acquired skills.

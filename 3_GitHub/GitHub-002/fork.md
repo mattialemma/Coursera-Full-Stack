@@ -1,45 +1,45 @@
 # Git Fork
 
-La fork è un'operazione che permette di **creare una copia di un repository remoto** sul tuo account GitHub.
+A fork is an operation that allows you to **create a copy of a remote repository** on your GitHub account.
 
-## Come funziona
+## How it works
 
-1. **Fork su GitHub**: 
-Clicchi il pulsante "Fork" su un repository altrui → GitHub crea una copia completa nel tuo account
+1. **Fork on GitHub**: 
+You click the "Fork" button on someone else's repository → GitHub creates a complete copy in your account
 
-2. **Clone in locale**: 
-Scarichi la tua fork sul tuo computer
+2. **Clone locally**: 
+You download your fork to your computer
    ```bash
-   git clone https://github.com/TUO-USERNAME/nome-repo.git
+   git clone https://github.com/YOUR-USERNAME/repo-name.git
    ```
 
-3. **Modifiche**: Lavori sulla tua copia, fai commit e push
+3. **Changes**: Work on your copy, make commits and push
 
 4. **Pull Request**: 
-Quando vuoi contribuire al progetto originale, crei una Pull Request per proporre le tue modifiche
+When you want to contribute to the original project, you create a Pull Request to propose your changes
 
-## Quando si usa
+## When to use
 
-- ✅ Contribuire a progetti open source
-- ✅ Sperimentare con codice altrui senza rischi
-- ✅ Creare una tua versione personalizzata di un progetto
+- ✅ Contributing to open source projects
+- ✅ Experimenting with others' code without risks
+- ✅ Creating your own customized version of a project
 
-## Differenza con Clone
+## Difference with Clone
 
-- **Clone**: Copia solo in locale, non su GitHub
-- **Fork**: Crea una copia su GitHub + poi la cloni in locale
+- **Clone**: Copy only locally, not on GitHub
+- **Fork**: Creates a copy on GitHub + then you clone it locally
 
-## Esempio pratico
+## Practical example
 
 ```bash
-# 1. Fai fork su GitHub (tramite interfaccia web)
-# 2. Clona la tua fork
+# 1. Fork on GitHub (via web interface)
+# 2. Clone your fork
 git clone https://github.com/mattialemma/react.git
 
-# 3. Lavora e committa
+# 3. Work and commit
 git add .
-git commit -m "Aggiunta nuova feature"
+git commit -m "Added new feature"
 git push
 
-# 4. Crea Pull Request su GitHub per proporre le modifiche al repository originale
+# 4. Create Pull Request on GitHub to propose changes to the original repository
 ```

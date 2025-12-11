@@ -1,21 +1,21 @@
 
-# Mostra le modifiche e il branch in cui mi trovo
+# Show changes and the branch I'm on
 git status
 
-# Aggiungo un file .txt
+# Add a .txt file
 touch file1.txt
 
-# Tracciare il nuovo file
+# Track the new file
 git add file1.txt
 
-# Rieseguo git status
-git status # Output: file1.txt è in fase di commit (area di staging)
+# Run git status again
+git status # Output: file1.txt is in commit phase (staging area)
 
-# Rimuove il file dall'area di staging
+# Remove the file from staging area
 git restore --stage file1.txt
 
-# Rieseguo git status
-git status # Output: file1.txt non è tracciato
+# Run git status again
+git status # Output: file1.txt is not tracked
 
 git add file1.txt
 git status 

@@ -1,4 +1,4 @@
-// Esame: esercizio di destrutturazione
+// Exam: destructuring exercise
 
 // -_-_-| 1 |-_-_-
 const products = [
@@ -8,7 +8,7 @@ const products = [
 ];
 // Destructure the second product's name and price from the array
 const [secondProductName, secondProductPrice] = products[1];
-// Oppure: const [,[secondProductName, secondProductPrice]] = products;
+// Or: const [,[secondProductName, secondProductPrice]] = products;
 
 console.log(`Second product: ${secondProductName}`);
 console.log(`Second product price: ${secondProductPrice}`);
@@ -23,7 +23,7 @@ const review = {
 };
 
 // Destructure the author, title, and timePosted properties from the review object
-const {author:autore, title, timePosted} = review; // Test rinominare proprietà author
+const { author: autore, title, timePosted } = review; // Test renaming author property
 
 
 console.log(`${autore} posted a review titled, ${title} at ${timePosted}.`);

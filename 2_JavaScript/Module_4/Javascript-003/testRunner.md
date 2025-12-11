@@ -1,11 +1,11 @@
 
 
 import { test, expect } from 'vitest' 
-- importa da Vitest le due funzioni fondamentali:
+- imports from Vitest the two fundamental functions:
 
-    - test serve per definire un test (“questa cosa deve funzionare così”).
-    - expect serve per scrivere l’asserzione, cioè verificare se il risultato è quello che ti aspetti.
+    - test is used to define a test ("this thing should work like this").
+    - expect is used to write the assertion, i.e., to verify if the result is what you expect.
 
 
 import addFive from './addFive.js' 
-importa la funzione addFive dal file addFive.js, così puoi testarla dentro il file di test.
+imports the addFive function from the addFive.js file, so you can test it inside the test file.

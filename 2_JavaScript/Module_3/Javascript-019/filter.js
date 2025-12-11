@@ -1,9 +1,9 @@
-// Esempi di strutture dati
-// Lavoriamo con gli Array
+// Examples of data structures
+// Working with Arrays
 
 // -_-_-_-| filter |-_-_-_-
 
-// Restituisce gli elementi dell'array che superano il test
+// Returns array elements that pass the test
 
 const nums = [0, 10, 20, 30, 40, 50];
 
@@ -14,7 +14,7 @@ const result = nums.filter(function (num) {
 console.log(result);
 
 
-// Stella logica ma con la funzione freccia
+// Same logic but with arrow function
 const result2 = nums.filter(
     (num) => {
         return num > 20;

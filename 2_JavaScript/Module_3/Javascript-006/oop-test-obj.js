@@ -1,29 +1,29 @@
 // OOP
 
 /*
-    Con la programmazione funzionale separiamo chiaramente i dati dalle funzioni che li elaborano.
-    Con l'approccio OOp si crea un oggetto e si memorizzano tutti i adti relativi a tale oggetto,
-    inclusi variabili, funzioni e istruzioni di output. La programmazione OOP include quindi la FP.
+    With functional programming we clearly separate data from the functions that process it.
+    With the OOP approach we create an object and store all data related to that object,
+    including variables, functions and output statements. OOP programming therefore includes FP.
 */
 
-var rettangolo = {
+var rectangle = {
     base: 10,
-    altezza: 25,
-    area: function() {
-        let ris = this.base * this.altezza;
-        console.log("Area 1: ",ris + "cm²");
+    height: 25,
+    area: function () {
+        let result = this.base * this.height;
+        console.log("Area 1: ", result + "cm²");
     }
 }
 
-var rettangolo2 = {
+var rectangle2 = {
     base: 5,
-    altezza: 2,
-    area: function() {
-        let ris = this.base * this.altezza;
-        console.log("Area 2: ",ris + "cm²");
+    height: 2,
+    area: function () {
+        let result = this.base * this.height;
+        console.log("Area 2: ", result + "cm²");
     }
 }
 
-rettangolo.area(); // Output: Area: 250cm²
-rettangolo2.area(); // Output: Area: 10cm²
+rectangle.area(); // Output: Area: 250cm²
+rectangle2.area(); // Output: Area: 10cm²
 

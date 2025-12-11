@@ -1,159 +1,159 @@
 # 2️⃣ Programming with JavaScript
 
-**Data completamento**: 30/11/2025  
-**Stato**: ✅ Completato
+**Completion Date**: 11/30/2025  
+**Status**: ✅ Completed
 
 ---
 
-## 📖 Descrizione del Modulo
+## 📖 Module Description
 
-Questo modulo copre i fondamenti della programmazione con JavaScript, dalla sintassi base fino ai concetti avanzati di programmazione funzionale, OOP, DOM manipulation e testing.
+This module covers the fundamentals of programming with JavaScript, from basic syntax to advanced concepts of functional programming, OOP, DOM manipulation, and testing.
 
-### Argomenti trattati:
-- Sintassi base e logica condizionale
-- Funzioni, array e oggetti
-- Programmazione funzionale (FP) vs OOP
-- Ereditarietà e prototipi
-- Destrutturazione e template literals
-- Manipolazione del DOM
-- Node.js, npm e testing con Jest
+### Topics Covered:
+- Basic syntax and conditional logic
+- Functions, arrays, and objects
+- Functional Programming (FP) vs OOP
+- Inheritance and prototypes
+- Destructuring and template literals
+- DOM manipulation
+- Node.js, npm, and testing with Jest
 - TDD (Test-Driven Development)
 
 ---
 
-## 📁 Contenuto del Modulo
+## 📁 Module Content
 
-### Module_1 - Introduzione a JavaScript
-**Data**: 17/11/2025
+### Module_1 - Introduction to JavaScript
+**Date**: 11/17/2025
 
-Fondamenti di JavaScript con test su Visual Studio Code e DevTools di Chrome.
+JavaScript fundamentals with tests on Visual Studio Code and Chrome DevTools.
 
-**Argomenti**:
-- `console.log` e strumenti DevTools
-- Logica condizionale (if/else)
-- Strutture switch
-- Variabili
-- Loop (cicli)
-- Regole di sintassi fondamentali
+**Topics**:
+- `console.log` and DevTools
+- Conditional logic (if/else)
+- Switch structures
+- Variables
+- Loops
+- Fundamental syntax rules
 
-**Esercizi**: 6 cartelle (Javascript-001 → Javascript-005, Console-Test)
+**Exercises**: 6 folders (Javascript-001 → Javascript-005, Console-Test)
 
 ---
 
-### Module_2 - Funzioni, Array e Oggetti
-**Data**: 19/11/2025
+### Module_2 - Functions, Arrays, and Objects
+**Date**: 11/19/2025
 
-Concetti fondamentali su funzioni, array, oggetti e gestione errori.
+Fundamental concepts on functions, arrays, objects, and error handling.
 
-**Argomenti**:
-- Funzioni (blocchi di codice riutilizzabile)
-- Array (oggetti con metodi specifici)
-- Oggetti in JavaScript
-- Stringhe (immutabilità e differenze con array)
-- Oggetto Math (arrotondamento, numeri casuali)
-- Gestione eccezioni ed errori
+**Topics**:
+- Functions (reusable code blocks)
+- Arrays (objects with specific methods)
+- Objects in JavaScript
+- Strings (immutability and differences with arrays)
+- Math object (rounding, random numbers)
+- Exception and error handling
 - `let`, `var`, `const`
 - `NaN` (Not a Number)
-- Programmazione difensiva
+- Defensive programming
 
-**Esercizi**: 13 cartelle (Javascript-000 → Javascript-012)
+**Exercises**: 13 folders (Javascript-000 → Javascript-012)
 
 ---
 
-### Module_3 - Programmazione Avanzata
-**Data**: 28/11/2025
+### Module_3 - Advanced Programming
+**Date**: 11/28/2025
 
-Concetti avanzati di programmazione funzionale, OOP e manipolazione DOM.
+Advanced concepts of functional programming, OOP, and DOM manipulation.
 
-**Argomenti**:
-- Valore di ritorno delle funzioni
-- Ricorsione
-- Scope delle variabili
-- Immutabilità
-- **Programmazione Funzionale (FP) vs OOP**
-  - FP: dati e funzionalità separati
-  - OOP: dati e funzionalità raggruppati in oggetti
-- **Ereditarietà e Prototype**
-  - Tutti gli oggetti condividono il prototipo
-  - Parola chiave `class` per OOP complesse
-  - I 4 principi OOP: ereditarietà, incapsulamento, astrazione, polimorfismo
-- Costruttori e `super`
-- **Destrutturazione** (array e oggetti)
-- Convertire oggetti in array
-- **Template literals** (interpolazione variabili)
+**Topics**:
+- Function return values
+- Recursion
+- Variable scope
+- Immutability
+- **Functional Programming (FP) vs OOP**
+  - FP: data and functionality separated
+  - OOP: data and functionality grouped in objects
+- **Inheritance and Prototype**
+  - All objects share the prototype
+  - `class` keyword for complex OOP
+  - The 4 OOP principles: inheritance, encapsulation, abstraction, polymorphism
+- Constructors and `super`
+- **Destructuring** (arrays and objects)
+- Converting objects to arrays
+- **Template literals** (variable interpolation)
 - Arrow functions
-- Operatore spread (`...`)
-- Operatore rest
-- Moduli ES6
-- **Manipolazione del DOM**
-- Gestione eventi (event handlers)
-- **JSON** e scambio dati
+- Spread operator (`...`)
+- Rest operator
+- ES6 modules
+- **DOM Manipulation**
+- Event handling (event handlers)
+- **JSON** and data exchange
 
-**Esercizi**: 27 cartelle (Javascript-001 → Javascript-028)
+**Exercises**: 27 folders (Javascript-001 → Javascript-028)
 
-**Note aggiuntive**:
-- Interpolazione variabili: `` `color: ${color};` ``
-- Styling console: `console.log("%cCiao", "color: red; background: blue;")`
+**Additional notes**:
+- Variable interpolation: `` `color: ${color};` ``
+- Console styling: `console.log("%cHello", "color: red; background: blue;")`
 
 ---
 
-### Module_4 - Testing e Node.js
-**Data**: 30/11/2025
+### Module_4 - Testing and Node.js
+**Date**: 11/30/2025
 
-Testing, Node.js, npm e best practices.
+Testing, Node.js, npm, and best practices.
 
-**Argomenti**:
-- **Node.js**: ambiente runtime JavaScript (motore V8)
-- **npm** (Node Package Manager): gestione pacchetti
-- Moduli npm (React, Webpack, Bootstrap, Angular)
-- `package.json`: informazioni progetto e dipendenze
-- **Jest**: framework di testing
+**Topics**:
+- **Node.js**: JavaScript runtime environment (V8 engine)
+- **npm** (Node Package Manager): package management
+- npm modules (React, Webpack, Bootstrap, Angular)
+- `package.json`: project information and dependencies
+- **Jest**: testing framework
 - **TDD** (Test-Driven Development)
 - Refactoring
-- **Tipi di testing**:
-  - Testing unitario (unit testing)
-  - Testing di integrazione
-  - Testing E2E (end-to-end)
-- Esercizi pratici integrati
+- **Types of testing**:
+  - Unit testing
+  - Integration testing
+  - E2E testing (end-to-end)
+- Integrated practical exercises
 
-**Esercizi**: 6 cartelle (Javascript-001 → Javascript-006)
+**Exercises**: 6 folders (Javascript-001 → Javascript-006)
 
 ---
 
-## 🛠️ Concetti Chiave Appresi
+## 🛠️ Key Concepts Learned
 
-### Variabili
+### Variables
 ```javascript
-let variabile = "riassegnabile";    // Preferibile
-const costante = "immutabile";      // Usa quando possibile
-var vecchioStile = "evitare";       // Non usare
+let variable = "reassignable";    // Preferable
+const constant = "immutable";      // Use when possible
+var oldStyle = "avoid";            // Don't use
 ```
 
-### Funzioni
+### Functions
 ```javascript
-// Funzione classica
-function saluta(nome) {
-  return `Ciao, ${nome}!`;
+// Classic function
+function greet(name) {
+  return `Hello, ${name}!`;
 }
 
 // Arrow function
-const saluta = (nome) => `Ciao, ${nome}!`;
+const greet = (name) => `Hello, ${name}!`;
 ```
 
-### Destrutturazione
+### Destructuring
 ```javascript
 // Array
-const [primo, secondo] = [1, 2, 3];
+const [first, second] = [1, 2, 3];
 
-// Oggetti
-const { nome, età } = { nome: "Mattia", età: 25 };
+// Objects
+const { name, age } = { name: "Mattia", age: 25 };
 ```
 
 ### Template Literals
 ```javascript
 const color = "red";
 const style = `color: ${color}; background: blue;`;
-// Risultato: "color: red; background: blue;"
+// Result: "color: red; background: blue;"
 ```
 
 ### Spread Operator
@@ -164,10 +164,10 @@ const arr2 = [...arr1, 4, 5];  // [1, 2, 3, 4, 5]
 
 ### DOM Manipulation
 ```javascript
-const elemento = document.getElementById("myId");
-elemento.textContent = "Nuovo testo";
-elemento.addEventListener("click", (e) => {
-  console.log("Cliccato!");
+const element = document.getElementById("myId");
+element.textContent = "New text";
+element.addEventListener("click", (e) => {
+  console.log("Clicked!");
 });
 ```
 
@@ -175,59 +175,59 @@ elemento.addEventListener("click", (e) => {
 
 ## 🎯 FP vs OOP
 
-### Programmazione Funzionale (FP)
-- **Dati e funzionalità separati**
-- Funzioni pure senza side effects
-- Immutabilità dei dati
+### Functional Programming (FP)
+- **Data and functionality separated**
+- Pure functions without side effects
+- Data immutability
 
-### Programmazione Orientata agli Oggetti (OOP)
-- **Dati e funzionalità raggruppati** in oggetti
-- 4 principi fondamentali:
-  1. **Ereditarietà** - Riutilizzo codice
-  2. **Incapsulamento** - Nascondere dettagli interni
-  3. **Astrazione** - Semplificare complessità
-  4. **Polimorfismo** - Comportamenti diversi con stessa interfaccia
+### Object-Oriented Programming (OOP)
+- **Data and functionality grouped** in objects
+- 4 fundamental principles:
+  1. **Inheritance** - Code reuse
+  2. **Encapsulation** - Hide internal details
+  3. **Abstraction** - Simplify complexity
+  4. **Polymorphism** - Different behaviors with same interface
 
 ---
 
-## 🧪 Testing con Jest
+## 🧪 Testing with Jest
 
-### Tipi di Testing
-1. **Testing Unitario**: Testa singole funzioni/componenti
-2. **Testing di Integrazione**: Testa interazione tra moduli
-3. **Testing E2E**: Testa l'intera applicazione dall'inizio alla fine
+### Types of Testing
+1. **Unit Testing**: Tests individual functions/components
+2. **Integration Testing**: Tests interaction between modules
+3. **E2E Testing**: Tests the entire application from start to finish
 
 ### TDD (Test-Driven Development)
-1. Scrivi il test (fallisce)
-2. Scrivi il codice minimo per passare il test
-3. Refactoring del codice
+1. Write the test (it fails)
+2. Write minimal code to pass the test
+3. Refactor the code
 
 ---
 
-## 🔧 Node.js e npm
+## 🔧 Node.js and npm
 
 ### Node.js
-Ambiente runtime JavaScript basato su motore V8 di Chrome. Permette di eseguire JavaScript fuori dal browser.
+JavaScript runtime environment based on Chrome's V8 engine. Allows running JavaScript outside the browser.
 
 ### npm (Node Package Manager)
-Gestore di pacchetti per installare librerie e framework.
+Package manager for installing libraries and frameworks.
 
 ```bash
-npm install <pacchetto>    # Installa pacchetto
-npm init                   # Crea package.json
+npm install <package>    # Install package
+npm init                 # Create package.json
 ```
 
 ### package.json
-Contiene:
-- Informazioni sul progetto
-- Lista dipendenze
-- Script di automazione
+Contains:
+- Project information
+- Dependencies list
+- Automation scripts
 
-**Esempi di librerie npm**: React, Webpack, Bootstrap, Angular Core
+**Examples of npm libraries**: React, Webpack, Bootstrap, Angular Core
 
 ---
 
-## 📚 Risorse
+## 📚 Resources
 
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [JavaScript.info](https://javascript.info/)
@@ -236,44 +236,44 @@ Contiene:
 
 ---
 
-## ✅ Competenze Acquisite
+## ✅ Skills Acquired
 
 ### Module 1
-- ✅ Sintassi base JavaScript
-- ✅ Console e DevTools
-- ✅ Logica condizionale e switch
-- ✅ Variabili e loop
+- ✅ Basic JavaScript syntax
+- ✅ Console and DevTools
+- ✅ Conditional logic and switch
+- ✅ Variables and loops
 
 ### Module 2
-- ✅ Funzioni riutilizzabili
-- ✅ Array e metodi
-- ✅ Oggetti in JavaScript
-- ✅ Gestione errori ed eccezioni
-- ✅ Oggetto Math
+- ✅ Reusable functions
+- ✅ Arrays and methods
+- ✅ Objects in JavaScript
+- ✅ Error and exception handling
+- ✅ Math object
 - ✅ `let`, `var`, `const`
 
 ### Module 3
-- ✅ Ricorsione e scope
+- ✅ Recursion and scope
 - ✅ FP vs OOP
-- ✅ Ereditarietà e prototipi
-- ✅ Destrutturazione
+- ✅ Inheritance and prototypes
+- ✅ Destructuring
 - ✅ Template literals
 - ✅ Arrow functions
-- ✅ Spread e rest operators
-- ✅ Manipolazione DOM
+- ✅ Spread and rest operators
+- ✅ DOM manipulation
 - ✅ JSON
 
 ### Module 4
-- ✅ Node.js e npm
-- ✅ Testing con Jest
+- ✅ Node.js and npm
+- ✅ Testing with Jest
 - ✅ TDD
-- ✅ Testing unitario, integrazione, E2E
+- ✅ Unit, integration, E2E testing
 - ✅ Refactoring
 
 ---
 
-## 📝 Note Personali
+## 📝 Personal Notes
 
-Ho svolto **esercizi guidati e autonomi** per verificare le competenze acquisite, integrando alcuni contenuti con **risorse esterne** per approfondire aspetti non trattati nel corso.
+I completed **guided and autonomous exercises** to verify acquired skills, integrating some content with **external resources** to deepen aspects not covered in the course.
 
-Totale esercizi completati: **52 cartelle** di esercizi pratici.
+Total exercises completed: **52 folders** of practical exercises.

@@ -1,7 +1,7 @@
-// Esempio creazione e utilizzo di una classe con ereditarietà
+// Example of creating and using a class with inheritance
 
 class Train {
-    constructor(color, lightsOn) { // Utilizzato per costruire le proprietà della futura istanza dell'oggetto della classe Train
+    constructor(color, lightsOn) { // Used to build the properties of the future instance of the Train class object
         this.color = color;
         this.lightsOn = lightsOn;
     }
@@ -15,7 +15,7 @@ class Train {
     getSelf() {
         console.log(this);
     }
-    getPrototype() { // Il risultato della chiamata è la registrazione in console di tutte le proprietà della classeprototype. 
+    getPrototype() { // The result of the call is logging to console all properties of the class prototype. 
         var proto = Object.getPrototypeOf(this);
         console.log(proto);
     }
@@ -24,7 +24,7 @@ class Train {
 let train1 = new Train("red", false);
 console.log(train1); // Output: Train {color: 'red', lightsOn: false}
 
-let train2 = new Train("orange", true); // Crea un'istanza della classe Train con Train.prototype come prototipo - Ovvero: (Crea un nuovo oggetto che eredita da Train.prototype)
+let train2 = new Train("orange", true); // Creates an instance of the Train class with Train.prototype as prototype - That is: (Creates a new object that inherits from Train.prototype)
 train2.lightsStatus(); // Output: Train { color: 'red', lightsOn: false }
 train2.toggleLights(); // Output: Lights on? true
 train2.lightsStatus(); // Output: Lights on? false
@@ -33,8 +33,8 @@ train2.getPrototype(); // Output: {constructor: f, toggleLights: f, lightsStatus
 
 
 /*
-    È possibile implementare il polimorfismo utilizzando le classi in JavaScript,
-    ereditando dalla classe base e sovrascrivendo il comportamento ereditato.
+    It is possible to implement polymorphism using classes in JavaScript,
+    inheriting from the base class and overriding the inherited behavior.
                                 (Overriding)                                        
 */
 
@@ -64,7 +64,7 @@ speedTrain.getPrototype(); // Output: Train {constructor: ƒ, toggleHighSpeed: �
 
 
 
-// -_-_-_-_-_-_-_-_-_-_-_-_-_-| Altro esempio |-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+// -_-_-_-_-_-_-_-_-_-_-_-_-_-| Another example |-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 console.log(); console.log("-_-_-_-_-_-"); console.log();
 
 
@@ -104,14 +104,14 @@ console.log(boxingGym.treadmill) //
 */
 
 /*
-    Quest'uiltimo codice mi consente di istanziare un nuovo oggetto istanza della classe Gym e,
-    quando lo ispeziono, ottengo le seguenti informazioni:
+    This last code allows me to instantiate a new object instance of the Gym class and,
+    when I inspect it, I get the following information:
 
-    - la proprietà openHrs è uguale a "7-22" (cioè dalle 7 del mattino alle 10 di sera).
+    - the openHrs property is equal to "7-22" (i.e. from 7 in the morning to 10 in the evening).
 
-    - la proprietà stationaryBike è un Object di tipo StationaryBike,
-      contenente due proprietà: position e gears.
+    - the stationaryBike property is an Object of type StationaryBike,
+      containing two properties: position and gears.
 
-    - la proprietà treadmill è un oggetto del tipo Treadmill,
-      contenente due proprietà: position e modes.
+    - the treadmill property is an object of type Treadmill,
+      containing two properties: position and modes.
 */

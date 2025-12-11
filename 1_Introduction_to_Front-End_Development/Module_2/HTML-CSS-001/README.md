@@ -1,10 +1,10 @@
-# Modulo 2
+# Module 2
 
-Questo progetto raccoglie ed unisce le conoscenze di base apprese nel Modulo 1 e nella prima parte del Modulo 2, fino alla sezione "Testo e colore nei CSS".
-L’obiettivo è esercitarsi sui principali elementi HTML e sulle regole fondamentali del CSS.
+This project collects and combines the basic knowledge learned in Module 1 and the first part of Module 2, up to the section "Text and Color in CSS".
+The goal is to practice the main HTML elements and fundamental CSS rules.
 
-All’interno del file style.css sono presenti esempi dei diversi tipi di selettori CSS, con varie prove su proprietà di testo, colori e struttura.
+Inside the style.css file, there are examples of different types of CSS selectors, with various tests on text properties, colors, and structure.
 
-Nel file index.html sono state effettuate prove pratiche sui selettori e sui principali elementi HTML affrontati nei moduli, come paragrafi, form, immagini, titoli, liste, link e altri tag di base.
+In the index.html file, practical tests were performed on selectors and the main HTML elements covered in the modules, such as paragraphs, forms, images, headings, lists, links, and other basic tags.
 
-# Ultimo aggiornamento: 14/11/2025
+# Last update: 11/14/2025

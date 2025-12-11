@@ -1,12 +1,12 @@
-// Esempi di strutture dati
-// Lavoriamo con gli Object
+// Examples of data structures
+// Working with Objects
 
 // -_-_-| Object -> Array |-_-_-
 
 /*
-    L'esempio che segue mostra come utilizzare la struttura dati Object
-    per portare a termine un compito specifico. Si tratta di convertire
-    un Objectin un array:
+    The following example shows how to use the Object data structure
+    to accomplish a specific task. It involves converting
+    an Object into an array:
 */
 
 
@@ -25,7 +25,7 @@ console.log(result) // Output: ['speed',100,'color','yellow']
 
 
 
-// Test personale
+// Personal test
 
 const result2 = [];
 const drone2 = {
@@ -33,14 +33,14 @@ const drone2 = {
     color: 'yellow'
 };
 
-// Creare drone1 con drone come prototipo
+// Create drone1 with drone as prototype
 const drone1 = Object.create(drone2);
-drone1.speed = 150; // Aggiungi o sovrascrivi proprietà
+drone1.speed = 150; // Add or overwrite property
 
-// Ottieni le chiavi di drone1
+// Get drone1 keys
 const drone1Keys = Object.keys(drone1); // ['speed']
 
-// Itera su drone1Keys e copia le proprietà in result
+// Iterate on drone1Keys and copy properties to result
 drone1Keys.forEach((key) => {
     result2.push(key, drone1[key]);
 });
@@ -48,11 +48,11 @@ drone1Keys.forEach((key) => {
 console.log(result2); // Output: ['speed', 150]
 
 
-// -_-_-| Mappe |-_-_-
-// Una mappa può sembrare molto simile a un Object in JS.
+// -_-_-| Maps |-_-_-
+// A Map can look very similar to an Object in JS.
 
-new Map(); // Costruttore Map()
-// Una Map() non ha ereditarietà, non ci sono prototipi!
+new Map(); // Map() constructor
+// A Map() has no inheritance, there are no prototypes!
 
 let bestBoxers = new Map();
 bestBoxers.set(1, "The Champion");
@@ -63,36 +63,36 @@ console.log(bestBoxers);
 
 /*
     Output:
-    Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
+    Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
 */
 
 bestBoxers.get(1); // Output: 'The Champion'
 
 
-// -_-_-| Gli insiemi |-_-_-
-// Un insieme è una collezione di valori unici.
+// -_-_-| Sets |-_-_-
+// A set is a collection of unique values.
 
-new Set(); // Creazione di un nuovo insieme tramite il costruttore Set()
+new Set(); // Creating a new set through the Set() constructor
 
-// Accetta anche array ed elimina eventuali ripetizioni di elementi
-const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+// Also accepts arrays and removes any element repetitions
+const repetitiveFruits = ['apple', 'pear', 'apple', 'pear', 'plum', 'apple'];
 const uniqueFruits = new Set(repetitiveFruits);
 console.log(uniqueFruits); // Output: {'apple', 'pear', 'plum'}
 
 
-// -_-_-| Altre strutture dati in JavaScript |-_-_-
+// -_-_-| Other data structures in JavaScript |-_-_-
 
 /*
-    Oltre alle strutture di dati integrate in JavaScript,
-    è possibile costruire strutture di dati non native e personalizzate.
-    Queste strutture di dati sono integrate in modo nativo in alcuni altri linguaggi di programmazione. 
+    In addition to the data structures built into JavaScript,
+    it is possible to build non-native and custom data structures.
+    These data structures are natively integrated in some other programming languages. 
 
-    Alcune strutture di dati più avanzate che non sono state trattate includono: 
+    Some more advanced data structures that were not covered include: 
 
     - Queue 
-    - Elenchi Linked List (singoli e doppi) 
+    - Linked Lists (single and double) 
     - Tree 
-    - Grafici  
+    - Graphs  
 
-    La maggior parte  di queste strutture le ho trattate nel corso di C e C++ presso la Federico II (Informatica) e alla scuola superiore (ISS Pitagora di Pozzuoli, informatica).
+    Most of these structures I covered in the C and C++ course at Federico II (Computer Science) and in high school (ISS Pitagora of Pozzuoli, computer science).
 */

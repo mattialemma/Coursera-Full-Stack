@@ -1,27 +1,27 @@
 
-    -_-_-| Testing E2 EE () | -_-_-
+    -_-_-| E2E Testing () | -_-_-
 
-    Testa l'intero prodotto software finito dal punto di vista dell'utente finale.
+    Tests the entire finished software product from the end user's perspective.
 
 
     -_-_-| Integration testing | -_-_-
 
-    Testano il modo in cui parti del sistema interagiscono con altre  parti del sistema.
-    In altre parole, testano il modo in cui parti separate del software interagiscono tra loro.
-    Sono più veloci e meno costosi dei test E2, ma non altrettanto veloci o economici quanto i test unitari.
+    Tests how parts of the system interact with other parts of the system.
+    In other words, they test how separate parts of the software interact with each other.
+    They are faster and less expensive than E2E tests, but not as fast or economical as unit tests.
 
 
     -_-_-| Unit testing | -_-_-
 
-    Il test unitario è il processo di test delle unità più piccole del codice sorgente in modo isolato.
-    Un buon esempio sono le funzioni.
-    Un'unità è la porzione di codice più piccola che è possibile testare separatamente dal resto dell'app.
-    In pratica, la più piccola unità di codice testabile in Javascript è solitamente una funzione o  un metodo.
+    Unit testing is the process of testing the smallest units of source code in isolation.
+    A good example is functions.
+    A unit is the smallest piece of code that can be tested separately from the rest of the app.
+    In practice, the smallest unit of testable code in JavaScript is usually a function or method.
 
-    I test unitari sono autosufficienti. (self-contained)
-    Sono pensati per testare il codice in modo isolato, preferibilmente separato dal resto del software.
+    Unit tests are self-contained.
+    They are designed to test code in isolation, preferably separate from the rest of the software.
 
 
-    In Jest, il mocking si utilizza tramite le funzioni mock di Jest. 
+    In Jest, mocking is used through Jest's mock functions. 
 
     

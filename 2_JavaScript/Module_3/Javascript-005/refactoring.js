@@ -1,4 +1,4 @@
-// Esercizio: Refactoring di var, let, const
+// Exercise: Refactoring var, let, const
 
 
 // This is the initial code using `var` with some issues to fix.
@@ -26,18 +26,18 @@ PI = 3.14159; // This should throw an error when changed to const
 // 3. Ensure the program works correctly after refactoring.
 
 
-// -_-_-_-| Mia soluzione (Refactored Code) |-_-_-_-
+// -_-_-_-| My solution (Refactored Code) |-_-_-_-
 
-const PI = 3.14159; 
-const x = 10; 
+const PI = 3.14159;
+const x = 10;
 let a = 20;
-let b = 40; 
+let b = 40;
 
 console.log(x);
 console.log(a);
 
 if (true) {
-    let z = 30; 
+    let z = 30;
     console.log(z);
 }
 

@@ -1,10 +1,10 @@
-// Operatore di spread
+// Spread operator
 
-//  È il metodo più breve e semplice per copiare
-//  le proprietà di un oggetto su un oggetto appena creato.
+//  It's the shortest and simplest method to copy
+//  the properties of an object onto a newly created object.
 
 let top3 = [
-    "Napoli",
+    "Naples",
     "Capri",
     "Procida"
 ];
@@ -17,9 +17,9 @@ function showTop3(place1, place2, place3) {
 
 showTop3(top3[0], top3[1], top3[2]);
 
-console.log(); console.log("- - - Con operatore di spread - - -");
-// E se avessi 10 elementi? Sarebbe scocciante elencarli tutti nella chiamata! 
-// Allora uso l'operatore di spread ...
+console.log(); console.log("- - - With spread operator - - -");
+// What if I had 10 elements? It would be annoying to list them all in the call! 
+// So I use the spread operator ...
 
-// Facciamo un test con top3:
+// Let's test with top3:
 showTop3(...top3);

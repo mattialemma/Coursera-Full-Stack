@@ -1,7 +1,7 @@
-// Polimorfismo
+// Polymorphism
 
 /*
-    Comportamenti diversi della stessa funzione a carico di oggetti diversi.
+    Different behaviors of the same function on different objects.
 */
 
 function engineOn(car) {
@@ -9,13 +9,13 @@ function engineOn(car) {
 }
 
 const ferrari = {
-    start: function() {
+    start: function () {
         return "Bruuuuuuum Bruuuuuuum!";
     }
 }
 
 const panda = {
-    start: function() {
+    start: function () {
         return "brhm...";
     }
 }
@@ -23,36 +23,36 @@ const panda = {
 engineOn(panda);
 engineOn(ferrari);
 
-// Altro esempio
+// Another example
 
 /*
-    Se utilizzo il  metodo concat()  su due stringhe,
-    il comportamento è esattamente lo stesso che si avrebbe se utilizzassi l'  operatore +  .
+    If I use the concat() method on two strings,
+    the behavior is exactly the same as if I used the + operator.
 */
 
 "abc".concat("def"); // Output: 'abcdef'
 
 
-// Posso anche usare il  metodo concat()  su due array:
+// I can also use the concat() method on two arrays:
 ["abc"].concat(["def"]); // Output: ['abc', 'def']
 
 
-// Invece "+" forza gli array a diventare stringa
+// Instead "+" forces arrays to become strings
 ["abc"] + ["def"]; // Output: "abc,def"
 
 
 /*
-    Ciò significa che il  metodo concat()  mostra un comportamento polimorfico,
-    poiché si comporta in modo diverso in base al contesto, in questo caso in base
-    ai tipi di dati che gli fornisco. Tuttavia, si noti che l'utilizzo
-    dell'operatore  +  con gli array non esegue una vera concatenazione.
-    Invece, forza gli array in stringhe prima di unirli e gli elementi sono separati da virgole.
-    Questo comportamento è diverso dal  metodo concat()  , che preserva la struttura dell'array.
+    This means that the concat() method shows polymorphic behavior,
+    since it behaves differently based on the context, in this case based
+    on the data types I provide it. However, note that using
+    the + operator with arrays does not perform true concatenation.
+    Instead, it forces the arrays into strings before joining them and the elements are separated by commas.
+    This behavior is different from the concat() method, which preserves the array structure.
 */
 
 
 //______________________________________________________________
-// Esempio di polimorfismo che utilizza le classi in JavaScript:
+// Example of polymorphism using classes in JavaScript:
 
 class Bird {
     useWings() {
@@ -62,7 +62,7 @@ class Bird {
 
 class Eagle extends Bird {
     useWings() {
-        super.useWings(); // La  parola chiave super  richiama i metodi della classe padre.
+        super.useWings(); // The super keyword calls methods from the parent class.
         console.log("Barely flapping!");
     }
 }
@@ -80,44 +80,44 @@ kingPenguin.useWings(); // "Diving!"
 
 //______________________________________________________________
 console.log("--------"); console.log();
-// Esercizio personale di test:
+// Personal test exercise:
 
-class Persona {
-    constructor(nome,cognome){
-        this.nome = nome;
-        this.cognome = cognome;
+class Person {
+    constructor(name, surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
-    saluta(nome) {
-        console.log("Ciao", nome, "da", this.nome, this.cognome + "!")
-    }
-}
-
-class Studente extends Persona {
-    constructor(nome, cognome, matricola){
-        super(nome,cognome) // Obbligatorio
-        this.matricola = matricola;
-    }
-    
-    saluta(nome) {
-        super.saluta(nome);
-        console.log("Sono un umile studente.");
+    greet(name) {
+        console.log("Hello", name, "from", this.name, this.surname + "!")
     }
 }
 
-class Prof extends Persona {
-    constructor(nome, cognome, soldi) {
-        super(nome, cognome);
-        this.soldi = soldi;
+class Student extends Person {
+    constructor(name, surname, studentId) {
+        super(name, surname) // Mandatory
+        this.studentId = studentId;
     }
 
-    saluta(nome, studente) {
-        super.saluta(nome);
-        console.log("Io ho dei soldi:",this.soldi,"Euro, mentre", studente.nome, "no");
+    greet(name) {
+        super.greet(name);
+        console.log("I am a humble student.");
     }
 }
 
-var studenteMattia = new Studente("Mattia", "Lemma", "N86005170");
-var profMario = new Prof("Mario", "Rossi", 1500);
-studenteMattia.saluta("Mario");
-profMario.saluta("Mattia", studenteMattia);
+class Professor extends Person {
+    constructor(name, surname, money) {
+        super(name, surname);
+        this.money = money;
+    }
+
+    greet(name, student) {
+        super.greet(name);
+        console.log("I have money:", this.money, "Euro, while", student.name, "doesn't");
+    }
+}
+
+var studentMattia = new Student("Mattia", "Lemma", "N86005170");
+var profMario = new Professor("Mario", "Rossi", 1500);
+studentMattia.greet("Mario");
+profMario.greet("Mattia", studentMattia);

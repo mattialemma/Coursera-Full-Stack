@@ -1,9 +1,9 @@
-// Esempio di test
+// Test example
 
 function addFive(val) {
     return val + 5;
 }
 
-module.exports = addFive; // La funzione è utilizzabile in altre pagine tramite import
+module.exports = addFive; // The function is usable in other pages via import
 
 

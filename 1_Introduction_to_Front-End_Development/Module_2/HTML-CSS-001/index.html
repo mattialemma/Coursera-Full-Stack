@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Il mio primo documento HTML</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
 
-    <body>
-        <p> Ho creato con successo il mio primo documento </p>
-        <p id="p1css"> Altro testo, ma colorato con il CSS </p> <!-- ID selector -->
+<head>
+    <title>My first HTML document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-<br>
-        <div id="p2css">
-            <h1> Titolo </h1>
-            <div>
-                <h5>Titolo2</h5>
-                <h3>Titolo3</h3>
-            </div>
+<body>
+    <p>I successfully created my first document </p>
+    <p id="p1css"> Other text, but colored with CSS </p> <!-- ID selector -->
+
+    <br>
+    <div id="p2css">
+        <h1> Title </h1>
+        <div>
+            <h5>Title2</h5>
+            <h3>Title3</h3>
         </div>
-<br>
-        <div id="p3css" class="test">
-            <h1> TITOLO </h1>
-            <div>
-                <h5>TITOLO2</h5>
-                <p class="test2"> TEST! </p>
-                <p>Test</p>
-            </div>
-            <h1>Titolo 4</h1>
+    </div>
+    <br>
+    <div id="p3css" class="test">
+        <h1> TITLE </h1>
+        <div>
+            <h5>TITLE2</h5>
+            <p class="test2"> TEST! </p>
+            <p>Test</p>
         </div>
+        <h1>Title 4</h1>
+    </div>
 
-<br>
-        
- <!-- Esempi d link con foto e testi -->
-        <a href="page2.html">  <img src="pasta.jpg" width="140" height="135" alt="Bella pasta cliccabile"><a/> <br>
-        <a href="page2.html"> testo cliccabile </a>
-        <a href="page2.html"> 
+    <br>
+
+    <!-- Examples of links with images and text -->
+    <a href="page2.html"> <img src="pasta.jpg" width="140" height="135" alt="Nice clickable pasta"><a /> <br>
+        <a href="page2.html"> clickable text </a>
+        <a href="page2.html">
             <ol>
-                <li>A cliccabile</li>
-                <li>B cliccabile</li>
+                <li>A clickable</li>
+                <li>B clickable</li>
             </ol>
         </a>
-       
 
-<!-- Immagine -->
-    <img src="pasta.jpg" width="140" height="135" alt="Bella pasta non cliccabile">
 
-<!-- Esempi di liste testuali -->
+        <!-- Image -->
+        <img src="pasta.jpg" width="140" height="135" alt="Nice non-clickable pasta">
+
+        <!-- Examples of text lists -->
         <ol>
             <li>a</li>
             <li>b</li>
@@ -55,11 +56,11 @@
             <li>b</li>
         </ul>
 
-<!-- Tabelle -->
+        <!-- Tables -->
         <table>
             <tr>
-                <th>Dato1</th>
-                <th>Dato2</th>
+                <th>Data1</th>
+                <th>Data2</th>
             </tr>
             <tr>
                 <td>elem1</td>
@@ -71,21 +72,22 @@
             </tr>
         </table>
 
-<!-- Form -->
-    <br>
-    <form action="/registration" method="POST">
-        <label for="username">Username:</label><br>
-        <input type="text" name="username"><br>
-        
-        <label for="fruit">Scegli frutta:</label>
-        <select name="fruit" id="fruit" >
-         <option value="banana" selected>Banana</option>
-         <option value="mela" selected>Mela</option>
-         <option value="pera">Pera</option>
-        </select> <br>
-        <input type="submit"> 
-    </form>
+        <!-- Form -->
+        <br>
+        <form action="/registration" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username"><br>
+
+            <label for="fruit">Choose fruit:</label>
+            <select name="fruit" id="fruit">
+                <option value="banana" selected>Banana</option>
+                <option value="apple" selected>Apple</option>
+                <option value="pear">Pear</option>
+            </select> <br>
+            <input type="submit">
+        </form>
 
 
-    </body>
+</body>
+
 </html>

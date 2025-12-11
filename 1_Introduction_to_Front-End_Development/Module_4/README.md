@@ -1,13 +1,13 @@
-16/11/2025 - Mattia Lemma
+11/16/2025 - Mattia Lemma
 
-In questa parte del corso ho effettuato diversi test pratici utilizzando Bootstrap, con l’obiettivo di comprendere e applicare i componenti e le classi fondamentali del Framework.
+In this part of the course, I performed several practical tests using Bootstrap, with the goal of understanding and applying the fundamental components and classes of the framework.
 
-Sono stati messi in pratica:
+The following were put into practice:
 
-L’utilizzo del grid system per creare layout responsive
-L’impiego di container, row e col
-La personalizzazione tramite classi di utilità (spaziature, colori, display, ecc.)
-L’integrazione di componenti come navbar, card, button, form
-I principi base del responsive design
+Using the grid system to create responsive layouts
+Using containers, rows, and cols
+Customization through utility classes (spacing, colors, display, etc.)
+Integration of components like navbar, card, button, form
+Basic principles of responsive design
 
-Questi test mi hanno permesso di acquisire familiarità con la struttura modulare di Bootstrap e con la creazione rapida di interfacce moderne e adattabili ai vari dispositivi.
+These tests allowed me to become familiar with Bootstrap's modular structure and with the rapid creation of modern interfaces adaptable to various devices.

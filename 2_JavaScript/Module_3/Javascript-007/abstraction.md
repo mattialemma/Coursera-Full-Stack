@@ -1,14 +1,14 @@
-    Astrazione
+    Abstraction
 
-    L'astrazione consiste nello scrivere il codice in un modo che lo renda più generalizzato.
+    Abstraction consists of writing code in a way that makes it more generalized.
 
-    L'astrazione consiste nell'estrarre il  concetto  di ciò che si sta cercando di fare, 
-    piuttosto che occuparsi di una manifestazione specifica di quel concetto.
-    + Pensi al “cosa”, non al “come”.
-      es: voglio cucinare.
+    Abstraction consists of extracting the concept of what you are trying to do, 
+    rather than dealing with a specific manifestation of that concept.
+    + You think about "what", not "how".
+      e.g.: I want to cook.
 
-    L'incapsulamento consiste nel non avere accesso o non preoccuparsi
-    del funzionamento interno di alcune implementazioni.
-    + Pensi al “come usarlo”, non al “come è fatto dentro”.
-      es: il forno funziona, ma non so com'è fatto dentro.
+    Encapsulation consists of not having access to or not worrying about
+    the internal workings of some implementations.
+    + You think about "how to use it", not "how it's made inside".
+      e.g.: the oven works, but I don't know how it's made inside.
 

@@ -1,11 +1,11 @@
 /*
-    Il metodo random della libreria Math consente di generare
-    un numero casuale compreso tra 0 e 0,99.
+    The random method of the Math library allows you to generate
+    a random number between 0 and 0.99.
 */
 
-var decimal = Math.random(); 
+var decimal = Math.random();
 console.log("A", decimal);
-console.log("B", decimal*10); // Rappresento i numeri da 0,0 fino a 9,9999...
-console.log("C", decimal*11); // Rapresenta i numeri da 0,0 fino a 10,9999...
-console.log("D", Math.floor(decimal*11)); // Rappresenta i numeri interi da 0 a 10 (incluso)
-console.log("E", Math.ceil(2.5)); // Arrotonda a 3 (verso l'alto)
+console.log("B", decimal * 10); // Represents numbers from 0.0 up to 9.9999...
+console.log("C", decimal * 11); // Represents numbers from 0.0 up to 10.9999...
+console.log("D", Math.floor(decimal * 11)); // Represents integers from 0 to 10 (inclusive)
+console.log("E", Math.ceil(2.5)); // Rounds to 3 (upwards)

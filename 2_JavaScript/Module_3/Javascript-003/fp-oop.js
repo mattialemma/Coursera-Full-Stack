@@ -1,10 +1,10 @@
 
-// -_-_-_-_-_-_-_-| Programmazione OOP |-_-_-_-_-_-_-_-
+// -_-_-_-_-_-_-_-| OOP Programming |-_-_-_-_-_-_-_-
 
 var virtualPet = {
     sleepy: true,
     nap: function () {
-        this.sleepy = false // this. si riferisce alla proprietà sleepy di virtualPet
+        this.sleepy = false // this. refers to the sleepy property of virtualPet
     }
 }
 
@@ -13,12 +13,12 @@ virtualPet.nap();
 console.log(virtualPet.sleepy) // Output: false
 
 
-/* -_-_-_-_-_-_-_-| Programmazione FP |-_-_-_-_-_-_-_- 
+/* -_-_-_-_-_-_-_-| FP Programming |-_-_-_-_-_-_-_- 
 
-+ FUNZIONI DI PRIMA CLASSE
-Una funzione in JavaScript è un valore che possiamo:
-- Passare ad altre funzioni, salvare in una variabile, restituire ad altre funzioni
-In JavaScript è normale passare una funzione o la sua invocazione come argomento a un'altra funzione.
++ FIRST-CLASS FUNCTIONS
+A function in JavaScript is a value that we can:
+- Pass to other functions, save in a variable, return to other functions
+In JavaScript it is normal to pass a function or its invocation as an argument to another function.
 */
 
 function addTwoNums(a, b) {
@@ -26,47 +26,47 @@ function addTwoNums(a, b) {
 }
 
 function randomNum() {
-    return Math.floor((Math.random() * 10) + 1); // Restituisce numero casuale tra 1 e 10
+    return Math.floor((Math.random() * 10) + 1); // Returns random number between 1 and 10
 }
 
-function specificNum() { return 42 }; // Restituisce il numero 42
+function specificNum() { return 42 }; // Returns the number 42
 
 var useRandom = true;
 
 var getNumber;
 
 if (useRandom) {
-    getNumber = randomNum // getNumber diventa la funzione randomNum 
+    getNumber = randomNum // getNumber becomes the randomNum function 
 } else {
-    getNumber = specificNum // getNumber diveta la funzione specificNum
+    getNumber = specificNum // getNumber becomes the specificNum function
 }
 
-addTwoNums(getNumber(), getNumber()) // Chiamo la funzione che ho selezionato (useRandom oppure specificNum)
+addTwoNums(getNumber(), getNumber()) // Call the function I selected (useRandom or specificNum)
 
-/* A riga 39 e 41:s
-L'intera dichiarazione della funzione randomNum viene salvata nella variabile getNumber 
-getNumber contiene la funzione, e non il valore restituito dalla funzione. */
+/* At lines 39 and 41:
+The entire randomNum function declaration is saved in the getNumber variable 
+getNumber contains the function, not the value returned by the function. */
 
 
-/* + FUNZIONI DI ORDINE SUPERIORE
-Si tratta di una funzione che presenta una o entrambe le seguenti caratteristiche:
-- Accetta altre funzioni come argomenti.
-- Quando viene invocata restituisce funzioni, trattandole come valori.
+/* + HIGHER-ORDER FUNCTIONS
+This is a function that has one or both of the following characteristics:
+- Accepts other functions as arguments.
+- When invoked returns functions, treating them as values.
 */
 
-getNumber1 = randomNum; // Number1 diventa la funzione randomNum()
-getNumber2 = randomNum; // Number2 diventa la funzione randomNum()
+getNumber1 = randomNum; // Number1 becomes the randomNum() function
+getNumber2 = randomNum; // Number2 becomes the randomNum() function
 
 function addTwoNums(getNumber1, getNumber2) {
     console.log(getNumber1() + getNumber2());
 }
 
 
-/* + FUNZIONI PURE ed effetti collaterali
-Una funzione pura restituisce lo stesso identico risultato a patto che le vengano dati gli stessi valori.
+/* + PURE FUNCTIONS and side effects
+A pure function returns the exact same result as long as it is given the same values.
 */
 
-// Esempio di funzione pura
+// Example of pure function
 function addTwoNums(a, b) {
-    return a + b; // Es: 5 + 6 sarà sempre 11
+    return a + b; // E.g.: 5 + 6 will always be 11
 }

@@ -1,13 +1,13 @@
-// Esercitazione di laboratorio su stringhe, array e oggetti
+// Laboratory exercise on strings, arrays and objects
 
-// Esercizio 1
+// Exercise 1
 var clothes = [];
-clothes.push("maglietta", "guanti", "sciarpa", "mutanda", "cravatta");
+clothes.push("shirt", "gloves", "scarf", "underwear", "tie");
 clothes.pop();
-clothes.push("cappellino elegante");
+clothes.push("elegant hat");
 console.log("Array[3]: " + clothes[3]);
 
 var favCar = {};
-favCar.color = "rosso";
-favCar.convertibile = true;
+favCar.color = "red";
+favCar.convertible = true;
 console.log(favCar);

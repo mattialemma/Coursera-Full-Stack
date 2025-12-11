@@ -1,5 +1,5 @@
-// In JavaScript un iterabile è  qualsiasi tipo di dato
-// su cui è possibile iterare  utilizzando un ciclo for.
+// In JavaScript an iterable is any data type
+// that can be iterated over using a for loop.
 
 console.log("-----");
 
@@ -17,60 +17,60 @@ for (let i = 0; i < array.length; i++) {
 
 console.log("-----");
 
-// Nonostante il comportamento simile, le stringhe NON sono array. 
-// Vediamo un esempio che funziona con gli array ma non con le stringhe:
+// Despite similar behavior, strings are NOT arrays. 
+// Let's see an example that works with arrays but not with strings:
 
-var stringa = "Hello ";
-// console.log(stringa.pop()); // Errore di compilazione | (stringa.pop is not a function)
+var string = "Hello ";
+// console.log(string.pop()); // Compilation error | (string.pop is not a function)
 
-// Ciò significa che non posso eseguire tutti i metodi array sulle stringhe.
+// This means I cannot execute all array methods on strings.
 
-var stringa2 = "Mattia Lemma";
-console.log(stringa + stringa2);
-console.log(stringa.concat(stringa2));
+var string2 = "Mattia Lemma";
+console.log(string + string2);
+console.log(string.concat(string2));
 
 // -_-_-_-_-_-_ -_-_-_-_-_-_ -_-_-_-_-_-_ -_-_-_-_-_-_ -_-_-_-_-_-_
 
-// Metodi utili per le stringhe
+// Useful methods for strings
 
 var greet = "Hello, ";
 var place = "World";
 
-greet.length; // Output: 7 (include spazi)
-greet.charAt(0); // Output: 'H' | Legge un singolo carattere in una stringa
+greet.length; // Output: 7 (includes spaces)
+greet.charAt(0); // Output: 'H' | Reads a single character in a string
 
-"Wo".concat("rl").concat("d"); // Output: 'World' | .concat() Concatena due stringhe
+"Wo".concat("rl").concat("d"); // Output: 'World' | .concat() Concatenates two strings
 greet.concat(place); // Output: 'Hello, World'
 
-"ho-ho-ho".indecOf('h'); // Output: 0 | Restituisce la posizione della prima corrispondenza con un carattere
+"ho-ho-ho".indexOf('h'); // Output: 0 | Returns the position of the first match with a character
 "ho-ho-ho".indexOf('o'); // Output: 1
 
-"ho-ho-ho".lastIndexOf('o'); // Output: 7 | Trova l'ultima corrispondenza
+"ho-ho-ho".lastIndexOf('o'); // Output: 7 | Finds the last match
 
-"ho-ho-ho".split("-"); // Output: ['ho', 'ho'. 'ho'] | Sminuzza la stringa in un array di sottostringhe
+"ho-ho-ho".split("-"); // Output: ['ho', 'ho', 'ho'] | Splits the string into an array of substrings
 
-// Esempio applicazione di .split()
-const risultato = "Ciao Mattia Lemma".split(" ");
-console.log(risultato); // ['Ciao', 'Mattia'. 'Lemma']
+// Example application of .split()
+const result = "Hello Mattia Lemma".split(" ");
+console.log(result); // ['Hello', 'Mattia', 'Lemma']
 
-// Split senza argomenti
-"Mattia".split(); // Output; ["Mattia"]
+// Split without arguments
+"Mattia".split(); // Output: ["Mattia"]
 
-// Split in singoli caratteri
+// Split into individual characters
 "Mattia".split(""); // Output: ["M", "a", "t", "t", "i", "a"]
 
 greet.toUpperCase(); // Output: "HELLO, "
 greet.toLowerCase(); // Output: "hello, "
 
-// -_-_-_-_-_-_-| RICAPITOLAZIONE |_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+// -_-_-_-_-_-_-| RECAP |_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-var stringa = "Mattia Lemma";
+var string = "Mattia Lemma";
 
-stringa.charAt();
-stringa.concat();
-stringa.indexOf();
-stringa.lastIndexOf();
-stringa.split();
-stringa.toUpperCase();
-stringa.toLowerCase();
+string.charAt();
+string.concat();
+string.indexOf();
+string.lastIndexOf();
+string.split();
+string.toUpperCase();
+string.toLowerCase();
 

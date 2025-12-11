@@ -1,19 +1,19 @@
-// Valori di ritorno delle funzioni
+// Function return values
 
-// console.log è stata costruita con l'intenzione di non avere il valore di ritorno impostato esplicitamente.
-console.log("Carissimo"); // Output: Carissimo e undefined
+// console.log was built with the intention of not having the return value explicitly set.
+console.log("Dear"); // Output: Dear and undefined
 
-// In questo modo il valore viene visualizzato nella console di DevTools, ma viene anche restituito
+// In this way the value is displayed in the DevTools console, but is also returned
 function consoleLog(val) {
     console.log(val);
     return val;
 }
 
-var parola = "Carissimo!";
-consoleLog(parola); // Output: Carissimo e 'Carissimo!'
+var word = "Dear!";
+consoleLog(word); // Output: Dear and 'Dear!'
 
 
-// Posso creare una funzione che restituisce un Object:
+// I can create a function that returns an Object:
 
 function objectMaker(val) {
     return {
@@ -21,16 +21,16 @@ function objectMaker(val) {
     }
 }
 
-var valore = objectMaker(20);
-console.log(valore);    // Output: { prop: 20 }
+var value = objectMaker(20);
+console.log(value);    // Output: { prop: 20 }
 
-var valore2 = objectMaker(Math.cbrt(27));
-console.log("Radice cubica di 27: ", valore2);  // Output: Racide cubica di 27: { prop: 3 }
+var value2 = objectMaker(Math.cbrt(27));
+console.log("Cube root of 27: ", value2);  // Output: Cube root of 27: { prop: 3 }
 
 
-// Altro esempio
+// Another example
 
-// Concatenamento di funzioni e restituzione di valori
+// Function chaining and value return
 let result = objectMaker(doubleIt(5));
 console.log(result); // { prop: 10 }
 

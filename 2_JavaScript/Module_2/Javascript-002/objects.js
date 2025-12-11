@@ -6,7 +6,7 @@ var storeManager = { // Object representing a store manager
     store: "Tech Gadgets",
 }
 
-console.log("Store Manager Details:"); 
+console.log("Store Manager Details:");
 console.log("Name:", storeManager.name); // Accessing object property using dot notation
 console.log("Age:", storeManager.age);
 console.log("Store:", storeManager.store);
@@ -24,7 +24,7 @@ storeManager.addPropriety = "New Value"; // Adding a new property to the object
 console.log("After adding a new property:");
 console.log(storeManager); // Printing the updated object
 
-// Posso accedere alle proprieta' anche usando le parentesi quadre
+// I can also access properties using square brackets
 console.log("Accessing properties using bracket notation:");
 console.log("Name:", storeManager["name"]);
 storeManager["experience"] = 10; // Adding another property using bracket notation
@@ -35,21 +35,21 @@ console.log(storeManager); // Printing the final state of the object
 
 console.log("-----");
 
-// Con le parentesti quadre posso aggiungere spazi nei nomi delle proprieta'
+// With square brackets I can add spaces in property names
 storeManager["years of service"] = 15;
 console.log("After adding 'years of service' property:");
-console.log(storeManager); 
+console.log(storeManager);
 
 console.log("-----");
 
-// Con le parentesi quadre posso aggiungere numeri come nomi delle proprieta'
+// With square brackets I can add numbers as property names
 storeManager[2024] = "Current Year";
 console.log("After adding '2024' property:");
 console.log(storeManager);
 
 console.log("-----");
 
-// Esempio di iterazione sulle proprieta' di un oggetto usando un array di chiavi
+// Example of iterating over object properties using an array of keys
 var arrOfKeys = ['speed', 'altitude', 'color'];
 var drone = {
     speed: 100,
@@ -57,7 +57,7 @@ var drone = {
     color: "red"
 }
 for (var i = 0; i < arrOfKeys.length; i++) {
-    console.log(drone[arrOfKeys[i]]) // L'operatore [] e' utile qui per accedere dinamicamente alle proprieta'
+    console.log(drone[arrOfKeys[i]]) // The [] operator is useful here to dynamically access properties
 }
 
 console.log("-----");

@@ -1,40 +1,40 @@
-// Template letterali
-// I template letterali sono un modo alternativo di lavorare con le stringhe
+// Template literals
+// Template literals are an alternative way of working with strings
 
 
-// Prima di JavScript ES6 l'unico modo per costruire stringhe era quello di delimitarlo con apici '' o ""
+// Before JavaScript ES6 the only way to build strings was to delimit them with quotes '' or ""
 'Hello, World!';
 "Hello, World!";
 
-// ES6 ha introdotto l'uso dei caratteri backtick come delimitatori:  
+// ES6 introduced the use of backtick characters as delimiters:  
 `Hello, World!`
 
-// Con i template leterali, un'espressione può essere incorporata in un segnaposto designato da ${ }
+// With template literals, an expression can be embedded in a placeholder designated by ${ }
 let greet = "Hello";
 let place = "World";
 console.log(`Heyy ${greet} ${place}!`);
 
-// Al posto di scrivere:
+// Instead of writing:
 let greet2 = "Hello";
 let place2 = "World";
 console.log("Heyy", greet2, place + "!");
 
 /*
-    L'uso dei template letterali consente ai programmatori di incorporare le variabili tra i backtick
-    senza la necessità di usare l'operatore + e gli apici "" o '' per delimitare i letterali di stringa
-    dalle variabili. 
+    The use of template literals allows programmers to embed variables between backticks
+    without the need to use the + operator and quotes "" or '' to delimit string literals
+    from variables. 
 */
 
-// Con i template letterali posso andare accapo:
-let variabile = 
-`Ciao
-carissimo
+// With template literals I can go to a new line:
+let variable =
+    `Hello
+dear
 JeJeJe!`;
 
-console.log(variabile);
+console.log(variable);
 
-// Cosa che non posso fare con "" e ''
+// Which I cannot do with "" and ''
 
-// La sintassi dei backtick consente di valutare espressioni:
+// The backtick syntax allows evaluating expressions:
 console.log(`${1 + 1 + 1 + 1 + 1} stars!`); // Output: 5 stars!
 
