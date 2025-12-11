@@ -83,7 +83,7 @@ Each module contains:
 **Mattia Lemma**
 - 🔗 GitHub: [@mattialemma](https://github.com/mattialemma)
 - 📧 Email: info@mattialemma.it, mattialemma2017@gmail.com
-- 🌐 Web: [Redhorn] (https://redhorn.it)
+- 🌐 Web: [RedHorn] (https://redhorn.it)
 
 ---
 
