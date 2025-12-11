@@ -2,17 +2,17 @@
 
 [![Coursera](https://img.shields.io/badge/Coursera-Meta%20Full%20Stack-0056D2?style=flat&logo=coursera&logoColor=white)](https://www.coursera.org/professional-certificates/meta-front-end-developer)
 [![GitHub](https://img.shields.io/badge/GitHub-mattialemma-181717?style=flat&logo=github)](https://github.com/mattialemma/Coursera-Full-Stack)
-[![Progress](https://img.shields.io/badge/Progress-3%2F7%20Corsi-success?style=flat)]()
+[![Progress](https://img.shields.io/badge/Progress-3%2F7%20Courses-success?style=flat)]()
 
-Questo repository contiene il materiale prodotto durante il **Meta Full Stack Developer Professional Certificate** su Coursera.
+This repository contains the material produced during the **Meta Full Stack Developer Professional Certificate** on Coursera.
 
-L'intero percorso è organizzato in corsi, ciascuno suddiviso in moduli, che a loro volta comprendono esercizi, progetti e appunti.
+The entire program is organized into courses, each subdivided into modules, which in turn include exercises, projects, and notes.
 
-**Obiettivo**: Documentare in modo chiaro e ordinato il percorso completo, creando una base di riferimento solida per studi futuri e portfolio professionale.
+**Goal**: Document the complete journey in a clear and organized way, creating a solid reference base for future studies and professional portfolio.
 
 ---
 
-## 📚 Struttura del Repository
+## 📚 Repository Structure
 
 ```
 📁 Coursera-Full-Stack/
@@ -32,60 +32,60 @@ L'intero percorso è organizzato in corsi, ciascuno suddiviso in moduli, che a l
 └── 📝README.md
 ```
 
-Ogni modulo contiene:
-- 📝 **Esercizi pratici** - Codice e soluzioni
-- 📖 **Appunti** - Note e concetti chiave
-- 🎯 **Progetti** - Progetti completati
+Each module contains:
+- 📝 **Practical exercises** - Code and solutions
+- 📖 **Notes** - Notes and key concepts
+- 🎯 **Projects** - Completed projects
 
 ---
 
-## 🎓 Programma del Corso
+## 🎓 Course Program
 
 ### ✅ 1️⃣ Introduction to Front-End Development
-- Concetti base del web (HTTP, DNS, browser)
-- HTML5 e semantica
-- CSS3 e responsive design
-- Introduzione a JavaScript
+- Basic web concepts (HTTP, DNS, browser)
+- HTML5 and semantics
+- CSS3 and responsive design
+- Introduction to JavaScript
 
 ### ✅ 2️⃣ Programming with JavaScript
-- Variabili, tipi di dati, operatori
-- Funzioni, scope e closure
-- Array, oggetti e metodi
-- Manipolazione del DOM
+- Variables, data types, operators
+- Functions, scope and closure
+- Arrays, objects and methods
+- DOM manipulation
 - ES6+ features
 
 ### 🔄 3️⃣ Version Control (Git & GitHub)
 - **Git**: `init`, `clone`, `add`, `commit`, `diff`, `blame`
-- **Branching**: creazione, merge, risoluzione conflitti
+- **Branching**: creation, merge, conflict resolution
 - **GitHub**: repository, fork, pull request, issues
-- **Workflow**: collaborazione e best practices
+- **Workflow**: collaboration and best practices
 
 ### 📋 4️⃣ React Basics
-- Componenti funzionali e class components
-- Props e State management
-- Hooks principali (useState, useEffect, useContext)
-- Routing con React Router
-- Gestione eventi e form
+- Functional components and class components
+- Props and State management
+- Main Hooks (useState, useEffect, useContext)
+- Routing with React Router
+- Event and form handling
 
 ### 📋 5️⃣ Back-End Development (Python & Django)
-- Python: sintassi, funzioni, OOP
+- Python: syntax, functions, OOP
 - Django: views, templates, ORM
-- Creazione API REST
-- Autenticazione e autorizzazione
+- REST API creation
+- Authentication and authorization
 
 ### 📋 6️⃣ Database & Data Modeling
 - SQL fundamentals
 - MySQL
-- Relazioni e normalizzazione
+- Relationships and normalization
 - Query optimization
 
 ### 📋 7️⃣ Capstone Project
-- Applicazione full stack completa
+- Complete full stack application
 - Front-end in React
 - Back-end in Django
-- Database MySQL
-- Autenticazione utenti
-- Deploy su cloud
+- MySQL database
+- User authentication
+- Cloud deployment
 
 ---
 
@@ -111,21 +111,24 @@ Ogni modulo contiene:
 
 ---
 
-## 📈 Progresso
+## 📈 Progress
 
-| Corso | Stato | Completamento |
-|-------|-------|---------------|
-| 1️⃣ Introduction to Front-End | ✅ Completato | 100% |
-| 2️⃣ Programming with JavaScript | ✅ Completato | 100% |
-| 3️⃣ Version Control (Git & GitHub) | ✅ Completato | 100% |
-| 4️⃣ React Basics | 📋 Da iniziare | 0% |
-| 5️⃣ Back-End (Python & Django) | 📋 Da iniziare | 0% |
-| 6️⃣ Database & Data Modeling | 📋 Da iniziare | 0% |
-| 7️⃣ Capstone Project | 📋 Da iniziare | 0% |
+| Course | Status | Completion |
+|-------|-------|-----------------|
+| 1️⃣ Introduction to Front-End | ✅ Completed | 100% |
+| 2️⃣ Programming with JavaScript | ✅ Completed | 100% |
+| 3️⃣ Version Control (Git & GitHub) | ✅ Completed | 100% |
+| 4️⃣ HTML and CSS in depth | 📋 In progress | 10% |
+| 5️⃣ React Basics | 📋 To start | 0% |
+| 6️⃣ Advanced React | 📋 To start | 0% |
+| 7️⃣ Programming in Python | 📋 To start | 0% |
+| 8️⃣ Introduction to Databases for Back-End Development | 📋 To start | 0% |
+| 9️⃣ Django Web Framework | 📋 To start | 0% |
+| 🔟 APIs | 📋 To start | 0% |
 
 ---
 
-## 📫 Contatti
+## 📫 Contact
 
 **Mattia Lemma**
 - 🔗 GitHub: [@mattialemma](https://github.com/mattialemma)
@@ -133,6 +136,6 @@ Ogni modulo contiene:
 
 ---
 
-## 📄 Licenza
+## 📄 License
 
-Questo repository è a scopo educativo e contiene materiale del corso Coursera Meta Full Stack Developer.
+This repository is for educational purposes and contains material from the Coursera Meta Full Stack Developer course.
