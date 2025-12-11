@@ -39,56 +39,6 @@ Each module contains:
 
 ---
 
-## 🎓 Course Program
-
-### ✅ 1️⃣ Introduction to Front-End Development
-- Basic web concepts (HTTP, DNS, browser)
-- HTML5 and semantics
-- CSS3 and responsive design
-- Introduction to JavaScript
-
-### ✅ 2️⃣ Programming with JavaScript
-- Variables, data types, operators
-- Functions, scope and closure
-- Arrays, objects and methods
-- DOM manipulation
-- ES6+ features
-
-### 🔄 3️⃣ Version Control (Git & GitHub)
-- **Git**: `init`, `clone`, `add`, `commit`, `diff`, `blame`
-- **Branching**: creation, merge, conflict resolution
-- **GitHub**: repository, fork, pull request, issues
-- **Workflow**: collaboration and best practices
-
-### 📋 4️⃣ React Basics
-- Functional components and class components
-- Props and State management
-- Main Hooks (useState, useEffect, useContext)
-- Routing with React Router
-- Event and form handling
-
-### 📋 5️⃣ Back-End Development (Python & Django)
-- Python: syntax, functions, OOP
-- Django: views, templates, ORM
-- REST API creation
-- Authentication and authorization
-
-### 📋 6️⃣ Database & Data Modeling
-- SQL fundamentals
-- MySQL
-- Relationships and normalization
-- Query optimization
-
-### 📋 7️⃣ Capstone Project
-- Complete full stack application
-- Front-end in React
-- Back-end in Django
-- MySQL database
-- User authentication
-- Cloud deployment
-
----
-
 ## 🛠️ Tech Stack
 
 ### Front-End
