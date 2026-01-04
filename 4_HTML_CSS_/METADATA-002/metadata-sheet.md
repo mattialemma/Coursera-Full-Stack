@@ -2,8 +2,8 @@
 
 ## HTML <meta> tags
 
-Earlier in the course, you learned about meta tags and how you can leverage them to convey information to search engines
-to better categorize your pages. We recommend that you keep this cheat sheet handy when building your web applications.
+Earlier in the course, we learned about meta tags and how you can leverage them to convey information to search engines
+to better categorize your pages. 
 The structure of a meta tag is as follows.
 
 #### Name
