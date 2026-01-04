@@ -68,7 +68,7 @@ you have made certain changes
 
 ---
 
-## <meta http-equiv="..."/> tags
+## <meta_http-equiv="..."/>_tags
 
 `
 <meta http-equiv="content-type" content="text/html">` specifies the format of the document returned by the server
