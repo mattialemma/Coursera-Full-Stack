@@ -9,13 +9,16 @@
 
 <body>
     <!-- VIDEO TAG -->
-    <video controls width="1920" height="1080">
+    <video controls width="1920" height="1080" muted autoplay>
         <!-- "controls" allows to control the video (like play, pause, volume, etc.)-->
+        <!-- "muted" allows the video to play without sound-->
+        <!-- "autoplay" allows the video to play automatically-->
         <source src="video.mp4" type="video/mp4">
     </video>
 
     <!-- AUDIO TAG -->
-    <audio>
+    <audio loop controls>
+        <!-- "loop" allows the audio to play in a loop, "controls" allows to control the audio (like play, pause, volume, etc.)-->
         <source src="audio.mp3" type="audio/mpeg">
     </audio>
 </body>
