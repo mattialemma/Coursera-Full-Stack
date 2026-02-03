@@ -1,0 +1,24 @@
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 1s infinite;
+    animation-direction: alternate;
+    transition: 4s;
+}
+
+#ball:hover {
+    animation-play-state: paused;
+    background-color: rgb(6, 185, 92);
+}
