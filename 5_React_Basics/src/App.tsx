@@ -35,7 +35,7 @@ function App() {
                                 className="p-4 bg-purple-600 hover:bg-purple-500 rounded-lg transition-all hover:scale-105 text-left"
                             >
                                 <h3 className="font-bold mb-1">🏋️ Exercise 01</h3>
-                                <p className="text-sm text-purple-200">Props</p>
+                                <p className="text-sm text-purple-200">First Component</p>
                             </button>
 
                             {/* Exercise 02 Card */}
