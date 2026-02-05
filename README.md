@@ -68,7 +68,7 @@ Each module contains:
 | 1️⃣ Introduction to Front-End | ✅ Completed | 100% |
 | 2️⃣ Programming with JavaScript | ✅ Completed | 100% |
 | 3️⃣ Version Control (Git & GitHub) | ✅ Completed | 100% |
-| 4️⃣ HTML and CSS in depth | 📋 In progress | 99% |
+| 4️⃣ HTML and CSS in depth | ✅ Completed | 100% |
 | 5️⃣ React Basics | 📋 To start | 0% |
 | 6️⃣ Advanced React | 📋 To start | 0% |
 | 7️⃣ Programming in Python | 📋 To start | 0% |

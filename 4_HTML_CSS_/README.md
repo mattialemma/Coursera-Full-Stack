@@ -1,7 +1,7 @@
 # 2️⃣ HTML and CSS in Depth
 
-**Completion Date**: ---
-**Status**:  Work in progress
+**Completion Date**: 05/02/2026
+**Status**:  Completed
 
 ## Link, Visited, Hover, Active (LVHA)
 
