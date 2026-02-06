@@ -1,0 +1,13 @@
+# React Start
+
+## npm install
+
+```bash
+npm install
+```
+
+## Installing React
+
+```bash
+npm init react-app name-of-your-project
+```

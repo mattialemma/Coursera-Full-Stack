@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
 // Import Exercise components
-import Exercise01 from './React_Basics_01/Exercises/Exercise01'
-import Exercise02 from './React_Basics_01/Exercises/Exercise02'
-import Exercise03 from './React_Basics_01/Exercises/Exercise03'
+// Import Exercise components
+import Exercise01 from './React_Basics_01/Exercises/01/Exercise01'
+import Exercise02 from './React_Basics_01/Exercises/02/Exercise02'
+import Exercise03 from './React_Basics_01/Exercises/03/Exercise03'
 
 type View = 'menu' | 'ex01' | 'ex02' | 'ex03';
 
@@ -17,7 +18,7 @@ function App() {
         return (
             <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 text-white p-8">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl font-bold mb-2 text-center">🚀 React Basics Hub</h1>
+                    <h1 className="text-primary">🚀 React Basics Hub</h1>
                     <p className="text-gray-300 text-center mb-10">Select an exercise to start learning</p>
 
                     {/* React Basics 01 Section */}

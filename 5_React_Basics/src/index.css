@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@layer components {
+
+  /* Custom class */
+  .text-primary {/* Custom class example that you can use in App.tsx component */
+    @apply text-4xl font-bold mb-2 text-center;
+  }
+}
