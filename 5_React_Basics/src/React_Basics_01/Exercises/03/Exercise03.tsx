@@ -1,8 +1,12 @@
-export default function Exercise03() {
+const Nav = (props: { name: string, surname: string }) => {
     return (
-        <div className="p-4">
-            <h2 className="text-2xl font-bold mb-4">Exercise 03</h2>
-            <p>Content for Exercise 03 goes here.</p>
-        </div>
-    );
+        <ul>
+            <li>{props.name}</li>
+            <li>{props.surname}</li>
+        </ul>
+    )
 }
+
+export default Nav
+
+
