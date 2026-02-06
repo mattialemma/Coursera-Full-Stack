@@ -2,7 +2,7 @@
 
 [![Coursera](https://img.shields.io/badge/Coursera-Meta%20Full%20Stack-0056D2?style=flat&logo=coursera&logoColor=white)](https://www.coursera.org/professional-certificates/meta-front-end-developer)
 [![GitHub](https://img.shields.io/badge/GitHub-mattialemma-181717?style=flat&logo=github)](https://github.com/mattialemma/Coursera-Full-Stack)
-[![Progress](https://img.shields.io/badge/Progress-3%2F10%20Courses-success?style=flat)]()
+[![Progress](https://img.shields.io/badge/Progress-4%2F10%20Courses-success?style=flat)]()
 
 This repository contains the material produced during the **Meta Full Stack Developer Professional Certificate** on Coursera.
 
