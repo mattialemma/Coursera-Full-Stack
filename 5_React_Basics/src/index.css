@@ -6,4 +6,9 @@
   .text-primary {/* Custom class example that you can use in App.tsx component */
     @apply text-4xl font-bold mb-2 text-center;
   }
+
+  .card {
+    @apply hover:bg-gray-200 hover:scale-105 m-5 max-w-[300px] border border-[#525252] p-5 rounded-[10px];
+  }
+  
 }
