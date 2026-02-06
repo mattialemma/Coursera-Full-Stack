@@ -69,7 +69,7 @@ Each module contains:
 | 2️⃣ Programming with JavaScript | ✅ Completed | 100% |
 | 3️⃣ Version Control (Git & GitHub) | ✅ Completed | 100% |
 | 4️⃣ HTML and CSS in depth | ✅ Completed | 100% |
-| 5️⃣ React Basics | 📋 In progress | 15% |
+| 5️⃣ React Basics | 📋 In progress | 40% |
 | 6️⃣ Advanced React | 📋 To start | 0% |
 | 7️⃣ Programming in Python | 📋 To start | 0% |
 | 8️⃣ Introduction to Databases for Back-End Development | 📋 To start | 0% |
