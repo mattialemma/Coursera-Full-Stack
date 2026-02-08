@@ -16,14 +16,5 @@ function Weekends() {
 
 export default CurrentMessage
 
-/*
 
-If I want to use props instead of Date().getDay(), I can do the following:
 
-function CurrentMessage(props) {
-    if (props.day >= 1 && props.day <= 5) {
-        return <Workdays />
-    }
-    return <Weekends />
-}
-*/
