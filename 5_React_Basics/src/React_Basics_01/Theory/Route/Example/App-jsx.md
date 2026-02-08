@@ -1,4 +1,4 @@
-```React
+```jsx
 import "./App.css";
 import Homepage from "./Homepage";
 import AboutLittleLemon from "./AboutLittleLemon";
