@@ -9,9 +9,12 @@ import Exercise04 from './React_Basics_01/Exercises/04/Exercise04'
 import Exercise05 from './React_Basics_01/Exercises/05/Exercise05'
 import Exercise06 from './React_Basics_01/Exercises/06/Exercise06'
 import Exercise07 from './React_Basics_01/Exercises/07/Exercise07'
+import Exercise08 from './React_Basics_01/Exercises/08/Esercise08'
+import Exercise09 from './React_Basics_01/Exercises/09/Exercise09'
+import Exercise10 from './React_Basics_01/Exercises/10/Exercise10'
 
 
-type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07';
+type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08' | 'ex09' | 'ex10';
 
 function App() {
     const [currentView, setCurrentView] = useState<View>('menu');
@@ -97,6 +100,33 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 07</h3>
                                 <p className="text-sm text-green-200">Exercise 07</p>
                             </button>
+
+                            {/* Exercise 08 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex08')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 08</h3>
+                                <p className="text-sm text-green-200">Exercise 08</p>
+                            </button>
+
+                            {/* Exercise 09 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex09')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 09</h3>
+                                <p className="text-sm text-green-200">Exercise 09</p>
+                            </button>
+
+                            {/* Exercise 10 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex10')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 10</h3>
+                                <p className="text-sm text-green-200">Exercise 10</p>
+                            </button>
                         </div>
                     </div>
 
@@ -130,6 +160,9 @@ function App() {
                 {currentView === 'ex05' && <Exercise05 />}
                 {currentView === 'ex06' && <Exercise06 />}
                 {currentView === 'ex07' && <Exercise07 />}
+                {currentView === 'ex08' && <Exercise08 />}
+                {currentView === 'ex09' && <Exercise09 />}
+                {currentView === 'ex10' && <Exercise10 />}
             </main>
         </div>
     );
