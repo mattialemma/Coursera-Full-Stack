@@ -86,7 +86,6 @@ Please don't type in a zero
 */
 
 
-```
 ## Explanation of logical AND operator
 To understand what will be output on screen, consider the following example in standard JavaScript:
 
