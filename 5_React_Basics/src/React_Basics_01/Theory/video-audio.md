@@ -26,3 +26,38 @@ function VideoComponent() {
 
 **React Player:**
 https://www.npmjs.com/package/react-player
+
+
+## Example using React Player (NPM)
+
+```bash
+npm install react-player
+```
+
+```jsx
+import React from "react";
+import ReactPlayer from "react-player/youtube";
+
+const App = () => {
+  return (
+    <div>
+      <MyVideo />
+    </div>
+  );
+};
+
+const MyVideo = () => {
+  return (
+    <ReactPlayer url='https://www.youtube.com/watch?v=T8TZQ6k4SLE' 
+    playing={true}
+    controls={true}
+    width="100%"
+    height="100%"
+    volume={0.5}
+    />
+  );
+};
+
+export default App;
+
+```
