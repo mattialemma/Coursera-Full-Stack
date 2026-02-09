@@ -23,3 +23,41 @@ function ImageComponent() {
     )
 }
 ```
+
+---
+
+## Root
+src -> assets -> images -> image.jpeg
+
+## Component
+```jsx
+import image from "src/assets/images/image.jpeg";
+
+function ImageComponent() {
+    return (
+        <img src={image} alt="Image" />
+    )
+}
+```
+
+You can also use the require keyword to import assets.
+
+```jsx
+function ImageComponent() {
+    return (
+        <img src={require("src/assets/images/image.jpeg")} alt="Image" />
+    )
+}
+```
+
+Or you can use a variable.
+
+```jsx
+const image = "src/assets/images/image.jpeg";
+
+function ImageComponent() {
+    return (
+        <img src={image} alt="Image" />
+    )
+}
+```
