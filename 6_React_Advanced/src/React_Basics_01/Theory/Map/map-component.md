@@ -20,19 +20,21 @@ const data = [
   },
 ];
 
-const list = data.map((item) => (
-  return {
-    content: `${item.name} is ${item.age} years old`,
-    surname: item.surname,
-  };
-));
-
-
 export default function App() {
-  console.log(list);
+
+// With return beacuse I am doing things inside the function (row 27)
+const list = data.map((item) => (
+    const itemText = `${item.name} is ${item.age} years old`;
+    return (
+        <li>{itemText}</li>
+    );
+));
+    
   return (
     <div>
-      
+      <ul>
+        {listItems}
+      </ul>
     </div>
   );
 }
