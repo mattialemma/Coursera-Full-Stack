@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Exercise03() {
+function App() {
     const [score, setScore] = useState(0);
     const [comment, setComment] = useState("");
 
