@@ -2,14 +2,14 @@ import { useState } from 'react'
 
 // Import Exercise components
 // Import Exercise components
-import Exercise01 from './React_Basics_01/Exercises/01/Exercise01'
-import Exercise02 from './React_Basics_01/Exercises/02/Exercise02'
-import Exercise03 from './React_Basics_01/Exercises/03/Exercise03'
-import Exercise04 from './React_Basics_01/Exercises/04/Exercise04'
+import Exercise01 from './React_Advanced_01/Exercises/01/Exercise01'
+import Exercise02 from './React_Advanced_01/Exercises/02/Exercise02'
+import Exercise03 from './React_Advanced_01/Exercises/03/Exercise03'
+import Exercise04 from './React_Advanced_01/Exercises/04/Exercise04'
+import Exercise05 from './React_Advanced_01/Exercises/05/Exercise05'
 
 
-
-type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04';
+type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05';
 
 function App() {
     const [currentView, setCurrentView] = useState<View>('menu');
@@ -67,6 +67,15 @@ function App() {
                             >
                                 <h3 className="font-bold mb-1">🏋️ Exercise 04</h3>
                                 <p className="text-sm text-green-200">Exercise 04</p>
+                            </button>
+
+                            {/* Exercise 05 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex05')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 05</h3>
+                                <p className="text-sm text-green-200">Exercise 05</p>
                             </button>
                         </div>
                     </div>

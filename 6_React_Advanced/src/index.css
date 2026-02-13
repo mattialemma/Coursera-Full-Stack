@@ -10,6 +10,38 @@
   .card {
     @apply hover:bg-gray-200 hover:scale-105 m-5 max-w-[300px] border border-[#525252] p-5 rounded-[10px];
   }
+
+  /* Theme Switch */
+  .switch-container {
+    @apply relative inline-block w-14 h-8;
+  }
+  
+  .switch-input {
+    @apply opacity-0 w-0 h-0;
+  }
+
+  .switch-slider {
+    @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 transition-all duration-300 rounded-full;
+  }
+
+  /* Slider Before (the circle) */
+  .switch-slider::before {
+    @apply absolute content-[''] h-6 w-6 left-1 bottom-1 bg-white transition-all duration-300 rounded-full;
+  }
+
+  /* Checked state for slider */
+  .switch-input:checked + .switch-slider {
+    @apply bg-blue-500;
+  }
+
+  .switch-input:focus + .switch-slider {
+    @apply ring-2 ring-blue-300;
+  }
+
+  /* Checked state for the circle (transform) */
+  .switch-input:checked + .switch-slider::before {
+    @apply translate-x-6;
+  }
   
 }
 
