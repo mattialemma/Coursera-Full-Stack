@@ -7,9 +7,11 @@ import Exercise02 from './React_Advanced_01/Exercises/02/Exercise02'
 import Exercise03 from './React_Advanced_01/Exercises/03/Exercise03'
 import Exercise04 from './React_Advanced_01/Exercises/04/Exercise04'
 import Exercise05 from './React_Advanced_01/Exercises/05/Exercise05'
+import Exercise06 from './React_Advanced_01/Exercises/06/Exercise06'
+import Exercise07 from './React_Advanced_01/Exercises/07/Exercise07'
+import Exercise08 from './React_Advanced_01/Exercises/08/Exercise08'
 
-
-type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05';
+type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08';
 
 function App() {
     const [currentView, setCurrentView] = useState<View>('menu');
@@ -26,7 +28,7 @@ function App() {
 
                     {/* React Basics 01 Section */}
                     <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
-                        <h2 className="text-2xl font-semibold mb-4 text-blue-300">📘 React Basics 01</h2>
+                        <h2 className="text-2xl font-semibold mb-4 text-blue-300">📘 React Advanced 01</h2>
 
                         <p className="text-gray-400 mb-4 text-sm">
                             📖 Theory files are in <code className="bg-white/20 px-2 py-1 rounded">src/React_Basics_01/Theory/*.md</code>
@@ -77,6 +79,30 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 05</h3>
                                 <p className="text-sm text-green-200">Exercise 05</p>
                             </button>
+                            {/* Exercise 06 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex06')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 06</h3>
+                                <p className="text-sm text-green-200">Exercise 06</p>
+                            </button>
+                            {/* Exercise 07 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex07')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 07</h3>
+                                <p className="text-sm text-green-200">Exercise 07</p>
+                            </button>
+                            {/* Exercise 08 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex08')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 08</h3>
+                                <p className="text-sm text-green-200">Exercise 08</p>
+                            </button>
                         </div>
                     </div>
 
@@ -108,6 +134,9 @@ function App() {
                 {currentView === 'ex03' && <Exercise03 />}
                 {currentView === 'ex04' && <Exercise04 />}
                 {currentView === 'ex05' && <Exercise05 />}
+                {currentView === 'ex06' && <Exercise06 />}
+                {currentView === 'ex07' && <Exercise07 />}
+                {currentView === 'ex08' && <Exercise08 />}
             </main>
         </div>
     );

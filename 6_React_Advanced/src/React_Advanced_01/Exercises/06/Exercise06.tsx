@@ -39,7 +39,7 @@ const ThemeConsumer = React.memo(() => {
     );
 });
 
-export default function Exercise05() {
+export default function Exercise06() {
     return (
         <ThemeProvider>
             <ThemeConsumer />
