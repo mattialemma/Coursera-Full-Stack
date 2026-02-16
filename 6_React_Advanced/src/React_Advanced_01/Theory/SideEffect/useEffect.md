@@ -133,3 +133,11 @@ function LittleLemonChat({ chatId }) {
   return <h1>Status: {status}</h1>;
 }
 ```
+
+---
+
+### When to use useEffect
+
+[] = only run once (the first time the component mounts)
+without it, it will run every time the component re-renders
+[prop] = run when the prop changes
