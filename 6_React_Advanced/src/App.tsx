@@ -12,6 +12,7 @@ import Exercise07 from './React_Advanced_01/Exercises/07/Exercise07'
 import Exercise08 from './React_Advanced_01/Exercises/08/Exercise08'
 import Exercise09 from './React_Advanced_01/Exercises/09/Exercise09'
 import Exercise10 from './React_Advanced_01/Exercises/10/Exercise10'
+import Exercise11 from './React_Advanced_01/Exercises/11/Exercise11'
 
 type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08' | 'ex09' | 'ex10';
 
@@ -121,6 +122,14 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 10</h3>
                                 <p className="text-sm text-green-200">Exercise 10</p>
                             </button>
+                            {/* Exercise 11 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex11')}
+                                className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 11</h3>
+                                <p className="text-sm text-green-200">Exercise 11</p>
+                            </button>
                         </div>
                     </div>
 
@@ -157,6 +166,7 @@ function App() {
                 {currentView === 'ex08' && <Exercise08 />}
                 {currentView === 'ex09' && <Exercise09 />}
                 {currentView === 'ex10' && <Exercise10 />}
+                {currentView === 'ex11' && <Exercise11 />}
             </main>
         </div>
     );
