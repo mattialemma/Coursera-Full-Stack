@@ -20,13 +20,11 @@ const data = [
   },
 ];
 
-// Without return beacuse I am returning an object using {}
-const list = data.map((item) => (
-  {
-    content: `${item.name} is ${item.age} years old`,
-    surname: item.surname,
-  };
-));
+// Returning an object using () to wrap the object literal {}
+const list = data.map((item) => ({
+  content: `${item.name} is ${item.age} years old`,
+  surname: item.surname,
+}));
 
 
 export default function App() {

@@ -1,3 +1,10 @@
+/*
+
+Implementing mouse position tracking with HOC
+
+*/
+
+
 import { useState, useEffect } from "react";
 
 const PanelMouseLoggerImpl = ({ mousePosition }) => {

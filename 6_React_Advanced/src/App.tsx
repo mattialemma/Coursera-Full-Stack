@@ -15,8 +15,9 @@ import Exercise10 from './React_Advanced_01/Exercises/10/Exercise10'
 import Exercise11 from './React_Advanced_01/Exercises/11/Exercise11'
 import Exercise12 from './React_Advanced_01/Exercises/12/Exercise12'
 import Exercise13 from './React_Advanced_01/Exercises/13/Exercise13'
+import Exercise14 from './React_Advanced_01/Exercises/14/Exercise14'
 
-type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08' | 'ex09' | 'ex10' | 'ex11' | 'ex12' | 'ex13';
+type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08' | 'ex09' | 'ex10' | 'ex11' | 'ex12' | 'ex13' | 'ex14';
 
 function App() {
     const [currentView, setCurrentView] = useState<View>('menu');
@@ -156,6 +157,15 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 13</h3>
                                 <p className="text-sm text-yellow-100">Higher-Order Components (HOC)</p>
                             </button>
+
+                            {/* Exercise 14 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex14')}
+                                className="p-4 bg-yellow-600 hover:bg-yellow-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 14</h3>
+                                <p className="text-sm text-yellow-100">Render Props</p>
+                            </button>
                         </div>
                     </div>
 
@@ -195,6 +205,7 @@ function App() {
                 {currentView === 'ex11' && <Exercise11 />}
                 {currentView === 'ex12' && <Exercise12 />}
                 {currentView === 'ex13' && <Exercise13 />}
+                {currentView === 'ex14' && <Exercise14 />}
             </main>
         </div>
     );
