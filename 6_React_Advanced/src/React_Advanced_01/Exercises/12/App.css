@@ -6,7 +6,7 @@
   padding: 16px;
 }
 
-button {
+.App button {
   margin-top: 16px;
   width: 150px;
   height: 32px;
@@ -16,8 +16,8 @@ button {
   color: white;
 }
 
-button:disabled,
-button[disabled] {
+.App button:disabled,
+.App button[disabled] {
   background-color: #cccccc;
   color: #666666;
 }

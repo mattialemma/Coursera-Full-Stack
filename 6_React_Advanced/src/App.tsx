@@ -14,8 +14,9 @@ import Exercise09 from './React_Advanced_01/Exercises/09/Exercise09'
 import Exercise10 from './React_Advanced_01/Exercises/10/Exercise10'
 import Exercise11 from './React_Advanced_01/Exercises/11/Exercise11'
 import Exercise12 from './React_Advanced_01/Exercises/12/Exercise12'
+import Exercise13 from './React_Advanced_01/Exercises/13/Exercise13'
 
-type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08' | 'ex09' | 'ex10' | 'ex11' | 'ex12';
+type View = 'menu' | 'ex01' | 'ex02' | 'ex03' | 'ex04' | 'ex05' | 'ex06' | 'ex07' | 'ex08' | 'ex09' | 'ex10' | 'ex11' | 'ex12' | 'ex13';
 
 function App() {
     const [currentView, setCurrentView] = useState<View>('menu');
@@ -30,12 +31,12 @@ function App() {
                     <h1 className="text-primary">🚀 React Advanced Hub</h1>
                     <p className="text-gray-300 text-center mb-10">Select an exercise to start learning</p>
 
-                    {/* React Basics 01 Section */}
+                    {/* React Advanced 01 Section */}
                     <div className="bg-white/10 backdrop-blur rounded-xl p-6 mb-6">
                         <h2 className="text-2xl font-semibold mb-4 text-blue-300">📘 React Advanced 01</h2>
 
                         <p className="text-gray-400 mb-4 text-sm">
-                            📖 Theory files are in <code className="bg-white/20 px-2 py-1 rounded">src/React_Basics_01/Theory/*.md</code>
+                            📖 Theory files are in <code className="bg-white/20 px-2 py-1 rounded">src/React_Advanced_01/Theory/*.md</code>
                         </p>
 
                         <div className="grid md:grid-cols-3 gap-4">
@@ -63,7 +64,7 @@ function App() {
                                 className="p-4 bg-green-600 hover:bg-green-500 rounded-lg transition-all hover:scale-105 text-left"
                             >
                                 <h3 className="font-bold mb-1">🏋️ Exercise 03</h3>
-                                <p className="text-sm text-green-200">Exercise 03</p>
+                                <p className="text-sm text-green-200">Data Fetching</p>
                             </button>
 
                             {/* Exercise 04 Card */}
@@ -83,6 +84,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 05</h3>
                                 <p className="text-sm text-green-200">Exercise 05</p>
                             </button>
+
                             {/* Exercise 06 Card */}
                             <button
                                 onClick={() => setCurrentView('ex06')}
@@ -91,6 +93,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 06</h3>
                                 <p className="text-sm text-green-200">Exercise 06</p>
                             </button>
+
                             {/* Exercise 07 Card */}
                             <button
                                 onClick={() => setCurrentView('ex07')}
@@ -99,6 +102,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 07</h3>
                                 <p className="text-sm text-green-200">Exercise 07</p>
                             </button>
+
                             {/* Exercise 08 Card */}
                             <button
                                 onClick={() => setCurrentView('ex08')}
@@ -107,6 +111,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 08</h3>
                                 <p className="text-sm text-green-200">Exercise 08</p>
                             </button>
+
                             {/* Exercise 09 Card */}
                             <button
                                 onClick={() => setCurrentView('ex09')}
@@ -115,6 +120,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 09</h3>
                                 <p className="text-sm text-green-200">Exercise 09</p>
                             </button>
+
                             {/* Exercise 10 Card */}
                             <button
                                 onClick={() => setCurrentView('ex10')}
@@ -123,6 +129,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 10</h3>
                                 <p className="text-sm text-green-200">Exercise 10</p>
                             </button>
+
                             {/* Exercise 11 Card */}
                             <button
                                 onClick={() => setCurrentView('ex11')}
@@ -131,6 +138,7 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 11</h3>
                                 <p className="text-sm text-green-200">Exercise 11</p>
                             </button>
+
                             {/* Exercise 12 Card */}
                             <button
                                 onClick={() => setCurrentView('ex12')}
@@ -139,12 +147,21 @@ function App() {
                                 <h3 className="font-bold mb-1">🏋️ Exercise 12</h3>
                                 <p className="text-sm text-yellow-100">Radio Group (cloneElement)</p>
                             </button>
+
+                            {/* Exercise 13 Card */}
+                            <button
+                                onClick={() => setCurrentView('ex13')}
+                                className="p-4 bg-yellow-600 hover:bg-yellow-500 rounded-lg transition-all hover:scale-105 text-left"
+                            >
+                                <h3 className="font-bold mb-1">🏋️ Exercise 13</h3>
+                                <p className="text-sm text-yellow-100">Higher-Order Components (HOC)</p>
+                            </button>
                         </div>
                     </div>
 
-                    {/* Mattia Lemma */}
+                    {/* Footer / Info Section */}
                     <div className="bg-white/5 backdrop-blur rounded-xl p-6 opacity-60">
-                        <h2 className="text-2xl font-semibold mb-2 text-gray-400">📗 React Basics</h2>
+                        <h2 className="text-2xl font-semibold mb-2 text-gray-400">📗 React Advanced</h2>
                         <p className="text-gray-500">Mattia Lemma</p>
                     </div>
                 </div>
@@ -177,6 +194,7 @@ function App() {
                 {currentView === 'ex10' && <Exercise10 />}
                 {currentView === 'ex11' && <Exercise11 />}
                 {currentView === 'ex12' && <Exercise12 />}
+                {currentView === 'ex13' && <Exercise13 />}
             </main>
         </div>
     );
