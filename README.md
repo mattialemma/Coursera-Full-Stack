@@ -27,9 +27,20 @@ The entire program is organized into courses, each subdivided into modules, whic
 │   └── 📁 Module_4/
 ├── 📁 3_GitHub/
 │   ├── 📁 GitHub-001/
-│   ├── 📁 GitHub-002/
-│   └── 📄 README.md
-└── 📝README.md
+│   └── 📁 GitHub-002/
+├── 📁 4_HTML_CSS_/
+│   ├── 📁 CSS-01/
+│   ├── 📁 HTML-01/
+│   └── 📁 HTML-CSS-Project/
+├── 📁 5_React_Basics/
+│   └── 📁 src/
+├── 📁 6_React_Advanced/
+│   ├── 📁 final-portfolio-lab/
+│   └── 📁 src/
+├── 📁 8_Database/
+│   └── 📁 Module_1/
+│       └── 📄 DDL_DML_DQL.md
+└── 📝 README.md
 ```
 
 Each module contains:
@@ -72,7 +83,7 @@ Each module contains:
 | 5️⃣ React Basics | ✅ Completed | 100% |
 | 6️⃣ Advanced React | ✅ Completed | 100% |
 | 7️⃣ Programming in Python | 📋 To start | 0% |
-| 8️⃣ Introduction to Databases for Back-End Development | 📋 To start | 0% |
+| 8️⃣ Introduction to Databases for Back-End Development | 🔄 In progress | — |
 | 9️⃣ Django Web Framework | 📋 To start | 0% |
 | 🔟 APIs | 📋 To start | 0% |
 
