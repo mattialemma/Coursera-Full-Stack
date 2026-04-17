@@ -83,7 +83,7 @@ Each module contains:
 | 5️⃣ React Basics | ✅ Completed | 100% |
 | 6️⃣ Advanced React | ✅ Completed | 100% |
 | 7️⃣ Programming in Python | 📋 To start | 0% |
-| 8️⃣ Introduction to Databases for Back-End Development | 🔄 In progress | — |
+| 8️⃣ Introduction to Databases for Back-End Development | ✅ Completed | 100% |
 | 9️⃣ Django Web Framework | 📋 To start | 0% |
 | 🔟 APIs | 📋 To start | 0% |
 
